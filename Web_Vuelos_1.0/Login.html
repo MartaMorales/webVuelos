@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -20,84 +20,44 @@
 
 </head>
 <body>
-<header id="header">
-    <!-- Aqui he hecho un div para delimitar la barra de navegacion -->
-    <div class = "wiku-header">
-
-        <a class="nav-item nav-link" id="imgLogo" href="#" name="imgLogo">
-            <img src="img/wiku%20airlines%201.png" name="logoWiku" id="logoWiku" alt="Logo Wiku Airlines"
-                 width="200">
-        </a>
-        <nav class="nav nav-pills nav-fill">
-            <a onclick="activo(this)" class="nav-item nav-link active" href="#">Inicio</a>
-
-            <a onclick="activo(this)" class="nav-item nav-link" href="#">Destinos</a>
-
-            <a onclick="activo(this)" class="nav-item nav-link" href="#">Ofertas</a>
-
-            <a onclick="activo(this)" class="nav-item nav-link" href="#">Mis viajes</a>
-
-            <a onclick="activo(this)" class="nav-item nav-link" href="#">¿Quienes somos?</a>
-
-            <a onclick="activo(this)" class="nav-item nav-link" href="#">Contacto</a>
-        </nav>
-    </div>
-</header>
+<header></header>
 <main>
-    <fieldset id="fieldLogin">
-    <form>
-        <div class="contenedor">
-            <label for="user"><b>Usuario: </b></label>
-            <input type="text" placeholder="Usuario1234" name="user" required>
-            <br>
-            <label for="pass"><b>Contraseña: </b></label>
-            <input type="password" placeholder="Password1234" name="pass" required>
-            <br>
-            <button class="button1" type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="Recordarme"> Recordarme
-            </label>
-        </div>
-        <div class="contenedor">
-            <button class="button1" type="button" class="cancelbtn">Cancelar</button>
-            <span class="pass"><a href="#">Olvidaste tu contraseña?</a></span>
-        </div>
-    </form>
-    </fieldset>
-</main>
-<footer id="footer">
     <div class="row">
         <div class="col-lg-1"></div>
-        <div class="col-lg-2">
-            <img src="img/Wiku%20airlines%202%20bn.png" name="logoWikuBN" id="logoWikuBN"
-                 alt="Wiku Airlines logo blanco y negro" width="500">
-        </div>
-        <div class="col-lg-2">
-            <h5 class="encabezado5Footer">Destinos</h5>
-            <a class="link" href="#">Continente</a>
-            <a class="link" href="#">Paises</a>
-            <a class="link" href="#">Ciudades</a>
-        </div>
-        <div class="col-lg-2">
-            <h5 class="encabezado5Footer">¿Quienes somos?</h5>
-            <a class="link" href="#">Trabaja con nosotros</a>
-            <a class="link" href="#">Contacto</a>
-        </div>
-        <div class="col-lg-2">
-            <h5 class="encabezado5Footer">Enlaces útiles</h5>
-            <a class="link" href="#">Ayuda</a>
-        </div>
-        <div class="col-lg-2">
-            <h5 class="encabezado5Footer">Redes sociales</h5>
-            <a class="link" href="#">Facebook</a>
-            <a class="link" href="#">Twitter</a>
-            <a class="link" href="#">Instagram</a>
-        </div>
-        <div class="col-lg-1"></div>
-    </div>
-</footer>
+        <div class="col-lg-10">
 
+            <fieldset id="fieldLogin">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <form>
+                            <div class="contenedor">
+                                <div class="row">
+                                <label class="label"><b>Usuario: </b></label>
+                                <input type="text" placeholder="Usuario1234" name="user" required>
+                                </div>
+                                <div class="row">
+                                <label class="label"><b>Contraseña: </b></label>
+                                <input type="password" placeholder="Password1234" name="pass" required>
+                                </div>
+                                <button class="button1" type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="Recordarme"> Recordarme
+                                </label>
+                                <button class="button1 cancelbtn" type="button">Cancelar</button>
+                                <span class="pass"><a href="#">Olvidaste tu contraseña?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </fieldset>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</main>
+<footer></footer>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/Login.js"></script>
+<script src="js/login.js"></script>
 </html>
