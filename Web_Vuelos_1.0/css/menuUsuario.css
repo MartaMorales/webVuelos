@@ -1,11 +1,25 @@
-#login{
+/*Cuerpo de la web*/
+body {
+    background: #ece8d9;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    margin-top: 100px;
+    margin-left: 5%;
+    height: 100%;
+}
+/*Barra superior login*/
+#login {
     float: right;
     margin: 10px 5px 10px 0;
 }
-#login img{
+
+#login img {
     width: 20px;
     height: auto;
 }
+/*Barra de navegacion*/
 .nav {
 
     background: #00adb5;
@@ -50,7 +64,7 @@
     flex-grow: 1;
     text-align: center;
 }
-
+/*Logo superior*/
 .wiku-header {
 
     background: #ece8d9;
@@ -67,42 +81,35 @@
     margin-top: 15px;
 }
 
-/*Cuerpo de la web*/
-body {
-    background: #ece8d9;
-    font-family: 'Lato', sans-serif;
-}
-
-main {
-    margin-top:100px;
-    margin-left:5%;
-    height: 100%;
-}
-
 /*Menu*/
-#field{
+#field {
     border: solid #343a40;
     border-radius: 5px;
     margin-top: 5%;
     width: 95%
 }
-#div2, #div1{
-  display: inline-block;
+
+#div2, #div1 {
+    display: inline-block;
 }
-#imagen{
-  border-radius: 50%;
-  width: 40%;
+
+#imagen {
+    border-radius: 50%;
+    width: 40%;
 }
-#saludo{
+
+#saludo {
     background: none;
     border: none;
 }
-.parrafo{
+
+.parrafo {
     display: inline-block;
     width: 200px;
     margin-bottom: 20px;
 }
-.botonMenu{
+
+.botonMenu {
     background: none;
     color: #00adb5;
     border: none;
@@ -111,17 +118,17 @@ main {
     height: 40px;
     font-family: 'Lato', sans-serif;
 }
+
 .botonMenu:hover {
     color: #f8b500;
 }
-
 
 /*Footer*/
 footer {
     background: #393e46;
     color: white;
     padding: 45px 50px 46px 50px;
-    margin-top:5%;
+    margin-top: 5%;
 }
 
 footer img {
@@ -133,28 +140,6 @@ footer img {
 
 
 
-/*Pantalla de login*/
-#fieldLogin {
-    text-align: center;
-    width: 500px;
-    height: 300px;
-    background: #393e46;
-    border: solid;
-}
 
-.button1 {
-    background: #00adb5;
-    color: white;
-    padding: 5px 10px;
-    margin: 8px 0;
-    border: all;
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
-}
-
-.button1:hover {
-    background-color: #f8b500;
-}
 
 
