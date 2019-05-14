@@ -1,3 +1,7 @@
+html{
+    font-size: 62.5%;
+}
+
 /*Cuerpo de la web*/
 body {
     background: #393e46;
@@ -10,79 +14,7 @@ main {
     height: auto;
 }
 
-/*Barra superior login*/
-#login {
-    float: right;
-    margin: 10px 5px 10px 0;
-}
 
-#login img {
-    width: 20px;
-    height: auto;
-}
-
-/*Barra de navegacion*/
-.nav {
-
-    background: #00adb5;
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-top: 10px;
-    list-style: none;
-    height: 100%;
-    border-radius: 3rem;
-}
-
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    font-size: 1.3em;
-}
-
-.nav-pills .nav-link {
-    color: #393e46;
-    border-radius: 3rem;
-}
-
-.nav-pills .nav-link .active,
-.nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #f8b500 !important;
-}
-
-.nav-fill .nav-item {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    text-align: center;
-}
-
-.nav-justified .nav-item {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    text-align: center;
-}
-
-/*Logo superior*/
-.wiku-header {
-
-    background: #ece8d9;
-    margin: 0 auto;
-    height: 100px;
-    padding: 0 30px 0 30px;
-}
-
-.wiku-header a {
-    align-items: center;
-}
-
-.wiku-header a > img {
-    margin-top: 15px;
-}
 
 /*Pantalla de login*/
 .user_card {
@@ -100,6 +32,7 @@ main {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
+    font-size: 1.6rem;
 
 }
 .brand_logo_container {
@@ -128,11 +61,15 @@ main {
     width: 24px;
     height: auto;
 }
+.login{
+    font-size: 1.6rem;
+}
 
 .login_btn {
     width: 100%;
     background: #00adb5 !important;
     color: #ece8d9!important;
+    font-size: 1.6rem;
 }
 .login_btn:hover{
     background: #f8b500!important;
@@ -144,6 +81,7 @@ main {
 .login_container {
     padding: 0 2rem;
 }
+
 .input-group-text {
     background: #00adb5 !important;
     color: #ece8d9 !important;
@@ -155,23 +93,35 @@ main {
     box-shadow: none !important;
     outline: 0px !important;
 }
+.checkbox{
+    font-size: 7rem;
+}
+
+
+
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #f8b500 !important;
+
 }
+
 
 /*Footer*/
 footer {
+    font-size: 1.6rem;
     background: #ece8d9;
     color: #393e46;
-    padding: 45px 50px 46px 50px;
-    margin: 5% 0 0 0;
-    height: 100%;
+    /*padding: 45px 50px 46px 50px;*/
+    position: absolute;
+    bottom: 0;
+}
+footer h5{
+    font-size: 2rem;
 }
 
 footer img {
-    width: 200%;
-    margin:0 0 0 -170px;
-    padding: 0;
+    width: 80% !important;
+    margin: 0 auto;
+
 }
 
 
