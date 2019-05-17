@@ -7,10 +7,18 @@ body {
     background: white;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    overflow-x:hidden ;
 }
 
 main {
-    margin-top:10rem;
+    margin-top:14rem;
+    height: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 100%;
 }
 
@@ -68,13 +76,13 @@ main {
 }
 
 .nav-pills .nav-link {
-    color: #393e46;
+    color: white;
     border-radius: 3rem;
 }
 
 .nav-pills .nav-link .active,
 .nav-pills .show > .nav-link {
-    color: #fff;
+    color: #393e46!important;
     background-color: #f8b500 !important;
 }
 
@@ -109,6 +117,8 @@ main {
 }
 /*Footer*/
 footer {
+    display: block;
+
     background: #393e46;
     color: white;
     padding: 4.5rem 5.0rem 4.6rem 5.0rem;
@@ -117,6 +127,7 @@ footer {
    /* position: fixed;*/
     bottom: 0;
     width: 100%;
+    height: 100%;
 }
 footer h5{
     font-size: 2rem;
