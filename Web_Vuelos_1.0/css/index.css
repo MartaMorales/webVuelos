@@ -56,7 +56,14 @@ h3{
     display: block;
     color: black;
 }
-
+.imgCarousel{
+    alignment: center;
+    width: 150%;
+    height: auto;
+}
+.coment{
+    padding-left: 1rem;
+}
 
 
 
