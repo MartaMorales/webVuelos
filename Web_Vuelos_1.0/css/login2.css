@@ -33,9 +33,9 @@ body{
 }
 .brand_logo {
     z-index: 10;
-    height: 17rem;
-    width: auto;
-    margin: 0 0 0 -10.5rem;
+    height: auto;
+    width: 15rem;
+    margin: 3.1rem 0 0 -1.5rem;
 
 
 }
@@ -97,7 +97,7 @@ footer {
     background: white;
     color: #393e46;
     /*padding: 45px 50px 46px 50px;*/
-    position: absolute;
+
     bottom: 0;
 }
 footer h5{
@@ -105,7 +105,7 @@ footer h5{
 }
 
 footer img {
-    width: 80% !important;
+    width: 70% !important;
     margin: 0 auto;
 
 }

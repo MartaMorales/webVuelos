@@ -67,6 +67,9 @@ h3{
     display: block;
     color: black;
 }
+.carrusel{
+    padding-top: 4.1rem;
+}
 .imgCarousel{
     alignment: center;
     width: 150%;
