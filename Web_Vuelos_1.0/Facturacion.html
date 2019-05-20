@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wiku Airlines - Paajeros</title>
+    <title>Wiku Airlines - Facturacion</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="vendor/css/bootstrap-grid.css">
@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="vendor/css/normalize.css">
     <link rel="stylesheet" href="vendor/css/carouselIndex.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/pasajero.css">
+    <link rel="stylesheet" href="css/facturacion.css">
 </head>
 <body>
 <header></header>
 <main>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
     <div class="col-md-8 order-md-1">
-        <h4 class="mb-3">Billing address</h4>
+        <h4 class="mb-3">Datos de facturación.</h4>
         <form class="needs-validation" novalidate="">
             <div class="row">
                 <div class="col-md-6 mb-3">
@@ -56,10 +59,27 @@
                     Por favor, introduce un email válido.
                 </div>
             </div>
+            <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="password">Introduce una contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="por ejemplo: 123456" value="" required="">
+                <div class="invalid-feedback">
+                    Se requiere una contraseña válida.
+                </div>
+            </div>
+                <div class="col-md-6 mb-3">
+                    <label for="password">Repite la contraseña</label>
+                    <input type="password" class="form-control" id="passwordrep" placeholder="por ejemplo: 123456" value="" required="">
+                    <div class="invalid-feedback">
+                        Las contraseñas no coinciden.
+                    </div>
+                </div>
+
+            </div>
 
             <div class="mb-3">
                 <label for="address">Dirección</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 C/ Sol 1" required="">
+                <input type="text" class="form-control" id="address" placeholder="Por ejemplo: C/ Sol 1" required="">
                 <div class="invalid-feedback">
                     Por favor, introduce tu dirección.
                 </div>
@@ -68,7 +88,7 @@
             <div class="row">
                 <div class="col-md-5 mb-3">
                     <label for="country">Pais</label>
-                    <select class="custom-select d-block w-100" id="country" required="">
+                    <select class="custom-select d-block w-100 datos" id="country" required="">
                         <option value="">Escoge...</option>
                         <option>España</option>
                         <option>Francia</option>
@@ -84,7 +104,7 @@
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="state">Ciudad</label>
-                    <select class="custom-select d-block w-100" id="state" required="">
+                    <select class="custom-select d-block w-100 datos" id="state" required="">
                         <option value="">Escoge...</option>
                         <option>Madrid</option>
                         <option>Barcelona</option>
@@ -128,11 +148,17 @@
                 </div>
                 <div class="custom-control custom-radio">
                     <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                    <label class="custom-control-label" for="debit">Paypal</label>
+                    <label class="custom-control-label" for="paypal">Paypal</label>
                 </div>
             </div>
         </form>
     </div>
+            <input type="submit" value="Enviar" class="btn btn-primary boton">
+    </div>
+        <div class="col-lg-1"></div>
+    </div>
+
+
 </main>
 
 
