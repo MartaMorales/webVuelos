@@ -100,8 +100,9 @@ header{
 }
 
 .active{
-    color: #393e46!important;
+    color: white!important;
     background-color: #f8b500 !important;
+    height: 100%;
 }
 
 .nav-fill .nav-item {
