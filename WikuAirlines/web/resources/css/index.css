@@ -1,25 +1,33 @@
-
-.iconosbuscador{
-    width: 2.4rem;
-    height: 100%;
+.icons {
+    font-size: 2.8rem !important;
 }
 
-.destinyHome{
+.input-field .prefix ~ label {
+    margin-left: 3rem;
+    font-size: 1.6rem;
+}
+
+.input-browser {
+    width: calc(100% - -24rem);
+}
+
+.destinyHome {
     display: flex;
     flex-direction: row;
 }
 
-.destinyHome input{
-    padding:0;
+.destinyHome input {
+    padding: 0;
     display: flex;
 }
-.columnLg3BuscadorIndex{
+
+.columnLg3BuscadorIndex {
     display: flex;
     width: 2.4rem;
     height: 100%;
 }
 
-.columnLg2BuscadorIndex{
+.columnLg2BuscadorIndex {
     display: flex;
     flex-direction: row;
     width: 2.4rem;
@@ -34,7 +42,8 @@
     justify-content: space-between;
 
 }
-.columnLg1BuscadorIndexbot{
+
+.columnLg1BuscadorIndexbot {
     background: dodgerblue;
     border-radius: 1rem;
 }
@@ -45,61 +54,51 @@
     border-color: #f8b500;
 }
 
-.columnLg1BuscadorIndexbot input{
+.columnLg1BuscadorIndexbot input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.columnLg1BuscadorIndexbot{
+.columnLg1BuscadorIndexbot {
     width: 80%;
     height: 100%;
     font-size: 1.6rem;
 }
 
-#titulo{
+#titulo {
     padding-top: 5rem;
     text-align: center;
 }
 
 
-h3{
+h3 {
     display: block;
     color: black;
 }
-.carrusel{
-    padding-top: 4.1rem;
+
+#carousel-one {
+    background-image: url("/WikuAirlines/resources/img/cities/KualaLumpur.jpeg");
+    background-size: 100%;
 }
-.imgCarousel{
-    alignment: center;
-    width: 150%;
-    height: auto;
+
+#carousel-two {
+    background-image: url("/WikuAirlines/resources/img/cities/Londres.jpeg");
+    background-size: 100%;
 }
-.coment{
-    text-align: center;
-    width: 100%;
+
+#carousel-three {
+    background-image: url("/WikuAirlines/resources/img/cities/SanFrancisco.jpeg");
+    background-size: 100%;
+}
+
+#carousel-four {
+    background-image: url("/WikuAirlines/resources/img/cities/pexels-photo-236451.jpeg");
+    background-size: 100%;
 
 }
 
-.carousel-wrapper{
-    background-image: none;
-    height: 42.5rem;
-}
-.carousel-wrapper img{
-    max-width: 100%;
-}
 
-.boton{
-    margin: 1rem 0 1rem 25%;
-    width: 50%;
-    background: dodgerblue;
-    border-radius: 1rem;
-}
-.boton:hover{
-    background: #f8b500;
-    border-radius: 1rem;
-    border-color: #f8b500;
-}
 
 
 

@@ -1,16 +1,20 @@
 $(document).ready(function(){
-
+    M.AutoInit();
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
 });
 
-
-/*Barra de navegacion*/
-function activo(link) {
-    var links = link.parentElement.getElementsByTagName("a");
-    for(var i of links){
-        i.classList.remove("active");
-    }
-    link.classList.add("active");
-}
+$(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+        data: {
+            "Apple": null,
+            "Microsoft": null,
+            "Google": 'https://placehold.it/250x250'
+        },
+    });
+});
 
 
 
