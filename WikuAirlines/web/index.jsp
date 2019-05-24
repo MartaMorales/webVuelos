@@ -15,7 +15,7 @@
 </head>
 <body>
 <header>
-    <%--<%@include file="/views/layout/header.jsp" %>--%>
+    <%@include file="/views/layout/header.jsp" %>
 </header>
 <main>
 
