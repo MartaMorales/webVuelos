@@ -2,85 +2,40 @@
 
 <!-- delimitacion de la barra de navegacion -->
 
-<div class="wiku-header">
-    <div class = "row">
+<div >
 
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6"></div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <form>
-                                <div class="row">
-                                    <div class="col login">
-                                        <label>Usuario: </label>
-                                        <input type="text" class="form-control"/>
-                                    </div>
-                                    <div class="col login">
-                                        <label>Contraseña: </label>
-                                        <input type="password" class="form-control login"/>
-
-                                    </div>
-                                    <a href="#">
-                                    <img id=login src="img/Icons/01-%20Light/06-PNG/24w/login-2.png" alt="iconoLogin">
-                                    </a>
-                                </div>
-                            </form>
+    <nav class="wiku-nav">
+            <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img class="wiku-logo-header" src="/WikuAirlines/resources/img/logos/wiku_blank.png"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="sass.html">Inicio</a></li>
+                    <li><a href="badges.html">Destinos</a></li>
+                    <li><a href="collapsible.html">Mis viajes</a></li>
+                    <li><a href="mobile.html">Contacto</a></li>
+                    <li><div class="row">
+                        <div class="input-field col s4">
+                            <input placeholder="User Name" id="first_name" type="text" class="validate">
+                            <label for="first_name">User Name</label>
                         </div>
-                    </div>
-                </div>
+                        <div class="input-field col s4">
+                            <input placeholder="Password" id="last_name" type="password" class="validate">
+                            <label for="last_name">Password</label>
+                        </div>
+                        <div class="input-field col s4">
+                                <button id="submit-button" type="submit" class="btn waves-effect waves-light">Login<i class="material-icons submit-icon right">send</i>
+                                </button>
+                        </div>
+                        </div>
+                    </li>
+            </ul>
             </div>
+    </nav>
 
-
-            <nav class="navbar navbar-expand-lg">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a onclick="activo(this)" id="index" class="nav-link active" href="/Web_Vuelos_1.0/Index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a onclick="activo(this)" id="destinos" class="nav-link" href="/Web_Vuelos_1.0/Destino.html">Destinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a onclick="activo(this)" id="misDatos" class="nav-link" href="#">Mis viajes</a>
-                        </li>
-                        <li class="nav-item" >
-                            <a onclick="activo(this)" class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
+    <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Inicio</a></li>
+            <li><a href="badges.html">Destinos</a></li>
+            <li><a href="collapsible.html">Mis viajes</a></li>
+            <li><a href="mobile.html">Contacto</a></li>
+    </ul>
 </div>
-
-
-
-
-
-
-<!--
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <nav class="nav nav-pills nav-fill">
-                        <a onclick="activo(this)" id="index" class="nav-item nav-link active" href="/Web_Vuelos_1.0/Index.html">Inicio</a>
-
-                        <a onclick="activo(this)" id="destinos" class="nav-item nav-link" href="/Web_Vuelos_1.0/Destino.html">Destinos</a>
-
-                        <a onclick="activo(this)" id="misDatos" class="nav-item nav-link" href="#">Mis viajes</a>
-
-                        <a onclick="activo(this)" class="nav-item nav-link" href="#">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
-<!--./ delimitacion de la barra de navegacion -->

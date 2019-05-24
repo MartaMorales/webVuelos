@@ -104,7 +104,7 @@
     <%@include file="/views/layout/footer.jsp" %>
 </footer>
 </body>
-<script src="resources/vendor/js/materialize.min.js"></script>
 <script src="resources/vendor/js/jquery-3.4.1.min.js"></script>
+<script src="resources/vendor/js/materialize.min.js"></script>
 <script src="resources/js/index.js"></script>
 </html>

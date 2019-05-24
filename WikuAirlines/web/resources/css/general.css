@@ -38,6 +38,25 @@ header{
 
 }
 
+/* Header*/
+
+.submit-icon{
+    line-height: 3.5rem !important;
+}
+
+.wiku-nav{
+    background-color: #1E90FF;
+    color:white;
+}
+
+.wiku-nav ul a{
+    font-size: 1.6rem;
+}
+
+.wiku-logo-header{
+    width: 8.5rem;
+    height: auto;
+}
 
 /*Footer*/
 footer {
