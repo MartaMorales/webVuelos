@@ -6,8 +6,8 @@
     margin-left: 3rem;
     font-size: 1.6rem;
 }
-.carousel .carousel-slider{
-    height: 40rem;
+.carousel{
+    height: 40rem !important;
 }
 .carousel-title{
     border-radius: 1rem;
