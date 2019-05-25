@@ -45,7 +45,7 @@ header{
 }
 
 .wiku-nav{
-    background-color: #1E90FF;
+    background-color: dodgerblue;
     color:white;
 }
 
@@ -54,8 +54,70 @@ header{
 }
 
 .wiku-logo-header{
-    width: 8.5rem;
+    width: 24.5rem;
     height: auto;
+}
+
+.wiku-button{
+    background-color: #f8b500;
+}
+
+.wiku-button:hover{
+    background-color: #FAD561;
+}
+
+.wiku-button:focus{
+    background-color: #FAA300;
+}
+
+.sidenav-overlay{
+    z-index: 1;
+}
+
+.wiku-logo-hamburger{
+    height: 15rem;
+}
+
+.wiku-logo-hamburger .background{
+    text-align: center;
+}
+
+.wiku-logo-img-hamburger{
+    width: 18rem;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #f8b500;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #f8b500;
+    -webkit-box-shadow: 0 1px 0 0 #f8b500;
+    box-shadow: 0 1px 0 0 #f8b500;
 }
 
 /*Footer*/
@@ -87,3 +149,8 @@ footer img{
     }
 }
 
+@media (max-width: 600px) {
+    .wiku-logo-header{
+        width: 22.5rem;
+    }
+}
