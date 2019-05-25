@@ -6,11 +6,23 @@
     margin-left: 3rem;
     font-size: 1.6rem;
 }
-
-.input-browser {
-    width: calc(100% - -24rem);
+.carousel .carousel-slider{
+    height: 40rem;
+}
+.carousel-title{
+    border-radius: 1rem;
+    width: 39rem;
+    filter: blur(2.6rem);
+    height: 10.5rem;
+    margin: 6rem;
 }
 
+h2{
+
+    margin: -13rem;
+    font: 400 10rem/1.2 'Leckerli One', Helvetica, sans-serif;
+    color: #f8b500 ;
+}
 .destinyHome {
     display: flex;
     flex-direction: row;

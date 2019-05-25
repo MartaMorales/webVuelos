@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiku Airlines - Index</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="resources/vendor/css/materialize.min.css">
     <link rel="stylesheet" href="resources/vendor/css/normalize.css">
@@ -18,7 +19,7 @@
     <%@include file="/views/layout/header.jsp" %>
 </header>
 <main>
-
+    <%--Buscador de vuelos --%>
     <section class="row">
         <div class="col l1  m1 s1"></div>
         <div class="col l10 m10 s10">
@@ -63,35 +64,38 @@
         </div>
         <div class="col l1  m1  s1"></div>
     </section>
-
+    <%--Carousel --%>
     <div class="container">
         <div class="carousel carousel-slider center">
-            <div class="carousel-item red white-text" id="carousel-one" href="#one!">
-                <h2>First Panel</h2>
-                <p class="white-text">This is your first panel</p>
+            <div class="carousel-item red white-text" id="carousel-one">
+                <img  class="carousel-title" src="resources/img/cities/paris.jpeg">
+                    <h2>First Panel</h2>
                 <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2">Ver oferta</a>
+                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
                 </div>
             </div>
             <div class="carousel-item amber white-text" id="carousel-two" href="#two!">
-                <h2>Second Panel</h2>
+                <h2 class="carousel-title" class="carousel-title">Second Panel</h2>
+                <img  class="carousel-title" src="resources/img/cities/paris.jpeg">
                 <p class="white-text">This is your second panel</p>
                 <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2">Ver oferta</a>
+                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
                 </div>
             </div>
             <div class="carousel-item green white-text" id="carousel-three" href="#three!">
-                <h2>Third Panel</h2>
+                <h2 class="carousel-title">Third Panel</h2>
+                <img  class="carousel-title" src="resources/img/cities/paris.jpeg">
                 <p class="white-text">This is your third panel</p>
                 <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2">Ver oferta</a>
+                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
                 </div>
             </div>
             <div class="carousel-item blue white-text" id="carousel-four" href="#four!">
-                <h2>Fourth Panel</h2>
+                <h2 class="carousel-title">Fourth Panel</h2>
+                <img  class="carousel-title" src="resources/img/cities/paris.jpeg">
                 <p class="white-text">This is your fourth panel</p>
                 <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2">Ver oferta</a>
+                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
                 </div>
             </div>
         </div>
