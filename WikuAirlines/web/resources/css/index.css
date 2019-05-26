@@ -11,17 +11,33 @@
 }
 .carousel-title{
     border-radius: 1rem;
-    width: 39rem;
+    width: 39rem!important;
     filter: blur(2.6rem);
     height: 10.5rem;
     margin: 6rem;
+    z-index: -8;
+
+}
+h1{
+    color: dodgerblue ;
+    z-index: 20;
+    margin: -13rem;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+    transition: 1s;
+    -webkit-transition: 1s;
 }
 
-h2{
 
+h1:hover{
+    z-index: 1;
     margin: -13rem;
-    font: 400 10rem/1.2 'Leckerli One', Helvetica, sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
     color: #f8b500 ;
+    transition: 1s;
 }
 .destinyHome {
     display: flex;

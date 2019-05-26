@@ -120,6 +120,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
     box-shadow: 0 1px 0 0 #f8b500;
 }
 
+/*body*/
+.icons {
+    font-size: 2.8rem;
+}
+
 /*Footer*/
 footer {
     display: block;
