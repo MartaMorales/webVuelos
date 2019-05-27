@@ -25,7 +25,7 @@
         <div class="col l10 m10 s10">
             <form class="needs-validation" novalidate>
                 <div class="row">
-                    <div class="col l3  m3  s3 columnLg3BuscadorIndex">
+                    <div class="col l3  m6  s12 center columnLg3BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons icons prefix">flight_takeoff</i>
                             <input type="text" id="origen" class="autocomplete input-browser">
@@ -33,7 +33,7 @@
                         </div>
 
                     </div>
-                    <div class="col l3  m3  s3 columnLg3BuscadorIndex">
+                    <div class="col l3  m6  s12 center columnLg3BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons icons prefix">flight_land</i>
                             <input type="text" id="destino" class="autocomplete input-browser">
@@ -41,19 +41,19 @@
                         </div>
 
                     </div>
-                    <div class="col l2  m2  s2 columnLg2BuscadorIndex">
+                    <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
                             <input type="text" class="datepicker" value="" placeholder="Salida">
                         </div>
                     </div>
-                    <div class="col l2  m2  s2 columnLg2BuscadorIndex">
+                    <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
                             <input type="text" class="datepicker" value="" placeholder="Llegada">
                         </div>
                     </div>
-                    <div class="col l2  m2  s2">
+                    <div class="col l2  m12  s12">
                         <a href="#">
                             <i class="material-icons icons">search</i>
                         </a>
@@ -101,7 +101,7 @@
 
 </main>
 
-<footer>
+<footer class="page-footer">
     <%@include file="/views/layout/footer.jsp" %>
 </footer>
 </body>

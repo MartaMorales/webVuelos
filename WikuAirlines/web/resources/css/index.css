@@ -2,6 +2,10 @@
     font-size: 2.8rem !important;
 }
 
+.input-field{
+    width: 95%;
+}
+
 .input-field .prefix ~ label {
     margin-left: 3rem;
     font-size: 1.6rem;
@@ -107,22 +111,26 @@ h3 {
 
 #carousel-one {
     background-image: url("/WikuAirlines/resources/img/cities/KualaLumpur.jpeg");
-    background-size: 100%;
+    background-size: auto;
+    background-position: center;
 }
 
 #carousel-two {
     background-image: url("/WikuAirlines/resources/img/cities/Londres.jpeg");
-    background-size: 100%;
+    background-size: auto;
+    background-position: center;
 }
 
 #carousel-three {
     background-image: url("/WikuAirlines/resources/img/cities/SanFrancisco.jpeg");
-    background-size: 100%;
+    background-size: auto;
+    background-position: center;
 }
 
 #carousel-four {
     background-image: url("/WikuAirlines/resources/img/cities/pexels-photo-236451.jpeg");
-    background-size: 100%;
+    background-size: auto;
+    background-position: center;
 
 }
 
