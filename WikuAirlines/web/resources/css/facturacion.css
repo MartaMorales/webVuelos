@@ -1,6 +1,10 @@
 html, body, .block {
     height: 100%;
 }
+.input-field .prefix ~ label {
+    margin-left: 3rem;
+    font-size: 1.6rem;
+}
 
 
 .pin-top {

@@ -6,10 +6,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/vendor/css/materialize.min.css">
-    <link rel="stylesheet" href="../resources/vendor/css/normalize.css">
-    <link rel="stylesheet" href="../resources/css/general.css">
-    <link rel="stylesheet" href="../resources/css/destino.css">
+    <link rel="stylesheet" href="resources/vendor/css/materialize.min.css">
+    <link rel="stylesheet" href="resources/vendor/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/general.css">
+    <link rel="stylesheet" href="resources/css/destino.css">
 
 
 </head>
@@ -19,7 +19,7 @@
 <main>
 
     <div id="booking" class="section">
-        <img class="image-background" src="../resources/img/cities/paris.jpeg" alt="paris, imagen de fondo">
+        <img class="image-background" src="resources/img/cities/paris.jpeg" alt="paris, imagen de fondo">
         <div class="section-center">
             <div class="container">
                 <div class="row">
@@ -194,7 +194,7 @@
 <footer><%@include file="/views/layout/footer.jsp" %></footer>
 
 </body>
-<script src="../resources/vendor/js/jquery-3.4.1.min.js"></script>
-<script src="../resources/vendor/js/materialize.min.js"></script>
-<script src="../resources/js/facturacion.js"></script>
+<script src="resources/vendor/js/jquery-3.4.1.min.js"></script>
+<script src="resources/vendor/js/materialize.min.js"></script>
+<script src="resources/js/facturacion.js"></script>
 </html>

@@ -14,10 +14,10 @@ public class Login extends HttpServlet {
         String name = request.getParameter("usuario");
         String password = request.getParameter("password");
 
-        String nombre = "Marta";
-        String contrasena = "Fayrah";
+        String nomb = "Marta";
+        String contras = "Fayrah";
 
-        if (name.equalsIgnoreCase(nombre) && password.equals(contrasena)){
+        if (name.equalsIgnoreCase(nomb) && password.equals(contras)){
            response.sendRedirect("index.jsp");
         }
     }
