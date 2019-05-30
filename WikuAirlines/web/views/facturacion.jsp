@@ -16,11 +16,73 @@
     <%@include file="/views/layout/header.jsp" %>
 </header>
 <main>
+<<<<<<< HEAD
     <div id="blue" class="block white">
         <nav class="pushpin-demo-nav" data-target="blue">
             <div class="nav-wrapper light-blue">
                 <div class="container">
                     <h1>Pasajeros</h1>
+=======
+    <div id="blue" class="block blue">
+        <nav class="pushpin-demo-nav" data-target="blue">
+            <div class="nav-wrapper light-blue">
+                <div class="container">
+                    <a href="#" class="brand-logo">Blue</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#!">Blue Link 1</a></li>
+                        <li><a href="#!">Blue Link 2</a></li>
+                        <li><a href="#!">Blue Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="red" class="block red lighten-1">
+        <nav class="pushpin-demo-nav" data-target="red">
+            <div class="nav-wrapper red">
+                <div class="container">
+                    <a href="#" class="brand-logo">Red</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#!">Red Link 1</a></li>
+                        <li><a href="#!">Red Link 2</a></li>
+                        <li><a href="#!">Red Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="green" class="block green lighten-1">
+        <nav class="pushpin-demo-nav" data-target="green">
+            <div class="nav-wrapper green">
+                <div class="container">
+                    <a href="#" class="brand-logo">Green</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#!">Green Link 1</a></li>
+                        <li><a href="#!">Green Link 2</a></li>
+                        <li><a href="#!">Green Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="col s12 ">
+            <h4>Cadastrar Cliente</h4>
+        </div>
+        <form class="" name="formulario">
+            <div class="row">
+                <div class="input-field col s5 m5 l5">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="inputNome" type="text" class="validate" name="Name" >
+                    <label for="inputNome">Nombre</label>
+>>>>>>> develop
                 </div>
             </div>
         </nav>
