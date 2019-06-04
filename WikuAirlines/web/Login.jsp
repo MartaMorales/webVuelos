@@ -70,7 +70,7 @@
 </main>
 
 <footer>
-    <%@include file="/views/layout/footer.jsp" %>
+    <%@include file="/views/layout/footerlogin.jsp" %>
 </footer>
 
 </body>

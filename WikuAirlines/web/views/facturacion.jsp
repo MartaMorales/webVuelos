@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="../resources/css/facturacion.css">
 </head>
 <body>
-<!--<header>
-    <%--<%@include file="/views/layout/header.jsp" %>
-</header>--%>-->
+<header>
+    <%@include file="/views/layout/header.jsp" %>
+</header>
 <main>
 
     <div id="blue" class="block white">
@@ -48,14 +48,14 @@
             </div>
             <div class="row">
                 <div class="col l1 m1"></div>
-                <div class="col 4l m4 s12">
+                <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="nombre" type="text" class="validate" name="Name">
                         <label for="nombre">Nombre</label>
                     </div>
                 </div>
-                <div class="col 4l m4 s12">
+                <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="apellidos" type="text" class="validate" name="apellidos">
@@ -66,14 +66,14 @@
             </div>
             <div class="row">
                 <div class="col l1 m1"></div>
-                <div class="col 4l m4 s12">
+                <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="dni" type="text" class="validate" name="dni">
                         <label for="dni">DNI</label>
                     </div>
                 </div>
-                <div class="col 4l m4 s12">
+                <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix icons">event</i>
                         <input type="text" class="datepicker validate" value="" placeholder="Fecha de Nacimiento">
@@ -83,7 +83,7 @@
             </div>
             <div class="row">
                 <div class="col l1 m1"></div>
-                <div class="col 4l m4 s12">
+                <div class="col l4 m4 s12">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">location_city</i>
                         <select class="validate">
@@ -95,7 +95,7 @@
                         <label>Nacionalidad</label>
                     </div>
                 </div>
-                <div class="col 4l m4 s12">
+                <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix icons">event</i>
                         <input type="text" class="validate" id="telefono">
@@ -214,9 +214,9 @@
         </nav>
     </div>
 </main>
-<!--<footer>
-    <%--<%@include file="/views/layout/footer.jsp" %>
-</footer>--%>-->
+<footer>
+    <%@include file="/views/layout/footer.jsp" %>
+</footer>
 
 </body>
 <script src="../resources/vendor/js/jquery-3.4.1.min.js"></script>
