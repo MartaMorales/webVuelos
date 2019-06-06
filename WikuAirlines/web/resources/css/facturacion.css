@@ -9,14 +9,18 @@ html, body, .block {
 
 .pin-top {
     position: relative;
+   top: 4rem;
 }
 
 
 .pin-bottom {
     position: relative;
+    top: 4rem;
+
 }
 
 
 .pinned {
     position: fixed !important;
+    top: 4rem;
 }

@@ -6,10 +6,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/vendor/css/materialize.min.css">
-    <link rel="stylesheet" href="../resources/vendor/css/normalize.css">
-    <link rel="stylesheet" href="../resources/css/general.css">
-    <link rel="stylesheet" href="../resources/css/facturacion.css">
+    <link rel="stylesheet" href="resources/vendor/css/materialize.min.css">
+    <link rel="stylesheet" href="resources/vendor/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/general.css">
+    <link rel="stylesheet" href="resources/css/facturacion.css">
 </head>
 <body>
 <header>
@@ -22,67 +22,7 @@
             <div class="nav-wrapper light-blue">
                 <div class="container">
                     <h1>Pasajeros</h1>
-=======
-    <div id="blue" class="block blue">
-        <nav class="pushpin-demo-nav" data-target="blue">
-            <div class="nav-wrapper light-blue">
-                <div class="container">
-                    <a href="#" class="brand-logo">Blue</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#!">Blue Link 1</a></li>
-                        <li><a href="#!">Blue Link 2</a></li>
-                        <li><a href="#!">Blue Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
 
-    <div id="red" class="block red lighten-1">
-        <nav class="pushpin-demo-nav" data-target="red">
-            <div class="nav-wrapper red">
-                <div class="container">
-                    <a href="#" class="brand-logo">Red</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#!">Red Link 1</a></li>
-                        <li><a href="#!">Red Link 2</a></li>
-                        <li><a href="#!">Red Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-    <div id="green" class="block green lighten-1">
-        <nav class="pushpin-demo-nav" data-target="green">
-            <div class="nav-wrapper green">
-                <div class="container">
-                    <a href="#" class="brand-logo">Green</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#!">Green Link 1</a></li>
-                        <li><a href="#!">Green Link 2</a></li>
-                        <li><a href="#!">Green Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-
-
-
-
-    <div class="row">
-        <div class="col s12 ">
-            <h4>Cadastrar Cliente</h4>
-        </div>
-        <form class="" name="formulario">
-            <div class="row">
-                <div class="input-field col s5 m5 l5">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="inputNome" type="text" class="validate" name="Name" >
-                    <label for="inputNome">Nombre</label>
->>>>>>> develop
                 </div>
             </div>
         </nav>
@@ -167,7 +107,7 @@
         </form>
     </div>
 
-    <div id="red" class="block red lighten-1">
+    <div id="red" class="block white">
         <nav class="pushpin-demo-nav" data-target="red">
             <div class="nav-wrapper red">
                 <div class="container">
@@ -187,71 +127,79 @@
                         <label for="inputNome">Nombre</label>
                     </div>
                     <div class="input-field col s5 m5 l5">
-                        <i class="material-icons prefix">perm_identity</i>
-                        <input id="inputCPF" type="text" class="validate" name="CPF">
-                        <label for="inputCPF">CPF</label>
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="inputapell" type="text" class="validate" name="apell">
+                        <label for="inputapell">Apellidos</label>
                     </div>
+
                 </div>
                 <div class="row">
-                    <div class="input-field col s5 m5 l5">
+                    <div class="input-field col s2 m2 l2">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <input id="inputDNI" type="text" class="validate" name="DNI">
+                        <label for="inputDNI">DNI/Pasaporte</label>
+                    </div>
+                    <div class="input-field col s4 m4 l4">
                         <i class="material-icons prefix">mail</i>
                         <input id="inpuEmail" type="email" class="validate" name="Email">
                         <label for="inpuEmail">Email</label>
                     </div>
+                    <div class="input-field col s4 m4 l4">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="repEmail" type="email" class="validate" name="Email">
+                        <label for="repEmail">Repite el Email</label>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="input-field col s5 m5 l5">
                         <i class="material-icons prefix">phone</i>
                         <input id="inputResidencial" type="tel" class="validate" name="Residencial">
-                        <label for="inputResidencial">Residêncial</label>
+                        <label for="inputResidencial">Telefono</label>
                     </div>
-                </div>
-                <div class="row">
                     <div class="input-field col s5 m5 l5">
                         <i class="material-icons prefix">phone</i>
                         <input id="inputCelular" type="tel" class="validate" name="Celular">
-                        <label for="inputCelular">Celular</label>
-                    </div>
-
-                    <div class="input-field col s5 m5 l5">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="inputComercial" type="tel" class="validate" name="Comercial">
-                        <label for="inputComercial">Comercial</label>
+                        <label for="inputCelular">Movil</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s5 m5 l5">
+                    <div class="input-field col s4 m4 l4">
                         <i class="material-icons prefix">location_city</i>
                         <input id="inputCEP" type="text" class="validate" name="Cep">
-                        <label for="inputCEP">CEP</label>
+                        <label for="inputCEP">Direccion</label>
                     </div>
-                    <div class="input-field col s5 m5 l5">
+                    <div class="input-field col s2 m2 l2">
                         <i class="material-icons prefix">location_city</i>
                         <input id="inputNumero" type="text" class="validate" name="Numero">
                         <label for="inputNumero">Número</label>
                     </div>
+                    <div class="input-field col s2 m2 l2">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="inputpiso" type="text" class="validate" name="Numero">
+                        <label for="inputpiso">Piso</label>
+                    </div>
+                    <div class="input-field col s2 m2 l2">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="inputPuerta" type="text" class="validate" name="Numero">
+                        <label for="inputPuerta">Puerta</label>
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="input-field col s5 m5 l5">
+                    <div class="input-field col s2 m2 l2">
                         <i class="material-icons prefix">location_city</i>
-                        <input id="inputLogradouro" type="text" class="validate" name="Logradouro">
-                        <label for="inputLogradouro">Logradouro</label>
+                        <input id="cp" type="text" class="validate" name="Logradouro">
+                        <label for="cp">Codigo postal</label>
                     </div>
-                    <div class="input-field col s5 m5 l5">
+                    <div class="input-field col s4 m4 l4">
                         <i class="material-icons prefix">location_city</i>
                         <input id="inputBairro" type="text" class="validate" name="Bairro">
-                        <label for="inputBairro">Bairro</label>
+                        <label for="inputBairro">Localidad</label>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s5 m5 l5">
+                    <div class="input-field col s4 m4 l4">
                         <i class="material-icons prefix">location_city</i>
                         <input id="inputLocalidade" type="text" class="validate" name="Localidade">
-                        <label for="inputLocalidade">Localidade</label>
-                    </div>
-                    <div class="input-field col s5 m5 l5">
-                        <i class="material-icons prefix">location_city</i>
-                        <input id="inputEstado" type="text" class="validate" name="Estado">
-                        <label for="inputEstado">Estado</label>
+                        <label for="inputLocalidade">Provincia</label>
                     </div>
                 </div>
                 <div class="row left-align">
@@ -280,7 +228,7 @@
 </footer>
 
 </body>
-<script src="../resources/vendor/js/jquery-3.4.1.min.js"></script>
-<script src="../resources/vendor/js/materialize.min.js"></script>
-<script src="../resources/js/facturacion.js"></script>
+<script src="resources/vendor/js/jquery-3.4.1.min.js"></script>
+<script src="resources/vendor/js/materialize.min.js"></script>
+<script src="resources/js/facturacion.js"></script>
 </html>
