@@ -1,3 +1,6 @@
+create database wiku_airlines;
+use wiku_airlines;
+
 create table if not exists pais (
 id int auto_increment not null primary key,
 nombre varchar (140),
