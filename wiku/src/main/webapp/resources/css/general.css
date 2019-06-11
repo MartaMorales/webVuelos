@@ -141,6 +141,10 @@ footer li {
     padding-top: 1rem;
 }
 
+footer > a:hover{
+    color:#f8b500;
+}
+
 .footer-logo{
     width: 20rem;
     height: auto;
