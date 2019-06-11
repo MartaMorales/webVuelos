@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -22,12 +24,12 @@
     <section class="row">
         <div class="col l1  m1 s1"></div>
         <div class="col l10 m10 s10">
-            <form class="needs-validation" novalidate>
+            <form:form action="${pageContext.request.contextPath}/destinos/buscar" cssClass="needs-validation" novalidate="novalidate" modelAttribute="buscarDestinoDTO" method="POST" >
                 <div class="row">
                     <div class="col l3  m6  s12 center columnLg3BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons icons prefix">flight_takeoff</i>
-                            <input type="text" id="origen" class="autocomplete input-browser">
+                            <form:input type="text" path="origen" id="origen" class="autocomplete input-browser"/>
                             <label for="origen">Origen</label>
                         </div>
 
@@ -35,7 +37,7 @@
                     <div class="col l3  m6  s12 center columnLg3BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons icons prefix">flight_land</i>
-                            <input type="text" id="destino" class="autocomplete input-browser">
+                            <form:input type="text" path="destino" id="destino" class="autocomplete input-browser"/>
                             <label for="destino">Destino</label>
                         </div>
 
@@ -43,14 +45,14 @@
                     <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
-                            <input id="salida" type="text" class="datepicker" value="">
+                            <form:input id="salida" path="fechaSalida" type="text" class="datepicker" value=""/>
                             <label for="salida">Salida</label>
                         </div>
                     </div>
                     <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
-                            <input id="llegada" type="text" class="datepicker" value="">
+                            <form:input id="llegada" path="fechaLLegada" type="text" class="datepicker" value=""/>
                             <label for="llegada">Llegada</label>
                         </div>
                     </div>
@@ -60,7 +62,7 @@
                         </button>
                     </div>
                 </div>
-            </form>
+            </form:form>
         </div>
         <div class="col l1  m1  s1"></div>
     </section>

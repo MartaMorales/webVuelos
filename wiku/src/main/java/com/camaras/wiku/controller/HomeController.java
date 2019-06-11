@@ -1,5 +1,6 @@
 package com.camaras.wiku.controller;
 
+import com.camaras.wiku.dto.BuscarDestinoDTO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,7 @@ public class HomeController {
 
     @GetMapping({"", "/home"})
     public String home(Model model) {
-        model.addAttribute("message", "HowToDoInJava Reader !!");
+        model.addAttribute("buscarDestinoDTO", new BuscarDestinoDTO());
         return "index";
     }
 }
