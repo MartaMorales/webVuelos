@@ -14,6 +14,8 @@ public class BuscarDestinoDTO implements Serializable {
     private String destino;
     private String fechaSalida;
     private String fechaLLegada;
+    private Integer adultos;
+    private Integer ninos;
 
     public String getOrigen() {
         return origen;
@@ -47,6 +49,22 @@ public class BuscarDestinoDTO implements Serializable {
         this.fechaLLegada = fechaLLegada;
     }
 
+    public Integer getAdultos() {
+        return adultos;
+    }
+
+    public void setAdultos(Integer adultos) {
+        this.adultos = adultos;
+    }
+
+    public Integer getNinos() {
+        return ninos;
+    }
+
+    public void setNinos(Integer ninos) {
+        this.ninos = ninos;
+    }
+
     public Date getFechaSalidaInDate(){
         return DateUtils.createDateFromStringWithFormat(this.fechaSalida,formDateFormat);
     }
@@ -55,3 +73,4 @@ public class BuscarDestinoDTO implements Serializable {
         return DateUtils.createDateFromStringWithFormat(this.fechaLLegada,formDateFormat);
     }
 }
+
