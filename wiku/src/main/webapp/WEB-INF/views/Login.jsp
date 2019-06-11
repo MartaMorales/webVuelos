@@ -77,7 +77,7 @@
 </main>
 
 <footer>
-    <%@include file="/views/layout/footerlogin.jsp" %>
+    <%@include file="/WEB-INF/views/layout/footerlogin.jsp" %>
 </footer>
 
 </body>

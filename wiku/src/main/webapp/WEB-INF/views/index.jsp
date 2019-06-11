@@ -15,7 +15,7 @@
 </head>
 <body>
 <header>
-    <%@include file="/views/layout/header.jsp" %>
+    <%@include file="/WEB-INF/views/layout/header.jsp" %>
 </header>
 <main>
     <%--Buscador de vuelos --%>
@@ -101,7 +101,7 @@
 </main>
 
 <footer class="page-footer">
-    <%@include file="/views/layout/footer.jsp" %>
+    <%@include file="/WEB-INF/views/layout/footer.jsp" %>
 </footer>
 </body>
 <script src="resources/vendor/js/jquery-3.4.1.min.js"></script>

@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <%@include file="/views/layout/header.jsp" %>
+    <%@include file="/WEB-INF/views/layout/header.jsp" %>
 </header>
 <main>
 
@@ -222,7 +222,7 @@
     </div>
 </main>
 <footer>
-    <%@include file="/views/layout/footer.jsp" %>
+    <%@include file="/WEB-INF/views/layout/footer.jsp" %>
 </footer>
 
 </body>
