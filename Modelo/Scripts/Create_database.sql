@@ -75,7 +75,9 @@ FOREIGN KEY (id_avion) REFERENCES avion(id)
 create table if not exists oferta( 
 id int auto_increment not null primary key,
 id_vuelo int,
+descripcion varchar(240),
 precio number(8,2),
+img_url varchar(200),
 FOREIGN KEY (id_vuelo) REFERENCES vuelo(id)
 );
 
