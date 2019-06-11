@@ -43,20 +43,21 @@
                     <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
-                            <input type="text" class="datepicker" value="" placeholder="Salida">
+                            <input id="salida" type="text" class="datepicker" value="">
+                            <label for="salida">Salida</label>
                         </div>
                     </div>
                     <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
-                            <input type="text" class="datepicker" value="" placeholder="Llegada">
+                            <input id="llegada" type="text" class="datepicker" value="">
+                            <label for="llegada">Llegada</label>
                         </div>
                     </div>
                     <div class="col l2  m12  s12">
-                        <a href="#">
-                            <i class="material-icons icons">search</i>
-                        </a>
-                        <input type="button" value="Buscar" class="btn btn-primary columnLg1BuscadorIndexbot wiku-button">
+                        <button id="submit-button" type="submit" class="btn btn-primary columnLg1BuscadorIndexbot waves-effect waves-light wiku-button">Buscar<i
+                                class="material-icons submit-icon left">search</i>
+                        </button>
                     </div>
                 </div>
             </form>
@@ -67,28 +68,28 @@
     <div class="container">
         <div class="carousel carousel-slider center">
             <div class="carousel-item red white-text" id="carousel-one">
-                <img  class="carousel-title" src="resources/img/cities/KualaLumpur.jpeg" alt="fondo">
-                    <h1>Kuala Lumpur</h1>
+                <img  class="carousel-title" src="resources/img/cities/KualaLumpur.jpeg" alt="fondo"/>
+                <h1>Kuala Lumpur</h1>
                 <div class="carousel-fixed-item center">
                     <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
                 </div>
             </div>
             <div class="carousel-item amber white-text" id="carousel-two" href="#two!">
-                <img  class="carousel-title" src="resources/img/cities/Londres.jpeg" alt="fondo">
+                <img  class="carousel-title" src="resources/img/cities/Londres.jpeg" alt="fondo"/>
                 <h1>Londres</h1>
                 <div class="carousel-fixed-item center">
                     <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
                 </div>
             </div>
             <div class="carousel-item green white-text" id="carousel-three" href="#three!">
-                <img  class="carousel-title" src="resources/img/cities/SanFrancisco.jpeg" alt="fondo">
+                <img  class="carousel-title" src="resources/img/cities/SanFrancisco.jpeg" alt="fondo"/>
                 <h1>San Francisco</h1>
                 <div class="carousel-fixed-item center">
                     <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
                 </div>
             </div>
             <div class="carousel-item blue white-text" id="carousel-four" href="#four!">
-                <img  class="carousel-title" src="resources/img/cities/pexels-photo-236451.jpeg" alt="fondo">
+                <img  class="carousel-title" src="resources/img/cities/pexels-photo-236451.jpeg" alt="fondo"/>
                 <h1>Brooklin</h1>
                 <div class="carousel-fixed-item center">
                     <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>

@@ -8,8 +8,9 @@
 
 .input-field .prefix ~ label {
     margin-left: 3rem;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
+
 .carousel{
     height: 40rem !important;
 }
@@ -20,117 +21,121 @@
     height: 10.5rem;
     margin: 6rem;
     z-index: -8;
-
+    -webkit-opacity: 0;
 }
 h1{
-    color: dodgerblue ;
-    z-index: 20;
-    margin: -13rem;
-    line-height: 1.2;
-    font-weight: 400;
-    font-family: 'Leckerli One', Helvetica, sans-serif;
-    transition: 1s;
-    -webkit-transition: 1s;
+color: dodgerblue ;
+z-index: 20;
+margin: -13rem;
+line-height: 1.2;
+font-weight: 400;
+font-family: 'Leckerli One', Helvetica, sans-serif;
+transition: 1s;
+-webkit-transition: 1s;
 }
 
 
 h1:hover{
-    z-index: 1;
-    margin: -13rem;
-    line-height: 1.2;
-    font-weight: 400;
-    font-family: 'Leckerli One', Helvetica, sans-serif;
-    color: #f8b500 ;
-    transition: 1s;
+z-index: 1;
+margin: -13rem;
+line-height: 1.2;
+font-weight: 400;
+font-family: 'Leckerli One', Helvetica, sans-serif;
+color: #f8b500 ;
+transition: 1s;
 }
 .destinyHome {
-    display: flex;
-    flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .destinyHome input {
-    padding: 0;
-    display: flex;
+padding: 0;
+display: flex;
 }
 
 .columnLg3BuscadorIndex {
-    display: flex;
-    width: 2.4rem;
-    height: 100%;
+display: flex;
+width: 2.4rem;
+height: 100%;
 }
 
 .columnLg2BuscadorIndex {
-    display: flex;
-    flex-direction: row;
-    width: 2.4rem;
-    height: 100%;
+display: flex;
+flex-direction: row;
+width: 2.4rem;
+height: 100%;
 }
 
 .columnLg1BuscadorIndex {
-    display: flex;
-    flex-direction: row;
-    width: 2.4rem;
-    height: 100%;
-    justify-content: space-between;
+display: flex;
+flex-direction: row;
+width: 2.4rem;
+height: 100%;
+justify-content: space-between;
 
 }
 
 .columnLg1BuscadorIndexbot {
-    background: dodgerblue;
-    border-radius: 1rem;
+background: dodgerblue;
+border-radius: 1rem;
 }
 
 .columnLg1BuscadorIndexbot:hover {
-    background: #f8b500;
-    border-radius: 1rem;
-    border-color: #f8b500;
+background: #f8b500;
+border-radius: 1rem;
+border-color: #f8b500;
 }
 
 .columnLg1BuscadorIndexbot input {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.columnLg1BuscadorIndexbot i{
+font-size:2rem;
 }
 
 .columnLg1BuscadorIndexbot {
-    width: 80%;
-    height: 100%;
-    font-size: 1.6rem;
+width: 100%;
+height: 100%;
+font-size: 1.6rem;
 }
 
 #titulo {
-    padding-top: 5rem;
-    text-align: center;
+padding-top: 5rem;
+text-align: center;
 }
 
 
 h3 {
-    display: block;
-    color: black;
+display: block;
+color: black;
 }
 
 #carousel-one {
-    background-image: url("/WikuAirlines/resources/img/cities/KualaLumpur.jpeg");
-    background-size: auto;
-    background-position: center;
+background-image: url("../img/cities/KualaLumpur.jpeg");
+background-size: auto;
+background-position: center;
 }
 
 #carousel-two {
-    background-image: url("/WikuAirlines/resources/img/cities/Londres.jpeg");
-    background-size: auto;
-    background-position: center;
+background-image: url("../img/cities/Londres.jpeg");
+background-size: auto;
+background-position: center;
 }
 
 #carousel-three {
-    background-image: url("/WikuAirlines/resources/img/cities/SanFrancisco.jpeg");
-    background-size: auto;
-    background-position: center;
+background-image: url("../img/cities/SanFrancisco.jpeg");
+background-size: auto;
+background-position: center;
 }
 
 #carousel-four {
-    background-image: url("/WikuAirlines/resources/img/cities/pexels-photo-236451.jpeg");
-    background-size: auto;
-    background-position: center;
+background-image: url("../img/cities/pexels-photo-236451.jpeg");
+background-size: auto;
+background-position: center;
 
 }
 
