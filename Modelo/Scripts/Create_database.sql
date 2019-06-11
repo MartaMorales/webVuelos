@@ -1,10 +1,17 @@
 create database wiku_airlines;
 use wiku_airlines;
 
+create table if not exists continente (
+id int auto_increment not null primary key,
+nombre varchar (140)
+);
+
 create table if not exists pais (
 id int auto_increment not null primary key,
+id_continente int,
 nombre varchar (140),
 acronimo varchar (10)
+FOREIGN KEY (id_continente) REFERENCES continente(id)
 );
 
 create table if not exists ciudad (
@@ -63,6 +70,13 @@ id_avion int,
 FOREIGN KEY (id_aeropuerto_salida) REFERENCES aeropuerto(id),
 FOREIGN KEY (id_aeropuerto_llegada) REFERENCES aeropuerto(id),
 FOREIGN KEY (id_avion) REFERENCES avion(id)
+);
+
+create table if not exists oferta( 
+id int auto_increment not null primary key,
+id_vuelo int,
+precio number(8,2),
+FOREIGN KEY (id_vuelo) REFERENCES vuelo(id)
 );
 
 create table if not exists reserva_vuelo(
