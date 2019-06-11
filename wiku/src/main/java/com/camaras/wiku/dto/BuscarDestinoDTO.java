@@ -1,14 +1,13 @@
 package com.camaras.wiku.dto;
 
 import com.camaras.wiku.utils.DateUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
 import java.util.Date;
 
 public class BuscarDestinoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    private String formDateFormat = "MMM dd,yyyy";
 
     private String origen;
     private String destino;
@@ -65,12 +64,5 @@ public class BuscarDestinoDTO implements Serializable {
         this.ninos = ninos;
     }
 
-    public Date getFechaSalidaInDate(){
-        return DateUtils.createDateFromStringWithFormat(this.fechaSalida,formDateFormat);
-    }
-
-    public Date getFechaLLegadaInDate(){
-        return DateUtils.createDateFromStringWithFormat(this.fechaLLegada,formDateFormat);
-    }
 }
 
