@@ -1,21 +1,14 @@
-package com.airbus.hums.surgeon.dao.template;
+package com.camaras.wiku.dao;
 
-import org.springframework.data.repository.CrudRepository;
-
-import com.airbus.hums.surgeon.model.database.template.RtTemplate;
+import com.camaras.wiku.model.Aeropuerto;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
- *  RtTemplate Repository defines the CRUD repository methods for the
- *  RtTemplate object.
+ *  Aeropuerto Repository defines the CRUD repository methods for the
+ *  Aeropuerto object.
  */
-public interface RtTemplateRepo extends CrudRepository<RtTemplate, Integer> {
-	
-	/**
-	 *  The type must be "RT" or "NRT".
-	 *
-	 * @param name the name
-	 * @return the acm template
-	 */
-	RtTemplate findByName(String name);
-	
+@Repository
+public interface AeropuertoDao extends JpaRepository<Aeropuerto, Integer> {
+
 }

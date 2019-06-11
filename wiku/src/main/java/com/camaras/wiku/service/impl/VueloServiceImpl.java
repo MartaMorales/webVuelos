@@ -1,4 +1,8 @@
 package com.camaras.wiku.service.impl;
 
-public class VueloServiceImpl {
+import com.camaras.wiku.service.VueloService;
+import org.springframework.stereotype.Service;
+
+@Service
+public class VueloServiceImpl implements VueloService {
 }

@@ -1,14 +1,14 @@
 package com.camaras.wiku.dao;
 
-import com.camaras.wiku.model.Asiento;
-import org.springframework.data.repository.CrudRepository;
+import com.camaras.wiku.model.Avion;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- *  Asiento Repository defines the CRUD repository methods for the
- *  Asiento object.
+ *  Avion Repository defines the CRUD repository methods for the
+ *  Avion object.
  */
 @Repository
-public interface AsientoDao extends CrudRepository<Asiento, Integer> {
+public interface AvionDao extends JpaRepository<Avion, Integer> {
 
 }

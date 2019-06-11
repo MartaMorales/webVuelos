@@ -15,6 +15,6 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://localhost:3306/medeor?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/wiku_airlines?serverTimezone=UTC
     username: root
     password: root

@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
+@Table(name = "vuelo")
 public class Vuelo {
     private Integer id;
     private Timestamp horaSalida;

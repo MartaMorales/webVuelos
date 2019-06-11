@@ -1,5 +1,5 @@
 package com.camaras.wiku.service;
 
-public interface VueloService {
+public interface TarjetaDeCreditoService {
 
 }

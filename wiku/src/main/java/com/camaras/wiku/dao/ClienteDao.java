@@ -1,14 +1,14 @@
 package com.camaras.wiku.dao;
 
-import com.camaras.wiku.model.Ciudad;
+import com.camaras.wiku.model.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- *  Ciudad Repository defines the CRUD repository methods for the
- *  Ciudad object.
+ *  Cliente Repository defines the CRUD repository methods for the
+ *  Cliente object.
  */
 @Repository
-public interface CiudadDao extends JpaRepository<Ciudad, Integer> {
+public interface ClienteDao extends JpaRepository<Cliente, Integer> {
 
 }

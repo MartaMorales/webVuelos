@@ -1,8 +1,8 @@
 package com.camaras.wiku.service.impl;
 
-import com.camaras.wiku.service.AvionService;
+import com.camaras.wiku.service.PasajeroService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AvionServiceImpl implements AvionService {
+public class PasajeroServiceImpl implements PasajeroService {
 }

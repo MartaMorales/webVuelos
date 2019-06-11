@@ -1,13 +1,14 @@
 package com.camaras.wiku.dao;
 
+import com.camaras.wiku.model.Vuelo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- *  TarjetaDeCreditoDao Repository defines the CRUD repository methods for the
- *  TarjetaDeCreditoDao object.
+ *  Vuelo Repository defines the CRUD repository methods for the
+ *  Vuelo object.
  */
 @Repository
-public interface TarjetaDeCreditoDao extends JpaRepository<TarjetaDeCreditoDao, Integer> {
+public interface VueloDao extends JpaRepository<Vuelo, Integer> {
 
 }
