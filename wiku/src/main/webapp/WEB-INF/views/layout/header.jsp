@@ -11,7 +11,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
         <li class="active"><a href="Gestion?action=Inicio">Inicio</a></li>
-        <li><a href="Gestion?action=Destinos">Destinos</a></li>
+        <li><a href="${pageContext.request.contextPath}/destinos/">Destinos</a></li>
         <li><a href="Gestion?action=Mis_Viajes">Mis viajes</a></li>
         <li><a href="Gestion?action=Contacto">Contacto</a></li>
         <li><div class="row">
