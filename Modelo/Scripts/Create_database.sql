@@ -1,3 +1,4 @@
+drop database if exists wiku_airlines;
 create database wiku_airlines;
 use wiku_airlines;
 
