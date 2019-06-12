@@ -420,3 +420,171 @@ insert into wiku_airlines.ciudad (id_pais,nombre,acronimo) values (50,'Campinas'
 insert into wiku_airlines.ciudad (id_pais,nombre,acronimo) values (50,'Florianópolis','FLN');
 insert into wiku_airlines.ciudad (id_pais,nombre,acronimo) values (50,'Joinville','JOI');
 insert into wiku_airlines.ciudad (id_pais,nombre,acronimo) values (50,'Aracaju','AJU');
+-- CHILE--------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Santiago de Chile','SCL');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Antofagasta','ANF');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Arica','ARI');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Calama','CJC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Talcahuano','CCP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'La Serena','LSC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Atacama','CPO');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Iquique','IQQ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Punta Arenas','PUQ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Puerto Montt','PMC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Isla de Pascua','IPC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (51,'Freire','ZCO');
+-- COLOMBIA -------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Bogotá','BOG');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Medellín','MDE');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Barranquilla','BAQ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Cartagena','CTG');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Yopal','EYP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Montería','MTR');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Quibdó','UIB');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Neiva','NVA');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Santa Marta','SMR');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Cúcuta','CUC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Armenia','AXM');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Pereira','PEI');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Barrancabermeja','EJA');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Bucaramanga','BGA');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Isla de San Andrés','ADZ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Ibagué','IBE');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Buenaventura','BUN');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (52,'Cali','CLO');
+-- ECUADOR--------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Quito','UIO');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Baltra','GPS');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'San Cristóbal','SCY');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Latacunga','LTX');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Cuenca','CUE');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Esmeraldas','ESM');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Guayaquil','GYE');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Catamayo','LOH');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Manta','MEC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Macas','XMS');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Puerto Francisco de Orellana','OCC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Salinas','SNC');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (53,'Nueva Loja','LGQ');
+-- PARAGUAY -----------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (54,'Asunción','ASU');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (54,'Ciudad del Este','AGT');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (54,'Mariscal Estigarribia','ESG');
+-- PERU ------------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Lima','LIM');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Chachapoyas','CHH');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Arequipa','AQP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Huamanga','AYP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Cajamarca','CJA');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Cuzco','CUZ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Chiclayo','CIX');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Iquitos','IQT');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Trujillo','TRU');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Puerto Maldonado','PEM');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Piura','PIU');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Juliaca','JUL');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Tarapoto','TTP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Tacna','TCQ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Tumbes','TBP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (55,'Pucallpa','PCL');
+-- SURINAM -------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (56,'Paramaribo','PBM');
+-- URUGUAY -----------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (57,'Montevideo','MVD');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (57,'Artigas','ATI');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (57,'Punta del Este','PDP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (57,'Rivera','RVY');
+-- VENEZUELA ------------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Maiquetía – Caracas','CCS');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Puerto Ayacucho','PYH');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Barcelona','BLA');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Barinas','BNS');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Canaima','CAJ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Ciudad Bolivar','CBL');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Gran Sabana','SNV');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Puerto Ordaz','PZO');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Valencia','VLN');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Coro','CZE');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Punto Fijo','LSP');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Barquisimeto','BRM');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Mérida','MRD');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Maturín','MUN');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Isla de Margarita','PMV');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Cumaná','CUM');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Santo Domingo','STD');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'San Antonio del Táchira','SVZ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Maracaibo','MAR');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (58,'Santa Barbara del Zulia','STB');
+-- -------------------------------------------
+-- ARABIA SAUDITA ---------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (59,'Riad','RUH');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (59,'Jeddah','JED');
+-- CHINA ------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Pekín','PEK');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Cantón','CAN');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Foshan','FUO');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Hong Kong','HKG');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Shanghái','PVG');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Taiwán','TPE');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Tianjin','TSN');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (60,'Xi’an','XIY');
+-- COREA DEL NORTE ---------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (61,'Pyongyang','FNJ');
+-- COREA DEL SUR ----------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (62,'Seúl','ICN');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (62,'Isla de Jeju','CJU');
+-- EMIRATOS ARABES UNIDOS --------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (63,'Abu Dhabi','AUH');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (63,'Dubái','DXB');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (63,'Sharjah','SHUJ');
+-- FILIPINAS ---------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (64,'Manila','MNL');
+-- INDIA ------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (65,'Nueva Delhi','DEL');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (65,'Bombay','BOM');
+-- INDONESIA ---------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (66,'Yakarta','CGK');
+-- IRAK -----------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (67,'Bagdad','BGW');
+-- ISRAEL --------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (68,'Tel Aviv','TLV');
+-- JAPON ------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Tokio','HND');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Chiba','NRT');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Fukuoka','FUK');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Hakodate','HKD');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Hiroshima','HIJ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Ibaraki','IBR');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Ishigaki','ISG');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Nagasaki','NGS');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Nagoya','NGO');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Okayama','OKJ');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Osaka','KIX');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (69,'Shizuoka','FSZ');
+-- KUWAIT --------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (70,'Ciudad de Kuwait','KWI');
+-- LIBANO ---------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (71,'Beirut','BEY');
+-- MALASIA ----------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (72,'Kuala Lumpur','KUL');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (72,'Penang','PEN');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (72,'Kota Kinabalu','BKI');
+-- RUSIA -------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (73,'Moscú','SVO');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (73,'Púlkovo-San Petersburgo','LED');
+-- SINGAPUR ----------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (74,'Singapur','SIN');
+-- TAILANDIA ----------------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (75,'Bangkok','BKK');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (75,'Chiang Mai','CNX');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (75,'Phuket','HKT');
+-- -----------------------------------------
+-- AUSTRALIA ---------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (76,'Brisbane','BNE');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (76,'Melbourne','MEL');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (76,'Sídney','SYD');
+-- NUEVA ZELANDA ------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (77,'Auckland','AKL');
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (77,'Wellington','WLG');
+-- POLINESIA FRANCESA --------------------
+insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (78,'Tahití','PPT');
