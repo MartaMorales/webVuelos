@@ -27,6 +27,7 @@ public class DestinosController {
     @GetMapping("")
     public String destinos(Model model) {
         logger.debug("Executing destinos() method via Get");
+        model.addAttribute("buscarDestinoDTO", new BuscarDestinoDTO());
         return "destinos";
     }
 
