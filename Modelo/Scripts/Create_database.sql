@@ -56,7 +56,10 @@ matricula varchar(140)
 create table if not exists aeropuerto(
 id int auto_increment not null primary key,
 id_ciudad int,
+<<<<<<< HEAD
 nombre varchar (140),
+=======
+>>>>>>> develop
 FOREIGN KEY (id_ciudad) REFERENCES ciudad(id)	
 );
 
