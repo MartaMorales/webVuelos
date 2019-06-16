@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Javier Y Marta
-  Date: 30/05/2019
-  Time: 9:33
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -36,15 +30,15 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form method="post" action="Login">
+                    <form:form  action="${pageContext.request.contextPath}/login" modelAttribute="buscarLoginDTO" method="post">
                         <div class="input-field m3">
                             <i class="material-icons icons prefix">person</i>
-                            <input type="text" name="usuario" id="userormail" class="validate">
+                            <form:input type="text" path="usuario" name="usuario" id="userormail" class="validate"/>
                             <label for="userormail">Nombre de usuario o email</label>
                         </div>
                         <div class="input-field m2">
                             <i class="material-icons icons prefix">vpn_key</i>
-                            <input type="password" name="password" id="passlog" class="validate">
+                            <form:input type="password" path="password" name="password" id="passlog" class="validate"/>
                             <label for="passlog">Contraseña</label>
                         </div>
                         <div class="switch">
@@ -68,7 +62,7 @@
                                 <a href="#">¿Has perdido tu contraseña?</a>
                             </div>
                         </div>
-                    </form>
+                    </form:form>
                 </div>
             </div>
         </div>

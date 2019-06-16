@@ -21,6 +21,7 @@ public class Cliente {
     private Pais pais;
     private Collection<Reserva> reservas;
     private Collection<TarjetaDeCredito> tarjetas;
+    private Collection<Login> loginsById;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -170,5 +171,14 @@ public class Cliente {
 
     public void setTarjetas(Collection<TarjetaDeCredito> tarjetas) {
         this.tarjetas = tarjetas;
+    }
+
+    @OneToMany(mappedBy = "cliente")
+    public Collection<Login> getLoginsById() {
+        return loginsById;
+    }
+
+    public void setLoginsById(Collection<Login> loginsById) {
+        this.loginsById = loginsById;
     }
 }

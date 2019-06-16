@@ -56,10 +56,7 @@ matricula varchar(140)
 create table if not exists aeropuerto(
 id int auto_increment not null primary key,
 id_ciudad int,
-<<<<<<< HEAD
 nombre varchar (140),
-=======
->>>>>>> develop
 FOREIGN KEY (id_ciudad) REFERENCES ciudad(id)	
 );
 
@@ -130,6 +127,14 @@ fecha_caducidad date,
 id_cliente int,
 cvv int (3),
 tipo varchar (20),
+FOREIGN KEY (id_cliente) REFERENCES cliente(id)
+);
+
+create table if not exists login(
+id int auto_increment not null primary key,
+id_cliente int,
+usuario varchar(50),
+password varchar(200),
 FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
 

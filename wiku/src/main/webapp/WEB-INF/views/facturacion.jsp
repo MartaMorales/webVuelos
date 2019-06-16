@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -24,7 +25,7 @@
                 </div>
             </div>
         </nav>
-        <form action="pasajero">
+        <form:form action="${pageContext.request.contextPath}/facturacion" method="post">
             <div class="row">
                 <h1>Pasajero 1:</h1>
             </div>
@@ -139,13 +140,25 @@
                     </div>
                     <div class="input-field col s4 m4 l4">
                         <i class="material-icons prefix">mail</i>
-                        <input id="inpuEmail" type="email" class="validate" name="Email">
-                        <label for="inpuEmail">Email</label>
+                        <input id="inputEmail" type="email" class="validate" name="Email">
+                        <label for="inputEmail">Email</label>
                     </div>
                     <div class="input-field col s4 m4 l4">
                         <i class="material-icons prefix">mail</i>
-                        <input id="repEmail" type="email" class="validate" name="Email">
-                        <label for="repEmail">Repite el Email</label>
+                        <input id="reptEmail" type="email" class="validate" name="Email">
+                        <label for="reptEmail">Repite el Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4 m4 l4">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="inputPassword" type="email" class="password-field validate" name="Email">
+                        <label for="inputPassword">Email</label>
+                    </div>
+                    <div class="input-field col s4 m4 l4">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="repPassword" type="email" class="password-field validate" name="Email">
+                        <label for="repPassword">Repite el Email</label>
                     </div>
                 </div>
                 <div class="row">

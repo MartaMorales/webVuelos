@@ -8,12 +8,13 @@ import com.camaras.wiku.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
 public class VueloServiceImpl implements VueloService {
 
-    private String formDateFormat = "MMM dd,yyyy";
+    private final String formDateFormat = "MMM dd,yyyy";
 
     @Autowired
     VueloDao vueloDao;
@@ -23,9 +24,11 @@ public class VueloServiceImpl implements VueloService {
 
     @Override
     public List<Vuelo> getVuelosFromForm(BuscarDestinoDTO buscarDestinoDTO){
+        Date llegada = dateUtils.createDateFromStringWithFormat(buscarDestinoDTO.getFechaLLegada(),formDateFormat);
+        Date salida = dateUtils.createDateFromStringWithFormat(buscarDestinoDTO.getFechaSalida(),formDateFormat);
+
         return vueloDao.findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreAndHoraLlegadaAndHoraSalidaOrderByHoraSalidaAsc(buscarDestinoDTO.getDestino(),
-                buscarDestinoDTO.getFechaLLegada(), dateUtils.createDateFromStringWithFormat(buscarDestinoDTO.getFechaLLegada(),formDateFormat),
-                dateUtils.createDateFromStringWithFormat(buscarDestinoDTO.getFechaSalida(),formDateFormat));
+                buscarDestinoDTO.getFechaLLegada(), llegada, salida);
     }
 
 }

@@ -588,3 +588,4 @@ insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (77,'Aucklan
 insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (77,'Wellington','WLG');
 -- POLINESIA FRANCESA --------------------
 insert into wiku_airlines.ciudad (id_pais, nombre, acronimo) values (78,'Tahití','PPT');
+commit;
