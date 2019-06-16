@@ -2,12 +2,15 @@ package com.camaras.wiku.model;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
 @Table(name = "reserva")
 public class Reserva {
     private Integer id;
+    private Date fechaLlegada;
+    private Date fechaSalida;
     private Collection<PasajeroReserva> pasajeroReservas;
     private Cliente cliente;
     private Collection<ReservaVuelo> reservaVuelos;
@@ -34,6 +37,22 @@ public class Reserva {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    public Date getFechaLlegada() {
+        return fechaLlegada;
+    }
+
+    public void setFechaLlegada(Date fechaLlegada) {
+        this.fechaLlegada = fechaLlegada;
+    }
+
+    public Date getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(Date fechaSalida) {
+        this.fechaSalida = fechaSalida;
     }
 
     @OneToMany(mappedBy = "reserva")
@@ -64,3 +83,4 @@ public class Reserva {
         this.reservaVuelos = reservaVuelos;
     }
 }
+
