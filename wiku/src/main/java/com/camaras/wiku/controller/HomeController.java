@@ -21,8 +21,8 @@ public class HomeController {
         return "index";
     }
 
-    @PostMapping({"/destinos/ofertas"})
-    public String ofertas(@ModelAttribute("buscarOfertasDTO") BuscarOfertasDTO buscarOfertasDTO, Model model){
-        logger.debug("Executing ofertas() method via post");
-    }
+//    @PostMapping({"/destinos/ofertas"})
+//    public String ofertas(@ModelAttribute("buscarOfertasDTO") BuscarOfertasDTO buscarOfertasDTO, Model model){
+//        logger.debug("Executing ofertas() method via post");
+//    }
 }

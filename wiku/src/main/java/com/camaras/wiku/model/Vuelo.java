@@ -9,12 +9,13 @@ import java.util.Objects;
 @Table(name = "vuelo")
 public class Vuelo {
     private Integer id;
-    private Timestamp horaSalida;
-    private Timestamp horaLlegada;
+    private String horaSalida;
+    private String horaLlegada;
     private Collection<ReservaVuelo> reservaVuelos;
     private Aeropuerto aeropuertoSalida;
     private Aeropuerto aeropuertoLlegada;
     private Avion avion;
+    private Oferta oferta;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -29,21 +30,21 @@ public class Vuelo {
 
     @Basic
     @Column(name = "hora_salida")
-    public Timestamp getHoraSalida() {
+    public String getHoraSalida() {
         return horaSalida;
     }
 
-    public void setHoraSalida(Timestamp horaSalida) {
+    public void setHoraSalida(String horaSalida) {
         this.horaSalida = horaSalida;
     }
 
     @Basic
     @Column(name = "hora_llegada")
-    public Timestamp getHoraLlegada() {
+    public String getHoraLlegada() {
         return horaLlegada;
     }
 
-    public void setHoraLlegada(Timestamp horaLlegada) {
+    public void setHoraLlegada(String horaLlegada) {
         this.horaLlegada = horaLlegada;
     }
 
@@ -99,5 +100,14 @@ public class Vuelo {
 
     public void setAvion(Avion avion) {
         this.avion = avion;
+    }
+
+    @OneToOne(mappedBy = "vuelo")
+    public Oferta getOferta() {
+        return oferta;
+    }
+
+    public void setOferta(Oferta oferta) {
+        this.oferta = oferta;
     }
 }

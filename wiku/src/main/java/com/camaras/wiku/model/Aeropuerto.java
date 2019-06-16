@@ -9,7 +9,6 @@ import java.util.Objects;
 public class Aeropuerto {
     private Integer id;
     private String nombre;
-    private String direccion;
     private Ciudad ciudad;
     private Collection<Vuelo> vuelosAeropuertoSalida;
     private Collection<Vuelo> vuelosAeropuertoLlegada;
@@ -35,29 +34,18 @@ public class Aeropuerto {
         this.nombre = nombre;
     }
 
-    @Basic
-    @Column(name = "direccion")
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Aeropuerto that = (Aeropuerto) o;
         return Objects.equals(id, that.id) &&
-                Objects.equals(nombre, that.nombre) &&
-                Objects.equals(direccion, that.direccion);
+                Objects.equals(nombre, that.nombre);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, direccion);
+        return Objects.hash(id, nombre);
     }
 
     @ManyToOne

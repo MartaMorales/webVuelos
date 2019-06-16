@@ -43,6 +43,8 @@ FOREIGN KEY (id_pais) REFERENCES  pais(id)
 create table if not exists reserva(
 id int auto_increment not null primary key,
 id_cliente int,
+fecha_salida date,
+fecha_llegada date,
 FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
 
@@ -55,8 +57,8 @@ matricula varchar(140)
 
 create table if not exists aeropuerto(
 id int auto_increment not null primary key,
-id_ciudad int,
 nombre varchar (140),
+id_ciudad int,
 FOREIGN KEY (id_ciudad) REFERENCES ciudad(id)	
 );
 
@@ -64,8 +66,8 @@ create table if not exists vuelo(
 id int auto_increment not null primary key,
 id_aeropuerto_salida int,
 id_aeropuerto_llegada int,
-hora_salida timestamp,
-hora_llegada timestamp,
+hora_salida varchar(10),
+hora_llegada varchar(10),
 id_avion int,
 FOREIGN KEY (id_aeropuerto_salida) REFERENCES aeropuerto(id),
 FOREIGN KEY (id_aeropuerto_llegada) REFERENCES aeropuerto(id),
@@ -129,13 +131,3 @@ cvv int (3),
 tipo varchar (20),
 FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
-
-create table if not exists login(
-id int auto_increment not null primary key,
-id_cliente int,
-usuario varchar(50),
-password varchar(200),
-FOREIGN KEY (id_cliente) REFERENCES cliente(id)
-);
-
-

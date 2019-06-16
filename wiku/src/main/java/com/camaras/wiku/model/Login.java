@@ -56,7 +56,7 @@ public class Login {
         return Objects.hash(id, usuario, password);
     }
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "id_cliente", referencedColumnName = "id")
     public Cliente getCliente() {
         return cliente;

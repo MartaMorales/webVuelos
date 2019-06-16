@@ -12,6 +12,7 @@ public class Pais {
     private String acronimo;
     private Collection<Ciudad> ciudads;
     private Collection<Cliente> clientes;
+    private Continente continente;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -75,5 +76,15 @@ public class Pais {
 
     public void setClientes(Collection<Cliente> clientes) {
         this.clientes = clientes;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "id_continente", referencedColumnName = "id")
+    public Continente getContinente() {
+        return continente;
+    }
+
+    public void setContinente(Continente continente) {
+        this.continente = continente;
     }
 }
