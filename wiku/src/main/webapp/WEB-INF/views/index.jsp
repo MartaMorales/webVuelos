@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="resources/vendor/css/materialize.min.css">
-    <link rel="stylesheet" href="resources/css/general.css">
-    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/css/materialize.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/general.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/index.css">
 
 </head>
 <body>
@@ -100,7 +100,7 @@
     <%@include file="/WEB-INF/views/layout/footer.jsp" %>
 </footer>
 </body>
-<script src="resources/vendor/js/jquery-3.4.1.min.js"></script>
-<script src="resources/vendor/js/materialize.min.js"></script>
-<script src="resources/js/index.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/jquery-3.4.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/materialize.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
 </html>

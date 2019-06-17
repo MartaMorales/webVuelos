@@ -23,7 +23,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/wiku_airlines?serverTimezone=UTC
     username: root
-    password: curso
+    password: root
   resources:
     static-locations: /resources/
 

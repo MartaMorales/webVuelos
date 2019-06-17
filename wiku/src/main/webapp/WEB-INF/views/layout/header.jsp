@@ -7,7 +7,7 @@
         <nav class="wiku-nav">
         <div class="nav-wrapper">
         <a href="${pageContext.request.contextPath}/home" class="brand-logo"><img class="wiku-logo-header"
-        src="resources/img/logos/wiku_side_title_blank.png"></a>
+        src="${pageContext.request.contextPath}/resources/img/logos/wiku_side_title_blank.png"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
         <li class="active"><a href="${pageContext.request.contextPath}/home">Inicio</a></li>
@@ -39,7 +39,7 @@
         <ul id="mobile-demo" class="sidenav">
         <li><div class="user-view wiku-logo-hamburger">
         <div class="background">
-        <img class="wiku-logo-img-hamburger" src="resources/img/logos/wiku_title.png">
+        <img class="wiku-logo-img-hamburger" src="${pageContext.request.contextPath}/resources/img/logos/wiku_title.png">
         </div>
         </div></li>
         <li><a href="#!">Inicio</a></li>
