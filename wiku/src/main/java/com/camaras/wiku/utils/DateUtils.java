@@ -5,20 +5,20 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 @Component
 public class DateUtils {
 
     private static final Logger logger = LoggerFactory.getLogger(DateUtils.class);
 
-    public Date createDateFromStringWithFormat(String dateString, String format){
-        SimpleDateFormat formatter = new SimpleDateFormat(format);
-        Date date = null;
+    public LocalDateTime createDateFromStringWithFormat(String dateString, String format){
+       LocalDateTime date = null;
         try {
-            date = formatter.parse(dateString);
-        } catch (ParseException e) {
+            date = LocalDateTime.parse(dateString, DateTimeFormatter.ofPattern(format));
+
+        } catch (Exception e) {
             logger.error("There is an error parsing: ["+dateString+"] with format ["+format+"]. ERROR: \n"+e.getMessage());
         }
         return date;

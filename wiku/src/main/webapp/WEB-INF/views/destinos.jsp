@@ -129,7 +129,7 @@
                                     <p>directo</p>
                                 </div>
                                 <div class='col l3'>
-                                    <p>Duración:</p>
+                                    <p>Duración: ${vuelo.duracion} </p>
                                 </div>
                                 <div class='col l1'></div>
                             </div>

@@ -1,7 +1,7 @@
 package com.camaras.wiku.model;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.time.chrono.ChronoPeriod;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -16,6 +16,7 @@ public class Vuelo {
     private Aeropuerto aeropuertoLlegada;
     private Avion avion;
     private Oferta oferta;
+    private ChronoPeriod duracion;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -109,5 +110,14 @@ public class Vuelo {
 
     public void setOferta(Oferta oferta) {
         this.oferta = oferta;
+    }
+
+    @Transient
+    public ChronoPeriod getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(ChronoPeriod duracion) {
+        this.duracion = duracion;
     }
 }
