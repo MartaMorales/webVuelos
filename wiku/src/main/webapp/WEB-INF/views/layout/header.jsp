@@ -39,7 +39,7 @@
         <ul id="mobile-demo" class="sidenav">
         <li><div class="user-view wiku-logo-hamburger">
         <div class="background">
-        <img class="wiku-logo-img-hamburger" src="/WikuAirlines/resources/img/logos/wiku_title.png">
+        <img class="wiku-logo-img-hamburger" src="resources/img/logos/wiku_title.png">
         </div>
         </div></li>
         <li><a href="#!">Inicio</a></li>

@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -14,7 +15,9 @@
 
 </head>
 <body>
-<header><%@include file="/WEB-INF/views/layout/header.jsp" %></header>
+<header>
+    <%@include file="/WEB-INF/views/layout/header.jsp" %>
+</header>
 
 <main>
 
@@ -24,7 +27,8 @@
             <div class="container">
                 <div class="row">
                     <div class="booking-form">
-                        <form:form action="${pageContext.request.contextPath}/destinos/buscar" modelAttribute="buscarDestinoDTO" method="POST">
+                        <form:form action="${pageContext.request.contextPath}/destinos/buscar"
+                                   modelAttribute="buscarDestinoDTO" method="POST">
                             <div class="row no-margin">
                                 <div class="col s6">
                                     <div class="input-field">
@@ -35,18 +39,20 @@
 
                                     <div class="input-field">
                                         <i class="material-icons prefix icons">event</i>
-                                        <form:input type="text" path="fechaSalida" class="datepicker" id="fechaSalida" value="" placeholder="Salida" />
+                                        <form:input type="text" path="fechaSalida" class="datepicker" id="fechaSalida"
+                                                    value="" placeholder="Salida"/>
                                     </div>
                                 </div>
                                 <div class="col s6">
                                     <div class="form-group input-field">
                                         <i class="material-icons icons prefix">flight_land</i>
-                                        <form:input type="text" id="destino" path="destino" class="validate" />
+                                        <form:input type="text" id="destino" path="destino" class="validate"/>
                                         <label for="origen">Destino</label>
                                     </div>
                                     <div class="form-group input-field">
                                         <i class="material-icons prefix icons">event</i>
-                                        <form:input type="text" class="datepicker" path="fechaLLegada" id="fechaLlegada" placeholder="Llegada" />
+                                        <form:input type="text" class="datepicker" path="fechaLLegada" id="fechaLlegada"
+                                                    placeholder="Llegada"/>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +96,9 @@
                                 </div>
                             </div>
                             <div class="col l2">
-                                <button type="submit" class="wiku-button btn waves-effect waves-light boton" id="buscar">Buscar</button>
+                                <button type="submit" class="wiku-button btn waves-effect waves-light boton"
+                                        id="buscar">Buscar
+                                </button>
                             </div>
                         </form:form>
                     </div>
@@ -98,12 +106,48 @@
             </div>
         </div>
     </div>
-<div id="resultado"></div>
+
+    <div id="resultado">
+        <h3>Aquí tienes los siguientes vuelos a ${buscarDestinoDTO.destino}</h3>
+        <c:forEach items="${vuelos}" var="vuelo">
+        <h3>Vuelo de ida desde ${vuelo.aeropuertoSalida.nombre} a ${vuelo.aeropuertoLlegada.nombre}</h3>
+        <div class='row target'>
+            <div class='col l1'></div>
+            <div class='col l10 border'>
+                <div class='row'>
+                    <div class='col l10'>
+                        <div class='row'>
+                            <div class='col l1'></div>
+                            <div class='col l1'>
+                                <i class='material-icons icons prefix'>flight_takeoff</i>
+                            </div>
+                            <div class='col l3'>
+                                <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
+                            </div>
+                            <div class='col l3'>
+                                <p>directo</p>
+                            </div>
+                            <div class='col l3'>
+                                <p>Duración: </p>
+                            </div>
+                            <div class='col l1'></div>
+                        </div>
+                    </div>
+                    <div class='col l2 boton'><input type='button' value='Seleccionar'
+                                                     class='wiku-button btn waves-effect waves-light boton'></div>
+                </div>
+            </div>
+            <div class='col l1'></div>
+        </div>
+    </c:forEach>
+    </div>
 
 
 </main>
 
-<footer><%@include file="/WEB-INF/views/layout/footer.jsp" %></footer>
+<footer>
+    <%@include file="/WEB-INF/views/layout/footer.jsp" %>
+</footer>
 
 </body>
 <script src="resources/vendor/js/jquery-3.4.1.min.js"></script>

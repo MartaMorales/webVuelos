@@ -24,11 +24,8 @@ public class VueloServiceImpl implements VueloService {
 
     @Override
     public List<Vuelo> getVuelosFromForm(BuscarDestinoDTO buscarDestinoDTO){
-        Date llegada = dateUtils.createDateFromStringWithFormat(buscarDestinoDTO.getFechaLLegada(),formDateFormat);
-        Date salida = dateUtils.createDateFromStringWithFormat(buscarDestinoDTO.getFechaSalida(),formDateFormat);
-
-        return vueloDao.findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreAndHoraLlegadaAndHoraSalidaOrderByHoraSalidaAsc(buscarDestinoDTO.getDestino(),
-                buscarDestinoDTO.getFechaLLegada(), llegada, salida);
+        return vueloDao.findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreOrderByHoraSalidaAsc(buscarDestinoDTO.getDestino(),
+                buscarDestinoDTO.getOrigen());
     }
 
 }

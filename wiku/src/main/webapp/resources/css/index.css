@@ -114,35 +114,10 @@ display: block;
 color: black;
 }
 
-#carousel-one {
-background-image: url("../img/cities/KualaLumpur.jpeg");
+.carousel-wiku-item {
 background-size: auto;
 background-position: center;
 }
-
-#carousel-two {
-background-image: url("../img/cities/Londres.jpeg");
-background-size: auto;
-background-position: center;
-}
-
-#carousel-three {
-background-image: url("../img/cities/SanFrancisco.jpeg");
-background-size: auto;
-background-position: center;
-}
-
-#carousel-four {
-background-image: url("../img/cities/pexels-photo-236451.jpeg");
-background-size: auto;
-background-position: center;
-
-}
-
-
-
-
-
 
 
 

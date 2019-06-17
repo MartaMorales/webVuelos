@@ -67,39 +67,32 @@
         <div class="col l1  m1  s1"></div>
     </section>
     <%--Carousel --%>
+
     <div class="container">
         <div class="carousel carousel-slider center">
-            <div class="carousel-item red white-text" id="carousel-one">
-                <img  class="carousel-title" src="resources/img/cities/KualaLumpur.jpeg" alt="fondo"/>
-                <h1>Kuala Lumpur</h1>
-                <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
+            <c:forEach items="${ofertas}" var="oferta">
+                <div class="carousel-item red white-text carousel-wiku-item" style='background-image: url("${oferta.imgUrl}")'>
+                    <img  class="carousel-title" src="${oferta.imgUrl}" alt="fondo"/>
+                    <h1><c:out value="${oferta.vuelo.aeropuertoLlegada.ciudad.nombre}"/></h1>
+                    <div class="carousel-fixed-item center">
+                        <a class="btn waves-effect white grey-text darken-text-2 wiku-boton modal-trigger" href="#modal${oferta.id}">Ver oferta</a>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item amber white-text" id="carousel-two" href="#two!">
-                <img  class="carousel-title" src="resources/img/cities/Londres.jpeg" alt="fondo"/>
-                <h1>Londres</h1>
-                <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
+
+                <!-- Modal Structure -->
+                <div id="modal${oferta.id}" class="modal">
+                    <div class="modal-content">
+                        <h4>${oferta.vuelo.aeropuertoLlegada.ciudad.nombre}</h4>
+                        <p>${oferta.descripcion}</p>
+                        <p>Precio: ${oferta.precio} €.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="${pageContext.request.contextPath}/destinos/buscar/${oferta.vuelo.id}/" class="modal-close waves-effect waves-green btn-flat">Ver vuelo</a>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item green white-text" id="carousel-three" href="#three!">
-                <img  class="carousel-title" src="resources/img/cities/SanFrancisco.jpeg" alt="fondo"/>
-                <h1>San Francisco</h1>
-                <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
-                </div>
-            </div>
-            <div class="carousel-item blue white-text" id="carousel-four" href="#four!">
-                <img  class="carousel-title" src="resources/img/cities/pexels-photo-236451.jpeg" alt="fondo"/>
-                <h1>Brooklin</h1>
-                <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2 wiku-boton">Ver oferta</a>
-                </div>
-            </div>
+            </c:forEach>
         </div>
     </div>
-
 
 </main>
 

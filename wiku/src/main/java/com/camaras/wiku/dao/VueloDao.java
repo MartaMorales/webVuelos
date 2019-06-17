@@ -16,6 +16,6 @@ import java.util.List;
 @Repository
 public interface VueloDao extends JpaRepository<Vuelo, Integer> {
 
-    List<Vuelo> findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreAndHoraLlegadaAndHoraSalidaOrderByHoraSalidaAsc(String ciudadLlegada, String ciudadSalida, Date horaLlegada, Date horaSalida);
+    List<Vuelo> findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreOrderByHoraSalidaAsc(String ciudadLlegada, String ciudadSalida);
 
 }
