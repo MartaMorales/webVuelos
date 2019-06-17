@@ -1,5 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -8,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="resources/vendor/css/materialize.min.css">
-    <link rel="stylesheet" href="resources/css/general.css">
-    <link rel="stylesheet" href="resources/css/destino.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/css/materialize.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/general.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/destino.css">
 
 
 </head>
@@ -22,7 +23,7 @@
 <main>
 
     <div id="booking" class="section">
-        <img class="image-background" src="resources/img/cities/paris.jpeg" alt="paris, imagen de fondo">
+        <img class="image-background" src="${pageContext.request.contextPath}/resources/img/cities/paris.jpeg" alt="paris, imagen de fondo">
         <div class="section-center">
             <div class="container">
                 <div class="row">
@@ -110,36 +111,38 @@
     <div id="resultado">
         <h3>Aquí tienes los siguientes vuelos a ${buscarDestinoDTO.destino}</h3>
         <c:forEach items="${vuelos}" var="vuelo">
-        <h3>Vuelo de ida desde ${vuelo.aeropuertoSalida.nombre} a ${vuelo.aeropuertoLlegada.nombre}</h3>
-        <div class='row target'>
-            <div class='col l1'></div>
-            <div class='col l10 border'>
-                <div class='row'>
-                    <div class='col l10'>
-                        <div class='row'>
-                            <div class='col l1'></div>
-                            <div class='col l1'>
-                                <i class='material-icons icons prefix'>flight_takeoff</i>
+            <h3>Vuelo de ida desde ${vuelo.aeropuertoSalida.nombre} a ${vuelo.aeropuertoLlegada.nombre}</h3>
+            <div class='row target'>
+                <div class='col l1'></div>
+                <div class='col l10 border'>
+                    <div class='row'>
+                        <div class='col l10'>
+                            <div class='row'>
+                                <div class='col l1'></div>
+                                <div class='col l1'>
+                                    <i class='material-icons icons prefix'>flight_takeoff</i>
+                                </div>
+                                <div class='col l3'>
+                                    <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
+                                </div>
+                                <div class='col l3'>
+                                    <p>directo</p>
+                                </div>
+                                <div class='col l3'>
+                                    <p>Duración:</p>
+                                </div>
+                                <div class='col l1'></div>
                             </div>
-                            <div class='col l3'>
-                                <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
-                            </div>
-                            <div class='col l3'>
-                                <p>directo</p>
-                            </div>
-                            <div class='col l3'>
-                                <p>Duración: </p>
-                            </div>
-                            <div class='col l1'></div>
+                        </div>
+                        <div class='col l2 boton'>
+                            <input type='button' value='Seleccionar'
+                                   class='wiku-button btn waves-effect waves-light boton'>
                         </div>
                     </div>
-                    <div class='col l2 boton'><input type='button' value='Seleccionar'
-                                                     class='wiku-button btn waves-effect waves-light boton'></div>
                 </div>
+                <div class='col l1'></div>
             </div>
-            <div class='col l1'></div>
-        </div>
-    </c:forEach>
+        </c:forEach>
     </div>
 
 
@@ -150,7 +153,7 @@
 </footer>
 
 </body>
-<script src="resources/vendor/js/jquery-3.4.1.min.js"></script>
-<script src="resources/vendor/js/materialize.min.js"></script>
-<script src="resources/js/destino.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/jquery-3.4.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/materialize.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/destino.js"></script>
 </html>
