@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface LoginDao extends JpaRepository <Login, Integer> {
 
+    Login findByUsuario(String usuario);
+
     Login findByUsuarioAndPassword(String usuario, String password);
 
 }
