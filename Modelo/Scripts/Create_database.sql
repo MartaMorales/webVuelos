@@ -131,3 +131,13 @@ cvv int (3),
 tipo varchar (20),
 FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
+
+CREATE TABLE IF NOT EXISTS login (
+  id int auto_increment not null primary key,
+  usuario VARCHAR(50) NOT NULL,
+  enabled boolean NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  id_cliente int,
+  foreign key (id_cliente) references cliente(id)
+);

@@ -1301,3 +1301,7 @@ insert into wiku_airlines.oferta(id_vuelo, descripcion, precio, img_url) values(
 insert into wiku_airlines.oferta(id_vuelo, descripcion, precio, img_url) values(37, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',100,'resources/img/cities/Londres.jpeg');
 insert into wiku_airlines.oferta(id_vuelo, descripcion, precio, img_url) values(25, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',90,'resources/img/cities/dublin.jpeg');
 commit;
+/*usuario*/
+insert into wiku_airlines.cliente(nombre, apellido1, apellido2, dni, fecha_nacimiento, telefono, direccion, id_ciudad, id_pais, codigo_postal) VALUES ("Wiku", "Airlines", "Project", "12345678P", '2019-03-24', '654789654', "Calle Aqui mismo 1 2 3", 1,1,'28033');
+insert into wiku_airlines.login (usuario,enabled,password, email, id_cliente) VALUES ("wiku", true,'$2a$10$A90AkKAw7AVLTa0VJ.m5.epvBQi/noSS8tvHXZq0nTE0D9dzeXPqu', 'wiku.airlines@wiku.com',1);
+commit;
