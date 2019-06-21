@@ -30,15 +30,15 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form:form  action="${pageContext.request.contextPath}/login" modelAttribute="buscarLoginDTO" method="post">
+                    <form  >
                         <div class="input-field m3">
                             <i class="material-icons icons prefix">person</i>
-                            <form:input type="text" path="usuario" name="usuario" id="userormail" class="validate"/>
+                            <input type="text" name="usuario" id="userormail" class="validate"/>
                             <label for="userormail">Nombre de usuario o email</label>
                         </div>
                         <div class="input-field m2">
                             <i class="material-icons icons prefix">vpn_key</i>
-                            <form:input type="password" path="password" name="password" id="passlog" class="validate"/>
+                            <input type="password" name="password" id="passlog" class="validate"/>
                             <label for="passlog">Contraseña</label>
                         </div>
                         <div class="switch">
@@ -62,7 +62,7 @@
                                 <a href="#">¿Has perdido tu contraseña?</a>
                             </div>
                         </div>
-                    </form:form>
+                    </form>
                 </div>
             </div>
         </div>
