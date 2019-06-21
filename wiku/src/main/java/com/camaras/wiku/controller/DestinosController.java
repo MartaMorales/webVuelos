@@ -44,7 +44,6 @@ public class DestinosController {
         LocalDateTime fechaLlegada;
         ChronoLocalDate from;
         ChronoLocalDate to;
-        ChronoPeriod period;
 
         for (Vuelo vuelo : vuelos) {
             String llegada = buscarDestinoDTO.getFechaLLegada()+" "+ vuelo.getHoraLlegada();

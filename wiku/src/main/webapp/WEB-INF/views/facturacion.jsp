@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -25,7 +26,7 @@
                 </div>
             </div>
         </nav>
-        <form:form action="${pageContext.request.contextPath}/facturacion" method="post">
+        <form:form action="${pageContext.request.contextPath}/facturacion" modelAttribute="datosPasajeroDTO" method="post">
             <div class="row">
                 <h1>Pasajero 1:</h1>
             </div>
@@ -51,14 +52,14 @@
                 <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="nombre" type="text" class="validate" name="Name" required>
+                        <form:input path="nombre" id="nombre" type="text" class="validate" name="Name"/>
                         <label for="nombre">Nombre</label>
                     </div>
                 </div>
                 <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="apellidos" type="text" class="validate" name="apellidos" required>
+                        <form:input path="apellidos" id="apellidos" type="text" class="validate" name="apellidos"/>
                         <label for="apellidos">Apellidos</label>
                     </div>
                 </div>
@@ -69,14 +70,14 @@
                 <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="dni" type="text" class="validate" name="dni" required>
+                        <form:input path="dni" id="dni" type="text" class="validate" name="dni" />
                         <label for="dni">DNI</label>
                     </div>
                 </div>
                 <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix icons">event</i>
-                        <input type="text" class="datepicker" placeholder="Fecha de Nacimiento" required>
+                        <form:input path="fechaNacimiento" type="text" class="datepicker" placeholder="Fecha de Nacimiento" />
                     </div>
                 </div>
                 <div class="col l1 m1"></div>
@@ -86,24 +87,19 @@
                 <div class="col l4 m4 s12">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">location_city</i>
-                        <select>
-                            <option value="" disabled selected>Selecciona tu nacionalidad</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
+                        <form:select items="${paises}" path="nacionalidad"/>
                         <label>Nacionalidad</label>
                     </div>
                 </div>
                 <div class="col l4 m4 s12">
                     <div class="input-field">
                         <i class="material-icons prefix icons">event</i>
-                        <input type="text" class="validate" id="telefono">
+                        <form:input path="telefono" type="text" class="validate" id="telefono"/>
                         <label for="telefono">Telefono</label>
                     </div>
                 </div>
             </div>
-        </form>
+        </form:form>
     </div>
 
     <div id="red" class="block white">

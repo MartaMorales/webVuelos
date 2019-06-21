@@ -10,8 +10,7 @@ public class Pasajero {
     private Integer id;
     private String dni;
     private String nombre;
-    private String apellido1;
-    private String apellido2;
+    private String apellidos;
     private Collection<PasajeroAsiento> pasajeroAsientos;
     private Collection<PasajeroReserva> pasajeroReservas;
 
@@ -47,23 +46,13 @@ public class Pasajero {
     }
 
     @Basic
-    @Column(name = "apellido1")
-    public String getApellido1() {
-        return apellido1;
+    @Column(name = "apellidos")
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setApellido1(String apellido1) {
-        this.apellido1 = apellido1;
-    }
-
-    @Basic
-    @Column(name = "apellido2")
-    public String getApellido2() {
-        return apellido2;
-    }
-
-    public void setApellido2(String apellido2) {
-        this.apellido2 = apellido2;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
     @Override
@@ -74,13 +63,12 @@ public class Pasajero {
         return Objects.equals(id, pasajero.id) &&
                 Objects.equals(dni, pasajero.dni) &&
                 Objects.equals(nombre, pasajero.nombre) &&
-                Objects.equals(apellido1, pasajero.apellido1) &&
-                Objects.equals(apellido2, pasajero.apellido2);
+                Objects.equals(apellidos, pasajero.apellidos);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, dni, nombre, apellido1, apellido2);
+        return Objects.hash(id, dni, nombre, apellidos);
     }
 
     @OneToMany(mappedBy = "pasajero")

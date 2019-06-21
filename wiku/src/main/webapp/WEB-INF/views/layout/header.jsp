@@ -15,21 +15,12 @@
         <li><a href="Gestion?action=Mis_Viajes">Mis viajes</a></li>
         <li><a href="Gestion?action=Contacto">Contacto</a></li>
         <li><div class="row">
-        <form method="post" action="Login">
+
         <div class="input-field col s4">
-        <input placeholder="User Name" id="first_name" type="text" class="validate" name="usuario">
-        <label for="first_name">User Name</label>
-        </div>
-        <div class="input-field col s4">
-        <input placeholder="Password" id="last_name" type="password" class="validate" name="password">
-        <label for="last_name">Password</label>
-        </div>
-        <div class="input-field col s4">
-        <button id="submit-button" type="submit" class="btn waves-effect waves-light wiku-button">Login<i
-        class="material-icons submit-icon right">send</i>
+        <button id="submit-button" type="submit" class="btn waves-effect waves-light wiku-button">Login
+        <i class="material-icons submit-icon right">send</i>
         </button>
         </div>
-        </form>
         </div>
         </li>
         </ul>
@@ -39,7 +30,8 @@
         <ul id="mobile-demo" class="sidenav">
         <li><div class="user-view wiku-logo-hamburger">
         <div class="background">
-        <img class="wiku-logo-img-hamburger" src="${pageContext.request.contextPath}/resources/img/logos/wiku_title.png">
+        <img class="wiku-logo-img-hamburger" src="${pageContext.request.contextPath}
+        /resources/img/logos/wiku_title.png">
         </div>
         </div></li>
         <li><a href="#!">Inicio</a></li>
