@@ -1,5 +1,9 @@
 package com.camaras.wiku.service;
 
-public interface CiudadService {
+import com.camaras.wiku.model.Ciudad;
 
+import java.util.List;
+
+public interface CiudadService {
+    List<String> getAllCiudadesForAutocomplete();
 }
