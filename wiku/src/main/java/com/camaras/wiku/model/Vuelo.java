@@ -16,7 +16,7 @@ public class Vuelo {
     private Aeropuerto aeropuertoLlegada;
     private Avion avion;
     private Oferta oferta;
-    private ChronoPeriod duracion;
+    private String duracion;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -113,11 +113,11 @@ public class Vuelo {
     }
 
     @Transient
-    public ChronoPeriod getDuracion() {
+    public String getDuracion() {
         return duracion;
     }
 
-    public void setDuracion(ChronoPeriod duracion) {
+    public void setDuracion(String duracion) {
         this.duracion = duracion;
     }
 }

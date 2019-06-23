@@ -1,10 +1,6 @@
 package com.camaras.wiku.dto;
 
-import com.camaras.wiku.utils.DateUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.io.Serializable;
-import java.util.Date;
 
 public class BuscarDestinoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -15,6 +11,8 @@ public class BuscarDestinoDTO implements Serializable {
     private String fechaVuelta;
     private Integer adultos;
     private Integer ninos;
+    private Integer vueloIda;
+    private Integer vueloVuelta;
 
     public String getOrigen() {
         return origen;
@@ -64,5 +62,20 @@ public class BuscarDestinoDTO implements Serializable {
         this.ninos = ninos;
     }
 
+    public Integer getVueloIda() {
+        return vueloIda;
+    }
+
+    public void setVueloIda(Integer vueloIda) {
+        this.vueloIda = vueloIda;
+    }
+
+    public Integer getVueloVuelta() {
+        return vueloVuelta;
+    }
+
+    public void setVueloVuelta(Integer vueloVuelta) {
+        this.vueloVuelta = vueloVuelta;
+    }
 }
 

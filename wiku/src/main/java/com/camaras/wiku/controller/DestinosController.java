@@ -38,24 +38,12 @@ public class DestinosController {
     public String bucarDestinosFromIndexForm(@ModelAttribute("buscarDestinoDTO") BuscarDestinoDTO buscarDestinoDTO, Model model) {
         logger.debug("Executing buscarDestinosFromIndexForm() method via Get throw destinos.jsp form of destinos");
 
-        List<Vuelo> vuelos = vueloService.getVuelosFromForm(buscarDestinoDTO);
-        DateUtils format = new DateUtils();
-        LocalDateTime fechaIda;
-        LocalDateTime fechaVuelta;
-        ChronoLocalDate from;
-        ChronoLocalDate to;
+        List<Vuelo> vuelosIda = vueloService.getVuelosIdaFromForm(buscarDestinoDTO);
+        List<Vuelo> vuelosVuelta = vueloService.getVuelosVueltaFromForm(buscarDestinoDTO);
 
-        for (Vuelo vuelo : vuelos) {
-            String vuelta = buscarDestinoDTO.getFechaVuelta();
-            String ida = buscarDestinoDTO.getFechaIda();
-
-            fechaIda = format.createDateFromStringWithFormat(ida, "dd/mm/yyyy");
-            fechaVuelta = format.createDateFromStringWithFormat(vuelta, "dd/mm/yyyy");
-
-            //buscarDestinoDTO.setFechaIda(fechaSalida);
-        }
         model.addAttribute(buscarDestinoDTO);
-        model.addAttribute("vuelos", vuelos);
+        model.addAttribute("vuelosIda", vuelosIda);
+        model.addAttribute("vuelosVuelta", vuelosVuelta);
 
         return "destinos";
     }

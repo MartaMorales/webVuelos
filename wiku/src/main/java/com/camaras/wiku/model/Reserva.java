@@ -1,5 +1,7 @@
 package com.camaras.wiku.model;
 
+import com.camaras.wiku.model.enums.TipoReserva;
+
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Date;
@@ -11,6 +13,8 @@ public class Reserva {
     private Integer id;
     private Date fechaLlegada;
     private Date fechaSalida;
+    private Double precio;
+    private TipoReserva tipo;
     private Collection<PasajeroReserva> pasajeroReservas;
     private Cliente cliente;
     private Collection<ReservaVuelo> reservaVuelos;
@@ -53,6 +57,23 @@ public class Reserva {
 
     public void setFechaSalida(Date fechaSalida) {
         this.fechaSalida = fechaSalida;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
+    @Enumerated(EnumType.STRING)
+    public TipoReserva getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoReserva tipo) {
+        this.tipo = tipo;
     }
 
     @OneToMany(mappedBy = "reserva")

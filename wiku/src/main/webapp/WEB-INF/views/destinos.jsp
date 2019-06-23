@@ -10,8 +10,8 @@
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/css/materialize.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/general.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/destino.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/general.css">
 
 
 </head>
@@ -34,63 +34,63 @@
                                 <div class="col s6">
                                     <div class="input-field">
                                         <i class="material-icons icons prefix">flight_takeoff</i>
-                                        <form:input type="text" path="origen" id="origen" class="validate"/>
+                                        <form:input type="text" path="origen" id="origen" cssClass="booking-input validate"/>
                                         <label for="origen">Origen</label>
                                     </div>
 
                                     <div class="input-field">
                                         <i class="material-icons prefix icons">event</i>
-                                        <form:input type="text" path="fechaIda" class="datepicker" id="fechaSalida"
+                                        <form:input type="text" path="fechaIda" cssClass="booking-input datepicker" id="fechaSalida"
                                                     value="" placeholder="Salida"/>
                                     </div>
                                 </div>
                                 <div class="col s6">
                                     <div class="form-group input-field">
                                         <i class="material-icons icons prefix">flight_land</i>
-                                        <form:input type="text" id="destino" path="destino" class="validate"/>
+                                        <form:input type="text" id="destino" path="destino" cssClass=" booking-input validate"/>
                                         <label for="origen">Destino</label>
                                     </div>
                                     <div class="form-group input-field">
                                         <i class="material-icons prefix icons">event</i>
-                                        <form:input type="text" class="datepicker" path="fechaVuelta" id="fechaLlegada"
+                                        <form:input type="text" cssClass="booking-input datepicker" path="fechaVuelta" id="fechaLlegada"
                                                     placeholder="Llegada"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="row no-margin">
-                                <div class="col s6">
+                                <div class="col s6 left-select">
                                     <div class="form-group input-field">
                                         <span class="form-label">Adultos (18+)</span>
-                                        <form:select path="adultos" id="adultos" class="form-control">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
+                                        <form:select path="adultos" id="adultos" class="booking-input form-control">
+                                            <option class="booking-input" value="1">1</option>
+                                            <option class="booking-input" value="2">2</option>
+                                            <option class="booking-input" value="3">3</option>
+                                            <option class="booking-input" value="4">4</option>
+                                            <option class="booking-input" value="5">5</option>
+                                            <option class="booking-input" value="6">6</option>
+                                            <option class="booking-input" value="7">7</option>
+                                            <option class="booking-input" value="8">8</option>
+                                            <option class="booking-input" value="9">9</option>
+                                            <option class="booking-input" value="10">10</option>
                                         </form:select>
                                         <span class="select-arrow"></span>
                                     </div>
                                 </div>
-                                <div class="col s6">
+                                <div class="col s6 right-select">
                                     <div class="form-group input-field">
                                         <span class="form-label">Niños (0-17)</span>
-                                        <form:select id="ninos" path="ninos" class="form-control">
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
+                                        <form:select id="ninos" path="ninos" class="booking-input form-control">
+                                            <option class="booking-input" value="0">0</option>
+                                            <option class="booking-input" value="1">1</option>
+                                            <option class="booking-input" value="2">2</option>
+                                            <option class="booking-input" value="3">3</option>
+                                            <option class="booking-input" value="4">4</option>
+                                            <option class="booking-input" value="5">5</option>
+                                            <option class="booking-input" value="6">6</option>
+                                            <option class="booking-input" value="7">7</option>
+                                            <option class="booking-input" value="8">8</option>
+                                            <option class="booking-input" value="9">9</option>
+                                            <option class="booking-input" value="10">10</option>
                                         </form:select>
                                         <span class="select-arrow"></span>
                                     </div>
@@ -110,39 +110,41 @@
 
     <div id="resultado">
         <h3>Aquí tienes los siguientes vuelos a ${buscarDestinoDTO.destino}</h3>
-        <c:forEach items="${vuelos}" var="vuelo">
-            <h3>Vuelo de ida desde ${vuelo.aeropuertoSalida.nombre} a ${vuelo.aeropuertoLlegada.nombre}</h3>
-            <div class='row target'>
-                <div class='col l1'></div>
-                <div class='col l10 border'>
-                    <div class='row'>
-                        <div class='col l10'>
-                            <div class='row'>
-                                <div class='col l1'></div>
-                                <div class='col l1'>
-                                    <i class='material-icons icons prefix'>flight_takeoff</i>
+        <div class="container vuelos-container">
+            <c:forEach items="${vuelosIda}" var="vuelo">
+                <h3>Vuelo de ida desde ${vuelo.aeropuertoSalida.nombre} a ${vuelo.aeropuertoLlegada.nombre}</h3>
+                <div class='row target'>
+                    <div class='col l1'></div>
+                    <div class='col l10 border'>
+                        <div class='row'>
+                            <div class='col l10'>
+                                <div class='row'>
+                                    <div class='col l1'></div>
+                                    <div class='col l1'>
+                                        <i class='material-icons icons prefix'>flight_takeoff</i>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>directo</p>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>Duración: ${vuelo.duracion} </p>
+                                    </div>
+                                    <div class='col l1'></div>
                                 </div>
-                                <div class='col l3'>
-                                    <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
-                                </div>
-                                <div class='col l3'>
-                                    <p>directo</p>
-                                </div>
-                                <div class='col l3'>
-                                    <p>Duración: ${vuelo.duracion} </p>
-                                </div>
-                                <div class='col l1'></div>
+                            </div>
+                            <div class='col l2 boton'>
+                                <input type='button' value='Seleccionar'
+                                       class='wiku-button btn waves-effect waves-light boton'>
                             </div>
                         </div>
-                        <div class='col l2 boton'>
-                            <input type='button' value='Seleccionar'
-                                   class='wiku-button btn waves-effect waves-light boton'>
-                        </div>
                     </div>
+                    <div class='col l1'></div>
                 </div>
-                <div class='col l1'></div>
-            </div>
-        </c:forEach>
+            </c:forEach>
+        </div>
     </div>
 
 

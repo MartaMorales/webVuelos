@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface VueloService {
 
-    List<Vuelo> getVuelosFromForm(BuscarDestinoDTO buscarDestinoDTO);
+    List<Vuelo> getVuelosIdaFromForm(BuscarDestinoDTO buscarDestinoDTO);
+    List<Vuelo> getVuelosVueltaFromForm(BuscarDestinoDTO buscarDestinoDTO);
 
 }

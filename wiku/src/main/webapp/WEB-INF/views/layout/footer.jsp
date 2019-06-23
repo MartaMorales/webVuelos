@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col l3 s12 center-align">
-                <img class="footer-logo" src="resources/img/logos/wiku_title_blank.png">
+                <img class="footer-logo" src="${pageContext.request.contextPath}/resources/img/logos/wiku_title_blank.png">
             </div>
             <div class="col l2 offset-l1 s12 center-align">
                 <h5 class="white-text">Buscar Vuelos</h5>
