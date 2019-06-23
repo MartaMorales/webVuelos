@@ -103,5 +103,6 @@
 <script src="${pageContext.request.contextPath}/resources/vendor/js/jquery-3.4.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/vendor/js/materialize.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/vendor/js/jquery.validate.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/date.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
 </html>

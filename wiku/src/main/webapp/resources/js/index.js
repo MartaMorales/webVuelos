@@ -58,7 +58,7 @@ function validateForm(){
             },
             fechaLlegada: {
                 required: true,
-                salidaGreaterThanLlegada: false
+                llegadaGreaterThanSalida: true
             }
         },
         errorElement : 'div',
@@ -75,10 +75,10 @@ function validateForm(){
     $.validator.addMethod(
         "salidaGreaterThanLlegada",
         function() {
-            var salida = Date.parse($("#salida").val());
-            var llegada = Date.parse($("#llegada").val());
-            return salida > llegada;
+            var salida = Date.parseExact($("#salida").val(), 'dd/mm/yyyy');
+            var llegada = Date.parseExact($("#llegada").val(), 'dd/mm/yyyy');
+            return llegada > salida;
         },
-        "La fecha de salida no puede ser mayor que la de llegada."
+        "La fecha de ida no puede ser mayor que la de vuelta."
     );
 }

@@ -45,6 +45,8 @@ id int auto_increment not null primary key,
 id_cliente int,
 fecha_salida date,
 fecha_llegada date,
+precio double,
+tipo varchar(6),
 FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
 
