@@ -225,4 +225,12 @@ h3 {
 .border:hover {
     border: 0.2rem #f8b500 solid;
 }
-
+.vuelo-tittle{
+    text-align: center;
+}
+.span-tittle{
+    color: dodgerblue;
+}
+.span-tittle:hover{
+    color: #f8b500;
+}

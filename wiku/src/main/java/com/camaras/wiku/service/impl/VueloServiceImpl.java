@@ -9,23 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.Period;
-import java.time.chrono.ChronoLocalDate;
-import java.time.chrono.ChronoPeriod;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static java.time.temporal.ChronoUnit.*;
-
 @Service
 public class VueloServiceImpl implements VueloService {
-
-    private final String formDateFormat = "MMM dd,yyyy";
 
     @Autowired
     VueloDao vueloDao;
@@ -33,20 +24,42 @@ public class VueloServiceImpl implements VueloService {
     @Autowired
     DateUtils dateUtils;
 
+    /**
+     * Este metodo recibe por parametro un DTO del formulario de destinos y hace una busqueda de vuelos
+     * usando la ciudad de ida y de vuelta como se configura en el formulario. posteriormente calcula la duracion
+     * de cada vuelo y devuelve el listado al controlador.
+     * @param buscarDestinoDTO
+     * @return
+     */
     @Override
     public List<Vuelo> getVuelosIdaFromForm(BuscarDestinoDTO buscarDestinoDTO){
-        List<Vuelo> vuelos = vueloDao.findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreOrderByHoraSalidaAsc(buscarDestinoDTO.getDestino(),
+        List<Vuelo> vuelos = vueloDao.findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreOrderByHoraSalidaAsc(
+                buscarDestinoDTO.getDestino(),
                 buscarDestinoDTO.getOrigen());
         return getDuracionFromVuelosList(buscarDestinoDTO.getFechaIda(), vuelos);
     }
-
+    /**
+     * Este metodo recibe por parametro un DTO del formulario de destinos y hace una busqueda de vuelos
+     * usando la ciudad de ida y de vuelta al reves de como se configura en el formulario. posteriormente calcula la duracion
+     * de cada vuelo y devuelve el listado al controlador.
+     * @param buscarDestinoDTO
+     * @return
+     */
     @Override
     public List<Vuelo> getVuelosVueltaFromForm(BuscarDestinoDTO buscarDestinoDTO){
-        List<Vuelo> vuelos =  vueloDao.findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreOrderByHoraSalidaAsc(buscarDestinoDTO.getOrigen(),
+        List<Vuelo> vuelos =  vueloDao.findAllByAeropuertoLlegada_Ciudad_NombreAndAeropuertoSalida_Ciudad_NombreOrderByHoraSalidaAsc(
+                buscarDestinoDTO.getOrigen(),
                 buscarDestinoDTO.getDestino());
         return getDuracionFromVuelosList(buscarDestinoDTO.getFechaVuelta(), vuelos);
     }
 
+    /**
+     * Recibe por parametro la fecha del vuelo y el listado de vuelos recuperado de base de datos. Calcula la duracion
+     * del vuelo usando objetos localtime de java8. Setea la duracion y crea un listado nuevo con los vuelos completos
+     * @param fecha
+     * @param vuelos
+     * @return
+     */
     private List<Vuelo> getDuracionFromVuelosList(String fecha, List<Vuelo> vuelos){
         List<Vuelo> vuelosWithDuracion = new ArrayList<>();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
