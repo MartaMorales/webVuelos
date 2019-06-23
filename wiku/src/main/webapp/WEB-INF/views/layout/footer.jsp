@@ -29,6 +29,6 @@
     </div>
     <div class="footer-copyright">
         <div class="container center-align">
-            © 2014 Wiku Airlines - Marta Morales Feito
+            © 2019 Wiku Airlines - Marta Morales Feito
         </div>
     </div>

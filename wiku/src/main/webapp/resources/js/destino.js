@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $('.nav_wiku li').removeClass('active');
+    $('#destiny-option').addClass('active');
+
     M.AutoInit();
     $('.datepicker').datepicker({
         autoClose: true,

@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $('.nav_wiku li').removeClass('active');
+    $('#home-option').addClass('active');
+
     M.AutoInit();
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,

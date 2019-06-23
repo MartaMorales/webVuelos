@@ -9,12 +9,12 @@
         <a href="${pageContext.request.contextPath}/home" class="brand-logo"><img class="wiku-logo-header"
         src="${pageContext.request.contextPath}/resources/img/logos/wiku_side_title_blank.png"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-        <li class="active"><a href="${pageContext.request.contextPath}/home">Inicio</a></li>
-        <li><a href="${pageContext.request.contextPath}/destinos">Destinos</a></li>
-        <li><a href="Gestion?action=Mis_Viajes">Mis viajes</a></li>
-        <li><a href="Gestion?action=Contacto">Contacto</a></li>
-        <li><div class="row">
+        <ul class="nav-wiku right hide-on-med-and-down">
+        <li id="home-option"><a href="${pageContext.request.contextPath}/home">Inicio</a></li>
+        <li id="destiny-option"><a href="${pageContext.request.contextPath}/destinos">Destinos</a></li>
+        <li id="jouney-option"><a href="Gestion?action=Mis_Viajes">Mis viajes</a></li>
+        <li id="contact-option"><a href="Gestion?action=Contacto">Contacto</a></li>
+        <li id=""><div class="row">
 
         <div class="input-field col s4">
         <button id="submit-button" type="submit" class="btn waves-effect waves-light wiku-button">Login

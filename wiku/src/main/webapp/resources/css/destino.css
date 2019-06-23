@@ -2,9 +2,9 @@
     font-size: 3rem!important;
     margin-left: -1rem;
 }
-.input-field .prefix ~ label {
-    margin-left: 3rem;
-    font-size: 1.6rem;
+
+#submit-button{
+    margin-top: 45%;
 }
 
 h3 {
@@ -52,99 +52,8 @@ h3 {
     color:dodgerblue;
 }
 
-.booking-form .form-group {
-    position: relative;
-    margin-bottom: 0px;
-}
-
-.booking-form > form .row.no-margin {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.booking-form > form .row.no-margin [class*="col-"] {
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
-.booking-form .form-control {
-    background-color: #fff;
-    height: 80px;
-    padding: 25px 20px 0px;
-    border-radius: 0px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #0e2753;
-    border: 1px solid #dddee9;
-    border-bottom: 0px;
-    font-size: 20px;
-    font-weight: 700;
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-}
-
-.booking-form [class*="col-"] + [class*="col-"] .form-group .form-control {
-    border-left: 0px;
-}
-
-.booking-form .form-control::-webkit-input-placeholder {
-    color: #dddee9;
-}
-
-.booking-form .form-control:-ms-input-placeholder {
-    color: #dddee9;
-}
-
-.booking-form .form-control::placeholder {
-    color: #dddee9;
-}
-
-.booking-form .form-control:focus {
-    background: #f9f9f9;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.booking-form input[type="date"].form-control:invalid {
-    color: #dddee9;
-}
-
 .booking-input{
     color:white;
-}
-
-.booking-form select.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.booking-form select.form-control:invalid {
-    color: #dddee9;
-}
-
-.booking-form select.form-control option {
-    color: #0e2753;
-}
-
-.booking-form select.form-control + .select-arrow {
-    position: absolute;
-    right: 0px;
-    bottom: 4px;
-    width: 32px;
-    line-height: 32px;
-    height: 32px;
-    text-align: center;
-    pointer-events: none;
-    color: #dddee9;
-    font-size: 20px;
-}
-
-.booking-form select.form-control + .select-arrow:after {
-    content: '\279C';
-    display: block;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
 .booking-form .form-label {
@@ -180,6 +89,9 @@ h3 {
     border-radius: 0 10px 10px 0;
 }
 
+[type="radio"]:not(:checked), [type="radio"]:checked{
+    position: unset;
+}
 
 @media only screen and (max-width: 767px) {
     .booking-form [class*="col-"] + [class*="col-"] .form-group .form-control {
