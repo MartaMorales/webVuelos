@@ -125,6 +125,13 @@ textarea.materialize-textarea:focus:not([readonly]) {
     font-size: 2.8rem;
 }
 
+.error{
+    font-size: 1.2rem;
+    color: lightcoral;
+    font-weight: bold;
+    margin-top:-10px;
+}
+
 /*Footer*/
 footer {
     display: block;

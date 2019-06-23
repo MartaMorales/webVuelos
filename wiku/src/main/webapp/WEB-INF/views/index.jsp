@@ -29,7 +29,7 @@
                     <div class="col l3  m6  s12 center columnLg3BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons icons prefix">flight_takeoff</i>
-                            <form:input type="text" path="origen" id="origen" cssClass="autocomplete input-browser"/>
+                            <form:input type="text" path="origen" id="origen" cssClass="autocomplete input-browser .right-alert"/>
                             <label for="origen">Origen</label>
                         </div>
 
@@ -37,7 +37,7 @@
                     <div class="col l3  m6  s12 center columnLg3BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons icons prefix">flight_land</i>
-                            <form:input type="text" path="destino" id="destino" cssClass="autocomplete input-browser"/>
+                            <form:input type="text" path="destino" id="destino" cssClass="autocomplete input-browser right-alert"/>
                             <label for="destino">Destino</label>
                         </div>
 
@@ -102,5 +102,6 @@
 </body>
 <script src="${pageContext.request.contextPath}/resources/vendor/js/jquery-3.4.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/vendor/js/materialize.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/jquery.validate.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
 </html>
