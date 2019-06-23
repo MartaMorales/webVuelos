@@ -40,20 +40,19 @@ public class DestinosController {
 
         List<Vuelo> vuelos = vueloService.getVuelosFromForm(buscarDestinoDTO);
         DateUtils format = new DateUtils();
-        LocalDateTime fechaSalida;
-        LocalDateTime fechaLlegada;
+        LocalDateTime fechaIda;
+        LocalDateTime fechaVuelta;
         ChronoLocalDate from;
         ChronoLocalDate to;
 
         for (Vuelo vuelo : vuelos) {
-            String llegada = buscarDestinoDTO.getFechaLLegada()+" "+ vuelo.getHoraLlegada();
-            String salida = buscarDestinoDTO.getFechaSalida() + " " + vuelo.getHoraSalida();
+            String vuelta = buscarDestinoDTO.getFechaVuelta();
+            String ida = buscarDestinoDTO.getFechaIda();
 
-            fechaSalida = format.createDateFromStringWithFormat(salida, "LLL dd, yyyy HH:mm");
-            fechaLlegada = format.createDateFromStringWithFormat(llegada, "LLL dd, yyyy HH:mm");
-            from = ChronoLocalDate.from(fechaSalida);
-            to = ChronoLocalDate.from(fechaLlegada);
-            vuelo.setDuracion(ChronoPeriod.between(from, to));
+            fechaIda = format.createDateFromStringWithFormat(ida, "dd/mm/yyyy");
+            fechaVuelta = format.createDateFromStringWithFormat(vuelta, "dd/mm/yyyy");
+
+            //buscarDestinoDTO.setFechaIda(fechaSalida);
         }
         model.addAttribute(buscarDestinoDTO);
         model.addAttribute("vuelos", vuelos);

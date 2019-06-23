@@ -11,8 +11,8 @@ public class BuscarDestinoDTO implements Serializable {
 
     private String origen;
     private String destino;
-    private String fechaSalida;
-    private String fechaLLegada;
+    private String fechaIda;
+    private String fechaVuelta;
     private Integer adultos;
     private Integer ninos;
 
@@ -32,20 +32,20 @@ public class BuscarDestinoDTO implements Serializable {
         this.destino = destino;
     }
 
-    public String getFechaSalida() {
-        return fechaSalida;
+    public String getFechaIda() {
+        return fechaIda;
     }
 
-    public void setFechaSalida(String fechaSalida) {
-        this.fechaSalida = fechaSalida;
+    public void setFechaIda(String fechaIda) {
+        this.fechaIda = fechaIda;
     }
 
-    public String getFechaLLegada() {
-        return fechaLLegada;
+    public String getFechaVuelta() {
+        return fechaVuelta;
     }
 
-    public void setFechaLLegada(String fechaLLegada) {
-        this.fechaLLegada = fechaLLegada;
+    public void setFechaVuelta(String FechaVuelta) {
+        this.fechaVuelta = FechaVuelta;
     }
 
     public Integer getAdultos() {

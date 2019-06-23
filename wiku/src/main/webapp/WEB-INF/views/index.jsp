@@ -45,15 +45,15 @@
                     <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
-                            <form:input id="salida" path="fechaSalida" type="text" class="datepicker" value=""/>
-                            <label for="salida">Salida</label>
+                            <form:input id="salida" path="fechaIda" type="text" class="datepicker" value=""/>
+                            <label for="salida">Ida</label>
                         </div>
                     </div>
                     <div class="col l2  m6  s12 center columnLg2BuscadorIndex">
                         <div class="input-field">
                             <i class="material-icons prefix icons">event</i>
-                            <form:input id="llegada" path="fechaLLegada" type="text" class="datepicker" value=""/>
-                            <label for="llegada">Llegada</label>
+                            <form:input id="llegada" path="fechaVuelta" type="text" class="datepicker" value=""/>
+                            <label for="llegada">Vuelta</label>
                         </div>
                     </div>
                     <div class="col l2  m12  s12">

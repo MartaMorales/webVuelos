@@ -40,7 +40,7 @@
 
                                     <div class="input-field">
                                         <i class="material-icons prefix icons">event</i>
-                                        <form:input type="text" path="fechaSalida" class="datepicker" id="fechaSalida"
+                                        <form:input type="text" path="fechaIda" class="datepicker" id="fechaSalida"
                                                     value="" placeholder="Salida"/>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                     </div>
                                     <div class="form-group input-field">
                                         <i class="material-icons prefix icons">event</i>
-                                        <form:input type="text" class="datepicker" path="fechaLLegada" id="fechaLlegada"
+                                        <form:input type="text" class="datepicker" path="fechaVuelta" id="fechaLlegada"
                                                     placeholder="Llegada"/>
                                     </div>
                                 </div>
