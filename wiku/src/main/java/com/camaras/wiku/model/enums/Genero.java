@@ -1,12 +1,12 @@
 package com.camaras.wiku.model.enums;
 
-public enum TipoReserva {
-    IDA ("Ida"),
-    VUELTA ("vuelta");
+public enum Genero {
+    HOMBRE ("Sr."),
+    MUJER ("Sra.");
 
     private final String texto;
 
-    TipoReserva(String texto) {
+    Genero(String texto) {
         this.texto = texto;
     }
 

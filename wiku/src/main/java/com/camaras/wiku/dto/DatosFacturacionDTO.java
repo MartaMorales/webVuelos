@@ -1,20 +1,37 @@
 package com.camaras.wiku.dto;
 
+import com.camaras.wiku.model.Pasajero;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
-public class DatosPasajeroDTO implements Serializable {
+public class DatosFacturacionDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    private BuscarDestinoDTO buscarDestinoDTO;
+
+    //Datos de cliente
     private String nombre;
     private String Apellidos;
     private String dni;
     private LocalDateTime fechaNacimiento;
     private String nacionalidad;
     private String telefono;
+    private List<Pasajero> pasajeroList;
+
+
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
+    }
+
+    public BuscarDestinoDTO getBuscarDestinoDTO() {
+        return buscarDestinoDTO;
+    }
+
+    public void setBuscarDestinoDTO(BuscarDestinoDTO buscarDestinoDTO) {
+        this.buscarDestinoDTO = buscarDestinoDTO;
     }
 
     public String getNombre() {
@@ -64,4 +81,13 @@ public class DatosPasajeroDTO implements Serializable {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public List<Pasajero> getPasajeroList() {
+        return pasajeroList;
+    }
+
+    public void setPasajeroList(List<Pasajero> pasajeroList) {
+        this.pasajeroList = pasajeroList;
+    }
+
 }

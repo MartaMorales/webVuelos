@@ -36,6 +36,10 @@ public class DestinosController {
         List<Vuelo> vuelosIda = vueloService.getVuelosIdaFromForm(buscarDestinoDTO);
         List<Vuelo> vuelosVuelta = vueloService.getVuelosVueltaFromForm(buscarDestinoDTO);
 
+        if(!vuelosIda.isEmpty()){
+            buscarDestinoDTO.setVueloIda(vuelosIda.get(0).getId());
+        }
+
         model.addAttribute(buscarDestinoDTO);
         model.addAttribute("inicio", false);
         model.addAttribute("vuelosIda", vuelosIda);

@@ -1,7 +1,11 @@
 package com.camaras.wiku.model;
 
+import com.camaras.wiku.model.enums.Genero;
+import com.camaras.wiku.model.enums.TipoPasajero;
+
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -10,7 +14,13 @@ public class Pasajero {
     private Integer id;
     private String dni;
     private String nombre;
-    private String apellidos;
+    private String apellido1;
+    private String apellido2;
+    private Genero genero;
+    private TipoPasajero tipo;
+    private String telefono;
+    private Date fechaNacimiento;
+    private Pais pais;
     private Collection<PasajeroAsiento> pasajeroAsientos;
     private Collection<PasajeroReserva> pasajeroReservas;
 
@@ -46,14 +56,75 @@ public class Pasajero {
     }
 
     @Basic
-    @Column(name = "apellidos")
-    public String getApellidos() {
-        return apellidos;
+    @Column(name = "apellido1")
+    public String getApellido1() {
+        return apellido1;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellido1(String apellido1) {
+        this.apellido1 = apellido1;
     }
+
+    @Basic
+    @Column(name = "apellido2")
+    public String getApellido2() {
+        return apellido2;
+    }
+
+    public void setApellido2(String apellido2) {
+        this.apellido2 = apellido2;
+    }
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "genero")
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "tipo")
+    public TipoPasajero getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoPasajero tipo) {
+        this.tipo = tipo;
+    }
+
+    @Basic
+    @Column(name = "telefono")
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    @Basic
+    @Column(name = "fecha_nacimiento")
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    @OneToOne
+    @JoinColumn(name = "id_pais", referencedColumnName = "id")
+    public Pais getPais() {
+        return pais;
+    }
+
+    public void setPais(Pais pais) {
+        this.pais = pais;
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -63,12 +134,18 @@ public class Pasajero {
         return Objects.equals(id, pasajero.id) &&
                 Objects.equals(dni, pasajero.dni) &&
                 Objects.equals(nombre, pasajero.nombre) &&
-                Objects.equals(apellidos, pasajero.apellidos);
+                Objects.equals(apellido1, pasajero.apellido1) &&
+                Objects.equals(apellido2, pasajero.apellido2) &&
+                genero == pasajero.genero &&
+                tipo == pasajero.tipo &&
+                Objects.equals(telefono, pasajero.telefono) &&
+                Objects.equals(fechaNacimiento, pasajero.fechaNacimiento) &&
+                Objects.equals(pais, pasajero.pais);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, dni, nombre, apellidos);
+        return Objects.hash(id, dni, nombre, apellido1, apellido2);
     }
 
     @OneToMany(mappedBy = "pasajero")
@@ -89,3 +166,4 @@ public class Pasajero {
         this.pasajeroReservas = pasajeroReservas;
     }
 }
+

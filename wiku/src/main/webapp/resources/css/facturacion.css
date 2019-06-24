@@ -6,6 +6,9 @@ html, body, .block {
     font-size: 1.6rem;
 }
 
+#submit-button{
+    margin-top: 45%;
+}
 
 .pin-top {
     position: relative;

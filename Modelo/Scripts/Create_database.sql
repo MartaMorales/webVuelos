@@ -98,7 +98,13 @@ id int auto_increment not null primary key,
 dni varchar (9),
 nombre varchar (20),
 apellido1 varchar (20),
-apellido2 varchar (20)
+apellido2 varchar (20),
+genero varchar(20),
+telefono varchar(12),
+fecha_nacimiento Date,
+tipo varchar(10),
+id_pais int,
+FOREIGN KEY (id_pais) REFERENCES  pais(id)
 );
 
 create table if not exists pasajero_reserva(
