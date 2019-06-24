@@ -17,6 +17,7 @@ public class Vuelo {
     private Avion avion;
     private Oferta oferta;
     private String duracion;
+    private Double precio;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -120,4 +121,15 @@ public class Vuelo {
     public void setDuracion(String duracion) {
         this.duracion = duracion;
     }
+
+    @Transient
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
 }
+
+

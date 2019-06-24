@@ -71,6 +71,7 @@ public class VueloServiceImpl implements VueloService {
             vuelo.setDuracion(TimeUnit.SECONDS.toHours(seconds)+" horas y "+
                     (TimeUnit.SECONDS.toMinutes(seconds) - (TimeUnit.SECONDS.toHours(seconds)* 60))+" minutos.");
             vuelosWithDuracion.add(vuelo);
+            vuelo.setPrecio(200D);
         }
         return vuelosWithDuracion;
     }
