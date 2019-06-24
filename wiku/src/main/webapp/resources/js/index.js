@@ -50,10 +50,13 @@ function validateForm(){
     $("#index-form").validate({
         rules: {
             origen: {
-                required: true
+                required: true,
+                origenNotEqualsDestino: true
             },
             destino: {
-                required: true
+                required: true,
+                origenNotEqualsDestino: true
+
             },
             fechaSalida: {
                 required: true,
@@ -83,5 +86,15 @@ function validateForm(){
             return llegada > salida;
         },
         "La fecha de ida no puede ser mayor que la de vuelta."
+    );
+
+    $.validator.addMethod(
+        "origenNotEqualsDestino",
+        function() {
+            var origen = $("#origen").val();
+            var destino = $("#destino").val();
+            return origen !== destino;
+        },
+        "El origen y el destino no pueden ser el mismo."
     );
 }

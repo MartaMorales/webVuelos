@@ -36,7 +36,7 @@
                                     <div class="input-field">
                                         <i class="material-icons icons prefix">flight_takeoff</i>
                                         <form:input type="text" path="origen" id="origen"
-                                                    cssClass="booking-input validate"/>
+                                                    cssClass="booking-input"/>
                                         <label for="origen">Origen</label>
                                     </div>
 
@@ -44,21 +44,21 @@
                                         <i class="material-icons prefix icons">event</i>
                                         <form:input type="text" path="fechaIda" cssClass="booking-input datepicker"
                                                     id="fechaSalida"
-                                                    value="" placeholder="Salida"/>
+                                                    value="" placeholder="Ida"/>
                                     </div>
                                 </div>
                                 <div class="col s6">
                                     <div class="form-group input-field">
                                         <i class="material-icons icons prefix">flight_land</i>
                                         <form:input type="text" id="destino" path="destino"
-                                                    cssClass=" booking-input validate"/>
-                                        <label for="origen">Destino</label>
+                                                    cssClass=" booking-input"/>
+                                        <label for="destino">Destino</label>
                                     </div>
                                     <div class="form-group input-field">
                                         <i class="material-icons prefix icons">event</i>
                                         <form:input type="text" cssClass="booking-input datepicker" path="fechaVuelta"
                                                     id="fechaLlegada"
-                                                    placeholder="Llegada"/>
+                                                    placeholder="Vuelta"/>
                                     </div>
                                 </div>
                             </div>
@@ -67,16 +67,9 @@
                                     <div class="form-group input-field">
                                         <span class="form-label">Adultos (18+)</span>
                                         <form:select path="adultos" id="adultos" class="booking-input form-control">
-                                            <option class="booking-input" value="1">1</option>
-                                            <option class="booking-input" value="2">2</option>
-                                            <option class="booking-input" value="3">3</option>
-                                            <option class="booking-input" value="4">4</option>
-                                            <option class="booking-input" value="5">5</option>
-                                            <option class="booking-input" value="6">6</option>
-                                            <option class="booking-input" value="7">7</option>
-                                            <option class="booking-input" value="8">8</option>
-                                            <option class="booking-input" value="9">9</option>
-                                            <option class="booking-input" value="10">10</option>
+                                            <c:forEach begin="1" end="10" var="i">
+                                                <option class="booking-input" value="${i}">${i}</option>
+                                            </c:forEach>
                                         </form:select>
                                         <span class="select-arrow"></span>
                                     </div>
@@ -85,17 +78,9 @@
                                     <div class="form-group input-field">
                                         <span class="form-label">Niños (0-17)</span>
                                         <form:select id="ninos" path="ninos" class="booking-input form-control">
-                                            <option class="booking-input" value="0">0</option>
-                                            <option class="booking-input" value="1">1</option>
-                                            <option class="booking-input" value="2">2</option>
-                                            <option class="booking-input" value="3">3</option>
-                                            <option class="booking-input" value="4">4</option>
-                                            <option class="booking-input" value="5">5</option>
-                                            <option class="booking-input" value="6">6</option>
-                                            <option class="booking-input" value="7">7</option>
-                                            <option class="booking-input" value="8">8</option>
-                                            <option class="booking-input" value="9">9</option>
-                                            <option class="booking-input" value="10">10</option>
+                                            <c:forEach begin="1" end="10" var="i">
+                                                <option class="booking-input" value="${i}">${i}</option>
+                                            </c:forEach>
                                         </form:select>
                                         <span class="select-arrow"></span>
                                     </div>
@@ -112,22 +97,30 @@
                 </div>
             </div>
         </div>
-        <c:if test="${empty vuelosIda}">
+    <c:if test="${empty vuelosIda}">
+        <c:if test="${inicio}">
             <div class="container">
-                <h3>¡Busca vuelos a precios muy ecónomicos con Wiku!</h3>
-                <p>Atrévete a buscar las mejores ciudades y lánzate a encontrar los mejores vuelos cualquier destino que
-                    puedas imaginar.
-                    Disponemos de una gran variedad de horarios y aviones en los que podrás viajar como nunca antes lo
-                    has hecho. Tan solo
-                    tienes que introducir la ciudad de la que vas a partir, la ciudad que deseas visitar y las fechas de
-                    tu inesperado
+                <h2>¡Busca vuelos a precios muy ecónomicos con Wiku!</h2>
+                <p>Atrévete a buscar las mejores ciudades y lánzate a encontrar los mejores vuelos cualquier destino que puedas imaginar.
+                    Disponemos de una gran variedad de horarios y aviones en los que podrás viajar como nunca antes lo has hecho. Tan solo
+                    tienes que introducir la ciudad de la que vas a partir, la ciudad que deseas visitar y las fechas de tu inesperado
                     y maravilloso viaje.<br/><br/>
-                    Si lo que buscas son ofertas únicas sin importar el destino y deseando vivir aventuras e ir a lo
-                    loco en nuestra
-                    <a href="${pageContext.request.contextPath}/home">página de bienvenida</a> tenemos un apartado con
-                    los mejores descuentos. </p></div>
+                    Si lo que buscas son ofertas únicas sin importar el destino y deseando vivir aventuras e ir a lo loco en nuestra
+                    <a href="${pageContext.request.contextPath}/home">página de bienvenida</a> tenemos un apartado con los mejores descuentos. </p>
+            </div>
         </c:if>
-        <div id="resultado" class="row">
+        <c:if test="${not inicio}">
+            <div class="container">
+                <h2>¡Lo sentimos!<i class="material-icons">mood_bad</i></h2>
+                <p>No hemos encontrato un viaje con origen en <c:out value="${buscarDestinoDTO.origen}"/> y destino <c:out value="${buscarDestinoDTO.destino}"/>
+                    para las fechas <c:out value="${buscarDestinoDTO.fechaIda}"/> y <c:out value="${buscarDestinoDTO.fechaVuelta}"/>. Te animamos a que busques
+                    en otras fechas, otros destino o que te acerces por nuestra web en otro momento.<br/><br/>
+                    Si lo que buscas son ofertas únicas sin importar el destino y deseando vivir aventuras e ir a lo loco en nuestra
+                    <a href="${pageContext.request.contextPath}/home">página de bienvenida</a> tenemos un apartado con los mejores descuentos. </p>
+            </div>
+        </c:if>
+    </c:if>
+    <div id="resultado" class="row">
         <c:if test="${not empty vuelosIda}">
             <div class="col l6 m12 s12">
                 <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.destino}</span>
@@ -250,12 +243,11 @@
                     </c:forEach>
                 </div>
             </div>
+            <div class="container margin-auto row">
+                <button onclick="submitToBuy()" class="comprar-button btn-large waves-effect waves-light wiku-button"><i class="comprar-icon material-icons right">mood</i>Reservar</button>
+            </div>
         </c:if>
-        </div>
-        <div class="container row">
-            <button onclick="submitToBuy()" class="comprar-button btn waves-effect waves-light wiku-button">Comprar
-            </button>
-        </div>
+    </div>
     </form:form>
 </main>
 <footer class="page-footer">
@@ -264,5 +256,7 @@
 </body>
 <script src="${pageContext.request.contextPath}/resources/vendor/js/jquery-3.4.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/vendor/js/materialize.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/jquery.validate.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/vendor/js/date.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/destino.js"></script>
 </html>
