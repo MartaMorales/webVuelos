@@ -112,64 +112,87 @@
                 </div>
             </div>
         </div>
-    <c:if test="${empty vuelosIda}">
-        <div class="container">
-            <h3>¡Busca vuelos a precios muy ecónomicos con Wiku!</h3>
-            <p>Atrévete a buscar las mejores ciudades y lánzate a encontrar los mejores vuelos cualquier destino que puedas imaginar.
-                Disponemos de una gran variedad de horarios y aviones en los que podrás viajar como nunca antes lo has hecho. Tan solo
-                tienes que introducir la ciudad de la que vas a partir, la ciudad que deseas visitar y las fechas de tu inesperado
-                y maravilloso viaje.<br/><br/>
-                Si lo que buscas son ofertas únicas sin importar el destino y deseando vivir aventuras e ir a lo loco en nuestra
-                <a href="${pageContext.request.contextPath}/home">página de bienvenida</a> tenemos un apartado con los mejores descuentos. </p>        </div>
-    </c:if>
-    <div id="resultado" class="row">
+        <c:if test="${empty vuelosIda}">
+            <div class="container">
+                <h3>¡Busca vuelos a precios muy ecónomicos con Wiku!</h3>
+                <p>Atrévete a buscar las mejores ciudades y lánzate a encontrar los mejores vuelos cualquier destino que
+                    puedas imaginar.
+                    Disponemos de una gran variedad de horarios y aviones en los que podrás viajar como nunca antes lo
+                    has hecho. Tan solo
+                    tienes que introducir la ciudad de la que vas a partir, la ciudad que deseas visitar y las fechas de
+                    tu inesperado
+                    y maravilloso viaje.<br/><br/>
+                    Si lo que buscas son ofertas únicas sin importar el destino y deseando vivir aventuras e ir a lo
+                    loco en nuestra
+                    <a href="${pageContext.request.contextPath}/home">página de bienvenida</a> tenemos un apartado con
+                    los mejores descuentos. </p></div>
+        </c:if>
+        <div id="resultado" class="row">
         <c:if test="${not empty vuelosIda}">
             <div class="col l6 m12 s12">
-                <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.destino}</span> desde <span class="span-tittle">${buscarDestinoDTO.origen}</span> </h3>
+                <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.destino}</span>
+                    desde <span class="span-tittle">${buscarDestinoDTO.origen}</span></h3>
                 <div class="container vuelos-container">
                     <c:forEach items="${vuelosIda}" var="vuelo">
-                        <div class='row target'>
-                            <div class='col l1'></div>
-                            <div class='col l10 border'>
-                                <div class="row">
-                                    <div class="col l1"></div>
-                                    <div class="col l10 vuelo-tittle">
-                                        <h5>Vuelo de ida desde: <span class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
-                                        <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span></h5>
-                                    </div>
-                                    <div class="col l1"></div>
+                    <div class='row target'>
+                        <div class='col l1'></div>
+                        <div class='col l10 border'>
+                            <div class="row">
+                                <div class="col l1"></div>
+                                <div class="col l10 vuelo-tittle">
+                                    <h5>Vuelo de ida desde: <span
+                                            class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
+                                    <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span>
+                                    </h5>
                                 </div>
-                                <div class='row'>
-                                    <div class='col l1'>
-                                        <label>
-                                            <form:radiobutton class="with-gap" path="vueloIda" value="${vuelo.id}"/>
-                                            <span> </span>
-                                        </label>
-                                    </div>
-                                    <div class='col l1'>
-                                        <i class='material-icons icons prefix'>flight_takeoff</i>
-                                    </div>
-                                    <div class='col l3'>
-                                        <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
-                                    </div>
-                                    <div class='col l3'>
-                                        <p>directo</p>
-                                    </div>
-                                    <div class='col l3'>
-                                        <p>Duración: ${vuelo.duracion} </p>
-                                    </div>
-                                    <div class='col l1'></div>
-                                </div>
+                                <div class="col l1"></div>
                             </div>
-                            <div class='col l1'></div>
+                            <div class='row'>
+                                <div class='col l1'>
+                                    <label>
+                                        <form:radiobutton class="with-gap" path="vueloIda" value="${vuelo.id}"/>
+                                        <span> </span>
+                                    </label>
+                                </div>
+                                <div class='col l1'>
+                                    <i class='material-icons icons prefix'>flight_takeoff</i>
+                                </div>
+                                <div class='col l3'>
+                                    <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
+                                </div>
+                                <div class='col l3'>
+                                    <p>directo</p>
+                                </div>
+                                <div class='col l3'>
+                                    <p>Duración: ${vuelo.duracion} </p>
+                                </div>
+                                <div class='col l1'></div>
+                            </div>
+                            <div class="row">
+                                <div class="col l1"></div>
+                                <div class="col l10">
+                                    <h5>Precio:
+                                        <c:if test="${vuelo.precio eq vuelo.oferta.precio}">
+                                            <span class="span-tittle"><c:out value="${vuelo.oferta.precio}"/></span>
+                                        </c:if>
+                                        <c:if test="${vuelo.precio ne vuelo.oferta.precio}">
+                                            <span class="span-tittle"><c:out value="${vuelo.precio}"/></span>
+                                        </c:if>
+                                    </h5>
+                                </div>
+                                <div class="col l1"></div>
+                            </div>
                         </div>
+                        <div class='col l1'></div>
+                    </div>
                     </c:forEach>
                 </div>
             </div>
         </c:if>
         <c:if test="${not empty vuelosVuelta}">
             <div class="col l6 m12 s12">
-                <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.origen}</span> desde <span class="span-tittle">${buscarDestinoDTO.destino}</span> </h3>
+                <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.origen}</span>
+                    desde <span class="span-tittle">${buscarDestinoDTO.destino}</span></h3>
                 <div class="container vuelos-container">
                     <c:forEach items="${vuelosVuelta}" var="vuelo">
                         <div class='row target'>
@@ -178,20 +201,23 @@
                                 <div class="row">
                                     <div class="col l1"></div>
                                     <div class="col l10 vuelo-tittle">
-                                        <h5>Vuelo de ida desde: <span class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
-                                        <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span></h5>
+                                        <h5>Vuelo de ida desde: <span
+                                                class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
+                                        <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span>
+                                        </h5>
                                     </div>
                                     <div class="col l1"></div>
                                 </div>
                                 <div class='row'>
                                     <div class='col l1'>
                                         <label>
-                                            <form:radiobutton class="with-gap" path="vueloVuelta" value="${vuelo.id}"/>
+                                            <form:radiobutton class="with-gap" path="vueloVuelta"
+                                                              value="${vuelo.id}"/>
                                             <span> </span>
                                         </label>
                                     </div>
                                     <div class='col l1'>
-                                        <i class='material-icons icons prefix'>flight_takeoff</i>
+                                        <i class='material-icons icons prefix'>flight_land</i>
                                     </div>
                                     <div class='col l3'>
                                         <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
@@ -204,6 +230,20 @@
                                     </div>
                                     <div class='col l1'></div>
                                 </div>
+                                <div class="row">
+                                    <div class="col l1"></div>
+                                    <div class="col l10">
+                                        <h5>Precio:
+                                            <c:if test="${vuelo.precio eq vuelo.oferta.precio}">
+                                                <span class="span-tittle"><c:out value="${vuelo.oferta.precio}"/></span>
+                                            </c:if>
+                                            <c:if test="${vuelo.precio ne vuelo.oferta.precio}">
+                                                <span class="span-tittle"><c:out value="${vuelo.precio}"/></span>
+                                            </c:if>
+                                        </h5>
+                                    </div>
+                                    <div class="col l1"></div>
+                                </div>
                             </div>
                             <div class='col l1'></div>
                         </div>
@@ -211,10 +251,11 @@
                 </div>
             </div>
         </c:if>
-    </div>
-    <div class="container row">
-       <button onclick="submitToBuy()" class="comprar-button btn waves-effect waves-light wiku-button">Comprar</button>
-    </div>
+        </div>
+        <div class="container row">
+            <button onclick="submitToBuy()" class="comprar-button btn waves-effect waves-light wiku-button">Comprar
+            </button>
+        </div>
     </form:form>
 </main>
 <footer class="page-footer">
