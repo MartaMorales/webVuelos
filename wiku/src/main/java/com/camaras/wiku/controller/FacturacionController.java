@@ -2,8 +2,6 @@ package com.camaras.wiku.controller;
 
 import com.camaras.wiku.dto.BuscarDestinoDTO;
 import com.camaras.wiku.dto.DatosPasajeroDTO;
-import com.camaras.wiku.model.Pasajero;
-import com.camaras.wiku.model.Vuelo;
 import com.camaras.wiku.service.PaisService;
 import com.camaras.wiku.service.PasajeroService;
 import org.slf4j.Logger;
@@ -16,23 +14,18 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.List;
-
 @Controller
 @RequestMapping("/facturacion")
-public class PasajeroController {
-    private static final Logger logger = LoggerFactory.getLogger(PasajeroController.class);
+public class FacturacionController {
+    private static final Logger logger = LoggerFactory.getLogger(FacturacionController.class);
     @Autowired
     PasajeroService pasajeroService;
     @Autowired
     PaisService paisService;
 
-    @GetMapping("")
-    public String facturacion(Model model) {
-        logger.debug("Executing pasajeros() method via Get");
-
-        model.addAttribute("paises",paisService.getAllNamePaises());
-        model.addAttribute("datosPasajeroDTO", new DatosPasajeroDTO() );
+    @PostMapping("/formulario-reserva")
+    public String goFacturacionForm(@ModelAttribute("buscarDestinoDTO") BuscarDestinoDTO buscarDestinoDTO, Model model) {
+        logger.debug("Executing goFacturacionForm() method via Post");
 
         return "facturacion";
     }

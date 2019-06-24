@@ -1,11 +1,9 @@
 package com.camaras.wiku.controller;
 
 import com.camaras.wiku.dto.BuscarDestinoDTO;
-import com.camaras.wiku.model.Ciudad;
 import com.camaras.wiku.model.Oferta;
 import com.camaras.wiku.service.CiudadService;
 import com.camaras.wiku.service.OfertaService;
-import javafx.beans.binding.ObjectExpression;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

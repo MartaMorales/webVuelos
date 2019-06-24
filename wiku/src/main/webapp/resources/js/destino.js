@@ -19,3 +19,9 @@ $(document).ready(function(){
     });
 });
 
+function submitToBuy(){
+    const form = $('#destinos-form');
+    form.prop('action', '/wikuairlines/facturacion/formulario-reserva/');
+    form.submit();
+}
+

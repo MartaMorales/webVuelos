@@ -21,7 +21,7 @@
 </header>
 
 <main>
-    <form:form action="${pageContext.request.contextPath}/destinos/buscar"
+    <form:form id="destinos-form" action="${pageContext.request.contextPath}/destinos/buscar"
                modelAttribute="buscarDestinoDTO" method="POST">
         <div id="booking" class="section">
             <img class="image-background" src="${pageContext.request.contextPath}/resources/img/cities/paris.jpeg"
@@ -122,50 +122,99 @@
                 Si lo que buscas son ofertas únicas sin importar el destino y deseando vivir aventuras e ir a lo loco en nuestra
                 <a href="${pageContext.request.contextPath}/home">página de bienvenida</a> tenemos un apartado con los mejores descuentos. </p>        </div>
     </c:if>
-    <c:if test="${not empty vuelosIda}">
-        <div id="resultado">
-            <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.destino}</span> desde <span class="span-tittle">${buscarDestinoDTO.origen}</span> </h3>
-            <div class="container vuelos-container">
-                <c:forEach items="${vuelosIda}" var="vuelo">
-                    <div class='row target'>
-                        <div class='col l1'></div>
-                        <div class='col l10 border'>
-                            <div class="row">
-                                <div class="col l1"></div>
-                                <div class="col l10 vuelo-tittle">
-                                    <h5>Vuelo de ida desde: <span class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
-                                    <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span></h5>
+    <div id="resultado" class="row">
+        <c:if test="${not empty vuelosIda}">
+            <div class="col l6 m12 s12">
+                <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.destino}</span> desde <span class="span-tittle">${buscarDestinoDTO.origen}</span> </h3>
+                <div class="container vuelos-container">
+                    <c:forEach items="${vuelosIda}" var="vuelo">
+                        <div class='row target'>
+                            <div class='col l1'></div>
+                            <div class='col l10 border'>
+                                <div class="row">
+                                    <div class="col l1"></div>
+                                    <div class="col l10 vuelo-tittle">
+                                        <h5>Vuelo de ida desde: <span class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
+                                        <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span></h5>
+                                    </div>
+                                    <div class="col l1"></div>
                                 </div>
-                                <div class="col l1"></div>
+                                <div class='row'>
+                                    <div class='col l1'>
+                                        <label>
+                                            <form:radiobutton class="with-gap" path="vueloIda" value="${vuelo.id}"/>
+                                            <span> </span>
+                                        </label>
+                                    </div>
+                                    <div class='col l1'>
+                                        <i class='material-icons icons prefix'>flight_takeoff</i>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>directo</p>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>Duración: ${vuelo.duracion} </p>
+                                    </div>
+                                    <div class='col l1'></div>
+                                </div>
                             </div>
-                            <div class='row'>
-                                <div class='col l1'>
-                                    <label>
-                                        <form:radiobutton class="with-gap" path="vueloIda" value="${vuelo.id}"/>
-                                        <span> </span>
-                                    </label>
-                                </div>
-                                <div class='col l1'>
-                                    <i class='material-icons icons prefix'>flight_takeoff</i>
-                                </div>
-                                <div class='col l3'>
-                                    <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
-                                </div>
-                                <div class='col l3'>
-                                    <p>directo</p>
-                                </div>
-                                <div class='col l3'>
-                                    <p>Duración: ${vuelo.duracion} </p>
-                                </div>
-                                <div class='col l1'></div>
-                            </div>
+                            <div class='col l1'></div>
                         </div>
-                        <div class='col l1'></div>
-                    </div>
-                </c:forEach>
+                    </c:forEach>
+                </div>
             </div>
-        </div>
-    </c:if>
+        </c:if>
+        <c:if test="${not empty vuelosVuelta}">
+            <div class="col l6 m12 s12">
+                <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.origen}</span> desde <span class="span-tittle">${buscarDestinoDTO.destino}</span> </h3>
+                <div class="container vuelos-container">
+                    <c:forEach items="${vuelosVuelta}" var="vuelo">
+                        <div class='row target'>
+                            <div class='col l1'></div>
+                            <div class='col l10 border'>
+                                <div class="row">
+                                    <div class="col l1"></div>
+                                    <div class="col l10 vuelo-tittle">
+                                        <h5>Vuelo de ida desde: <span class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
+                                        <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span></h5>
+                                    </div>
+                                    <div class="col l1"></div>
+                                </div>
+                                <div class='row'>
+                                    <div class='col l1'>
+                                        <label>
+                                            <form:radiobutton class="with-gap" path="vueloVuelta" value="${vuelo.id}"/>
+                                            <span> </span>
+                                        </label>
+                                    </div>
+                                    <div class='col l1'>
+                                        <i class='material-icons icons prefix'>flight_takeoff</i>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>${vuelo.horaSalida}-${vuelo.horaLlegada}</p>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>directo</p>
+                                    </div>
+                                    <div class='col l3'>
+                                        <p>Duración: ${vuelo.duracion} </p>
+                                    </div>
+                                    <div class='col l1'></div>
+                                </div>
+                            </div>
+                            <div class='col l1'></div>
+                        </div>
+                    </c:forEach>
+                </div>
+            </div>
+        </c:if>
+    </div>
+    <div class="container row">
+       <button onclick="submitToBuy()" class="comprar-button btn waves-effect waves-light wiku-button">Comprar</button>
+    </div>
     </form:form>
 </main>
 <footer class="page-footer">

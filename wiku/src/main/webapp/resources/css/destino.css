@@ -34,11 +34,17 @@ h3 {
     transform: translateY(-50%);
 }
 
+#resultado{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .vuelos-container{
     height: 65rem;
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding: 0 5% 0 5%;
 }
 
 #booking {
