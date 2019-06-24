@@ -131,6 +131,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
     font-weight: bold;
     margin-top:-10px;
 }
+.margin-auto{
+    margin: 0 auto;
+    text-align: center;
+}
 
 /*Footer*/
 footer {

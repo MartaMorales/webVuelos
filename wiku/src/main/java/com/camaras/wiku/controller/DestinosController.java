@@ -25,6 +25,7 @@ public class DestinosController {
     public String destinos(Model model) {
         logger.debug("Executing destinos() method via Get");
         model.addAttribute("buscarDestinoDTO", new BuscarDestinoDTO());
+        model.addAttribute("inicio", true);
         return "destinos";
     }
 
@@ -36,6 +37,7 @@ public class DestinosController {
         List<Vuelo> vuelosVuelta = vueloService.getVuelosVueltaFromForm(buscarDestinoDTO);
 
         model.addAttribute(buscarDestinoDTO);
+        model.addAttribute("inicio", false);
         model.addAttribute("vuelosIda", vuelosIda);
         model.addAttribute("vuelosVuelta", vuelosVuelta);
 
