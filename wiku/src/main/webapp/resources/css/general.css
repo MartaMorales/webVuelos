@@ -26,13 +26,13 @@ body {
 }
 
 main {
-    margin-top:8.5rem;
+    margin-top: 2rem;
     height:inherit;
 }
 
 header{
     z-index: 100;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 

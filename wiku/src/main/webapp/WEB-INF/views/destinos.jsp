@@ -36,7 +36,7 @@
                                     <div class="input-field">
                                         <i class="material-icons icons prefix">flight_takeoff</i>
                                         <form:input type="text" path="origen" id="origen"
-                                                    cssClass="booking-input"/>
+                                                    cssClass="booking-input autocomplete"/>
                                         <label for="origen">Origen</label>
                                     </div>
 
@@ -51,7 +51,7 @@
                                     <div class="form-group input-field">
                                         <i class="material-icons icons prefix">flight_land</i>
                                         <form:input type="text" id="destino" path="destino"
-                                                    cssClass=" booking-input"/>
+                                                    cssClass="autocomplete booking-input"/>
                                         <label for="destino">Destino</label>
                                     </div>
                                     <div class="form-group input-field">
@@ -129,14 +129,39 @@
                 </div>
             </c:if>
         </c:if>
-        <div id="resultado" class="row">
-            <c:if test="${not empty vuelosIda}">
-                <div class="col l6 m12 s12">
-                    <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.destino}</span>
-                        desde <span class="span-tittle">${buscarDestinoDTO.origen}</span></h3>
-                    <div class="container vuelos-container">
-                        <c:forEach items="${vuelosIda}" var="vuelo">
-                            <div class='row target'>
+        <c:if test="${not inicio}">
+            <div class="container">
+                <h2>¡Lo sentimos!<i class="material-icons">mood_bad</i></h2>
+                <p>No hemos encontrato un viaje con origen en <c:out value="${buscarDestinoDTO.origen}"/> y destino <c:out value="${buscarDestinoDTO.destino}"/>
+                    para las fechas <c:out value="${buscarDestinoDTO.fechaIda}"/> y <c:out value="${buscarDestinoDTO.fechaVuelta}"/>. Revisa que los nombres de
+                    las ciudades son correctos y te animamos a que lo vuelvas a intentar o busques en otras fechas, otros destinos o que te acerces por
+                    nuestra web en otro momento. <br/><br/>
+                    Si lo que buscas son ofertas únicas sin importar el destino y deseando vivir aventuras e ir a lo loco en nuestra
+                    <a href="${pageContext.request.contextPath}/home">página de bienvenida</a> tenemos un apartado con los mejores descuentos. </p>
+            </div>
+        </c:if>
+    </c:if>
+    <div id="resultado" class="row">
+        <c:if test="${not empty vuelosIda}">
+            <div class="col l6 m12 s12">
+                <h3>Aquí tienes los siguientes vuelos a <span class="span-tittle">${buscarDestinoDTO.destino}</span>
+                    desde <span class="span-tittle">${buscarDestinoDTO.origen}</span></h3>
+                <div class="container vuelos-container">
+                    <c:forEach items="${vuelosIda}" var="vuelo">
+                    <div class='row target'>
+                        <div class='col l1'></div>
+                        <div class='col l10 border'>
+                            <div class="row">
+                                <div class="col l1"></div>
+                                <div class="col l10 vuelo-tittle">
+                                    <h5>Vuelo de ida desde: <span
+                                            class="span-tittle">${vuelo.aeropuertoSalida.nombre}</span></h5>
+                                    <h5>a: <span class="span-tittle">${vuelo.aeropuertoLlegada.nombre}</span>
+                                    </h5>
+                                </div>
+                                <div class="col l1"></div>
+                            </div>
+                            <div class='row'>
                                 <div class='col l1'>
                                 </div>
                                 <div class='col l10 border'>

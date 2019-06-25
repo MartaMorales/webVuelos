@@ -3,7 +3,6 @@ package com.camaras.wiku.dto;
 import com.camaras.wiku.model.Pasajero;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.List;
 
 public class DatosFacturacionDTO implements Serializable {
@@ -11,19 +10,44 @@ public class DatosFacturacionDTO implements Serializable {
 
     private BuscarDestinoDTO buscarDestinoDTO;
 
+    //Datos de la reserva
+    private Double precioTotal;
+
     //Datos de cliente
     private String nombre;
-    private String Apellidos;
+    private String apellido1;
+    private String apellido2;
     private String dni;
-    private LocalDateTime fechaNacimiento;
+    private String email;
+    private String calle;
+    private Integer numero;
+    private Integer piso;
+    private String puerta;
+    private Integer codigoPostal;
+    private String localidad;
+    private String provincia;
+    private String fechaNacimiento;
     private String nacionalidad;
     private String telefono;
+
+    //Datos Facturacion
+
+
+    //Datos de pasarejos
     private List<Pasajero> pasajeroList;
 
 
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
+    }
+
+    public Double getPrecioTotal() {
+        return precioTotal;
+    }
+
+    public void setPrecioTotal(Double precioTotal) {
+        this.precioTotal = precioTotal;
     }
 
     public BuscarDestinoDTO getBuscarDestinoDTO() {
@@ -42,12 +66,20 @@ public class DatosFacturacionDTO implements Serializable {
         this.nombre = nombre;
     }
 
-    public String getApellidos() {
-        return Apellidos;
+    public String getApellido1() {
+        return apellido1;
     }
 
-    public void setApellidos(String apellidos) {
-        Apellidos = apellidos;
+    public void setApellido1(String apellido1) {
+        this.apellido1 = apellido1;
+    }
+
+    public String getApellido2() {
+        return apellido2;
+    }
+
+    public void setApellido2(String apellido2) {
+        this.apellido2 = apellido2;
     }
 
     public String getDni() {
@@ -58,11 +90,75 @@ public class DatosFacturacionDTO implements Serializable {
         this.dni = dni;
     }
 
-    public LocalDateTime getFechaNacimiento() {
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCalle() {
+        return calle;
+    }
+
+    public void setCalle(String calle) {
+        this.calle = calle;
+    }
+
+    public Integer getNumero() {
+        return numero;
+    }
+
+    public void setNumero(Integer numero) {
+        this.numero = numero;
+    }
+
+    public Integer getPiso() {
+        return piso;
+    }
+
+    public void setPiso(Integer piso) {
+        this.piso = piso;
+    }
+
+    public String getPuerta() {
+        return puerta;
+    }
+
+    public void setPuerta(String puerta) {
+        this.puerta = puerta;
+    }
+
+    public Integer getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public void setCodigoPostal(Integer codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
+
+    public String getLocalidad() {
+        return localidad;
+    }
+
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    public String getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(LocalDateTime fechaNacimiento) {
+    public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 

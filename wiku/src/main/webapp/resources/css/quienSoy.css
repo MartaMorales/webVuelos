@@ -1,0 +1,34 @@
+.wiku-title{
+    color:#FAD561;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 0 dodgerblue;
+    font-size: 10rem;
+}
+
+.wiku-title-small{
+    color:#FAD561;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 0 dodgerblue;
+    font-size: 8rem;
+}
+
+.wiku-text-title{
+    text-shadow: 2px 2px 0 #393e46;
+}
+
+.wiku-quiensoy-img{
+    width: 25rem;
+    border: 1rem solid dodgerblue;
+    border-radius: 50%;
+}
+
+.img-container{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+p{
+    text-align: center;
+}

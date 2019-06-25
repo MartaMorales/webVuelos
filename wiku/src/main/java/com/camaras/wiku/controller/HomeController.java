@@ -50,7 +50,10 @@ public class HomeController {
         return ciudadesJson;
     }
 
-
+    @GetMapping("/quien-soy")
+    public String quienSoy(Model model){
+        return "quiensoy";
+    }
 
 
 
