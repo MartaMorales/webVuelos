@@ -188,6 +188,17 @@
             También quiero dar las gracias a mi pareja por animarme a comenzar con el mundo del desarrollo, ayudarme a gestionar el proyecto aplicando la metodología SCRUM y por sugerirme y ayudarme con el aprendizaje
             de las nuevas tecnologías.</p>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col l12 m12 s12">
+                    <div class="icon-block">
+                        <div class="img-container">
+                            <a href="https://www.linkedin.com/in/marta-morales-feito/"><img class="wiku-quiensoy-logo" alt="Linked-in" src="${pageContext.request.contextPath}/resources/img/logos/linkedin.png"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="page-footer">
         <%@include file="/WEB-INF/views/layout/footer.jsp" %>
