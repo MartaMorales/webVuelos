@@ -29,6 +29,7 @@ nombre  varchar  (20)not null, -- not null se pone siempre despues del tipo
 apellido1 varchar (20),
 apellido2 varchar (20),
 dni  varchar (9)not null,
+email varchar(100) not null,
 fecha_nacimiento date,
 telefono int,
 direccion varchar (140),

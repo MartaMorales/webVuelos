@@ -15,6 +15,7 @@ public class Cliente {
     private String dni;
     private Date fechaNacimiento;
     private Integer telefono;
+    private String email;
     private String direccion;
     private Integer codigoPostal;
     private Ciudad ciudad;
@@ -92,6 +93,16 @@ public class Cliente {
 
     public void setTelefono(Integer telefono) {
         this.telefono = telefono;
+    }
+
+    @Basic
+    @Column(name = "email")
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Basic
