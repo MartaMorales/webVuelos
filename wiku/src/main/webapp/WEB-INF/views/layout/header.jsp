@@ -11,14 +11,14 @@
                                 <ul class="nav-wiku right hide-on-med-and-down">
                                         <li id="home-option"><a href="${pageContext.request.contextPath}/home">Inicio</a></li>
                                         <li id="destiny-option"><a href="${pageContext.request.contextPath}/destinos">Destinos</a></li>
-                                        <li id="jouney-option"><a href="Gestion?action=Mis_Viajes">Mis viajes</a></li>
-                                        <li id="contact-option"><a href="Gestion?action=Contacto">Contacto</a></li>
+                                        <li id="jouney-option"><a href="${pageContext.request.contextPath}/home">Mis viajes</a></li>
+                                        <li id="contact-option"><a href="${pageContext.request.contextPath}/quien-soy">¿Quién soy?</a></li>
                                         <li id="">
                                         <div class="row">
                                                 <div class="input-field col s4">
-                                                        <button id="submit-button" type="submit" class="btn waves-effect waves-light wiku-button">Login
+                                                        <a id="submit-button" href="${pageContext.request.contextPath}/login" class="btn waves-effect waves-light wiku-button">Login
                                                                 <i class="material-icons submit-icon right">send</i>
-                                                        </button>
+                                                        </a>
                                                 </div>
                                         </div>
                                         </li>
@@ -34,29 +34,15 @@
                                         </div>
                                 </div>
                         </li>
-                        <li><a href="#!">Inicio</a></li>
-                        <li><a href="#!">Destinos</a></li>
-                        <li><a href="#">Mis viajes</a></li>
-                        <li><a href="#!">Contacto</a></li>
-                        <li><div class="divider"></div></li>
-                        <li><a class="subheader">Login</a></li>
-                        <li>
-                                <div class="container input-field">
-                                        <input placeholder="User Name" id="first_name" type="text" class="validate">
-                                        <label for="first_name">User Name</label>
-                                </div>
-                        </li>
-                        <li>
-                                <div class="container input-field">
-                                        <input placeholder="Password" id="last_name" type="password" class="validate">
-                                        <label for="last_name">Password</label>
-                                </div>
-                        </li>
+                        <li><a href="${pageContext.request.contextPath}/home">Inicio</a></li>
+                        <li><a href="${pageContext.request.contextPath}/destinos">Destinos</a></li>
+                        <li><a href="${pageContext.request.contextPath}/home">Mis viajes</a></li>
+                        <li><a href="${pageContext.request.contextPath}/quien-soy">¿Quién soy?</a></li>
                         <li>
                                 <div class="container">
-                                        <button id="submit-button" type="submit" class="btn waves-effect waves-light wiku-button">Login<i
+                                        <a id="submit-button" href="${pageContext.request.contextPath}/login" class="btn waves-effect waves-light wiku-button">Login<i
                                         class="material-icons submit-icon right">send</i>
-                                        </button>
+                                        </a>
                                 </div>
                         </li>
                 </ul>
