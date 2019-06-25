@@ -2,6 +2,10 @@ body{
     background: #393e46;
 }
 
+main{
+    height: 55vh;
+}
+
 /*Pantalla de Login*/
 .user_card {
     width: 35rem;
@@ -14,7 +18,7 @@ body{
     -moz-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.5rem;
     font-size: 1.6rem;
-
+    margin:0 auto;
 }
 .brand_logo_container {
     position: absolute;
@@ -25,6 +29,7 @@ body{
     background: #393e46;
     padding: 1rem;
     text-align: center;
+    margin-left: 5.5rem;
 }
 .brand_logo {
     z-index: 10;
@@ -34,6 +39,11 @@ body{
 
 
 }
+
+.row-login{
+    margin-top: 9rem;
+}
+
 .form_container {
     margin-top: 10rem;
 }
@@ -63,24 +73,6 @@ body{
 }
 #labrec{
     font-size: 1.6rem;
-}
-/*Footer*/
-footer {
-    font-size: 1.6rem;
-    background: white;
-    color: #393e46;
-    /*padding: 45px 50px 46px 50px;*/
-
-    bottom: 0;
-}
-footer h5{
-    font-size: 2rem;
-}
-
-footer img {
-    width: 70% !important;
-    margin: 0 auto;
-
 }
 
 

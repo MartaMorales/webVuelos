@@ -12,7 +12,6 @@
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/css/materialize.min.css">
-    <!--<link rel="stylesheet" href="resources/vendor/css/normalize.css">-->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/general.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/login2.css">
 
@@ -20,13 +19,13 @@
 <body>
 <header></header>
 <main>
-    <div class="row">
+    <div class="row-login row">
         <div class="col l4 m4"></div>
         <div class="col l4 m4 s12">
             <div class="user_card">
                 <div class="d-flex justify-content-center">
                     <div class="brand_logo_container">
-                        <img src="resources/img/logos/wiku_blank.png" class="brand_logo" alt="Logo">
+                        <img src="${pageContext.request.contextPath}/resources/img/logos/wiku_blank.png" class="brand_logo" alt="Logo">
                     </div>
                 </div>
                 <div class="d-flex justify-content-center form_container">

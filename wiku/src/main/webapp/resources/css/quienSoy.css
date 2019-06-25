@@ -24,6 +24,18 @@
     border-radius: 50%;
 }
 
+.wiku-title-greetings{
+    color:dodgerblue;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 0 #FAD561;
+    font-size: 2.5rem;
+}
+
+.text-grey{
+    color: #6c757d;
+}
+
 .img-container{
     text-align: center;
     margin-top: 2rem;
@@ -31,4 +43,10 @@
 
 p{
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .wiku-title-small{
+        font-size: 5rem;
+    }
 }

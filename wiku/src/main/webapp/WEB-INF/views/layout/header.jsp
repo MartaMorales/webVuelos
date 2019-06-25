@@ -17,9 +17,9 @@
         <li id=""><div class="row">
 
         <div class="input-field col s4">
-        <button id="submit-button" type="submit" class="btn waves-effect waves-light wiku-button">Login
+        <a id="submit-button" href="${pageContext.request.contextPath}/login" class="btn waves-effect waves-light wiku-button">Login
         <i class="material-icons submit-icon right">send</i>
-        </button>
+        </a>
         </div>
         </div>
         </li>

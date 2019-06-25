@@ -82,9 +82,55 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 white-text">
+                        <h2 class="wiku-title lighten-2">El Equipo</h2>
+                        <p class="wiku-text-title">Miembros del equipo del proyecto Wiku Airlines para Conecta Empleo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parallax">
+                <img src="${pageContext.request.contextPath}/resources/img/quiensoy/budapest.jpg">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col l6 m6 s12">
+                    <div class="icon-block">
+                        <div class="img-container">
+                            <img class="wiku-quiensoy-img" src="${pageContext.request.contextPath}/resources/img/quiensoy/fayrah.jpg"/>
+                        </div>
+                        <h5 class="center">Fayrah</h5>
+                        <h6 class="center text-grey">Chief Executive Officer (CEO)</h6>
+                        <p class="light">
+                            Fayrah es la CEO de Wiku, la cual ha aportado grandes ideas y ha sido un gran pilar dentro del apoyo que ha recibido el proyecto. Ha estado presente en todas las fases del
+                            desarrollo y ha repartido sus dosis de órdenes, mimos y exigencias en sus horas de comida y paseo. Ella es la principal razón por la cual la aerolínea Wiku admite mascotas
+                            en todas sus instalaciones y aviones.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col l6 m6 s12">
+                    <div class="icon-block">
+                        <div class="img-container">
+                            <img class="wiku-quiensoy-img" src="${pageContext.request.contextPath}/resources/img/quiensoy/marta.jpg"/>
+                        </div>
+                        <h5 class="center">Marta Morales Feito</h5>
+                        <h6 class="center text-grey">Chief Technology Officer (CTO)</h6>
+                        <p class="light">
+                            Tras una dura decisión decidí realizar el proyecto yo sola y avanzar al máximo con las mejores tecnologías que pensé para ello. Soy una persona constante, tenaz y muy ambiciosa
+                            por lo que me centré al máximo en el proyecto. He realizado el análisis, la definición de la base de datos, la mínima funcionalidad deseada, diseñado la interfaz, creado el
+                            proyecto y la principal desarrolladora.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container center valign-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 white-text">
                         <h2 class="wiku-title-small lighten-2">Marta, Desarrolladora Web</h2>
                         <p class="wiku-text-title">Amante de la naturaleza, los viajes y los animales. De Ambientóloga a Desarrolladora web.</p>
-                        <a class="waves-effect waves-light btn-large teal lighten-2">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -137,46 +183,10 @@
                 </div>
             </div>
         </div>
-        <div class="parallax-container center valign-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 white-text">
-                        <h2 class="wiku-title lighten-2">El Equipo</h2>
-                        <p class="wiku-text-title">Miembros del equipo del proyecto Wiku Airlines para Conecta Empleo.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="parallax">
-                <img src="${pageContext.request.contextPath}/resources/img/quiensoy/budapest.jpg">
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col l6 m6 s12">
-                    <div class="icon-block">
-                        <div class="img-container">
-                            <img class="wiku-quiensoy-img" src="${pageContext.request.contextPath}/resources/img/quiensoy/fayrah.jpg"/>
-                        </div>
-                        <h5 class="center">Chief Executive Officer (CEO)</h5>
-                        <p class="light">
-                            We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col l6 m6 s12">
-                    <div class="icon-block">
-                        <div class="img-container">
-                            <img class="wiku-quiensoy-img" src="${pageContext.request.contextPath}/resources/img/quiensoy/marta.jpg"/>
-                        </div>
-                        <h5 class="center">Chief Technology Officer (CTO)</h5>
-                        <p class="light">
-                            By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="container row">
+            <p><span class="wiku-title-greetings">Agradecimientos:</span>Quiero agradecer a mi antiguo equipo por ayudarme en la creación y el desarrollo de la aerolínea y a Armando principalmente por haber tenido la idea.
+            También quiero dar las gracias a mi pareja por animarme a comenzar con el mundo del desarrollo, ayudarme a gestionar el proyecto aplicando la metodología SCRUM y por sugerirme y ayudarme con el aprendizaje
+            de las nuevas tecnologías.</p>
         </div>
     </main>
     <footer class="page-footer">
