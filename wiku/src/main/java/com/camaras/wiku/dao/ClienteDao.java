@@ -16,6 +16,6 @@ import java.util.List;
 public interface ClienteDao extends JpaRepository<Cliente, Integer> {
 
 //    List<Cliente> findAllByLogin(String mensaje);
-
+  //  Cliente findById(String mensaje);
 
 }

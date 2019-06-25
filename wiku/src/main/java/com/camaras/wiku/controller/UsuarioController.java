@@ -26,6 +26,7 @@ public class UsuarioController {
     @PostMapping("/crearusuario")
     public void crearUsuario(@ModelAttribute("crearUsuarioDTO") CrearUsuarioDTO crearUsuarioDTO, Model model){
         logger.debug("Executing crearUsuario() method via post throw usuario.jsp ");
+
         model.addAttribute(crearUsuarioDTO);
     }
 }
