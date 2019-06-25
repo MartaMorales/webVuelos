@@ -29,8 +29,7 @@
                         <li>
                                 <div class="user-view wiku-logo-hamburger">
                                         <div class="background">
-                                                <img class="wiku-logo-img-hamburger" src="${pageContext.request.contextPath}
-                                                /resources/img/logos/wiku_title.png">
+                                                <img class="wiku-logo-img-hamburger" src="${pageContext.request.contextPath}/resources/img/logos/wiku_title.png">
                                         </div>
                                 </div>
                         </li>
