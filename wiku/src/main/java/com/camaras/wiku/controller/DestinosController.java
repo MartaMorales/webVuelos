@@ -36,7 +36,7 @@ public class DestinosController {
         List<Vuelo> vuelosIda = vueloService.getVuelosIdaFromForm(buscarDestinoDTO);
         List<Vuelo> vuelosVuelta = vueloService.getVuelosVueltaFromForm(buscarDestinoDTO);
 
-        if(!vuelosIda.isEmpty()){
+        if (!vuelosIda.isEmpty()) {
             buscarDestinoDTO.setVueloIda(vuelosIda.get(0).getId());
         }
 
@@ -48,10 +48,15 @@ public class DestinosController {
         return "destinos";
     }
 
-    @GetMapping("/buscar/{id_vuelo}/")
-    public String destinos(@PathVariable("id_vuelo") Integer idVuelo, Model model) {
+    @GetMapping("/buscar/{nombre_ciudadIda}/{nombre_ciudadLlegada}")
+    public String destinos(@PathVariable("nombre_ciudadIda") String nombreCiudadIda,
+                           @PathVariable("nombre_ciudadLlegada") String nombreCiudadLlegada, Model model) {
         logger.debug("Executing buscarDestinosFromIndexForm() method via Get throw index.jsp form of destinos");
-
+        BuscarDestinoDTO buscarDestinoDTO = new BuscarDestinoDTO();
+        buscarDestinoDTO.setOrigen(nombreCiudadIda);
+        buscarDestinoDTO.setDestino(nombreCiudadLlegada);
+        model.addAttribute("buscarDestinoDTO", buscarDestinoDTO);
+        model.addAttribute("inicio", true);
         return "destinos";
     }
 }

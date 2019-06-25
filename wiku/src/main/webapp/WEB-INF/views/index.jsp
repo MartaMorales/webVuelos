@@ -87,7 +87,7 @@
                         <p>Precio: ${oferta.precio} €.</p>
                     </div>
                     <div class="modal-footer">
-                        <a href="${pageContext.request.contextPath}/destinos/buscar/${oferta.vuelo.id}/" class="modal-close waves-effect waves-green btn-flat">Ver vuelo</a>
+                        <a href="${pageContext.request.contextPath}/destinos/buscar/${oferta.vuelo.aeropuertoSalida.ciudad.nombre}/${oferta.vuelo.aeropuertoLlegada.ciudad.nombre}" class="modal-close waves-effect waves-green btn-flat">Ver vuelo</a>
                     </div>
                 </div>
             </c:forEach>

@@ -71,6 +71,9 @@ public class VueloServiceImpl implements VueloService {
 
         for (Vuelo vuelo : vuelos) {
             vuelo.setDuracion(dateUtils.getDurarionFromVuelo(vuelo.getHoraSalida(), vuelo.getHoraLlegada(), horaPattern));
+            if(vuelo.getOferta()!=null)
+                vuelo.setPrecio(vuelo.getOferta().getPrecio());
+            else
             vuelo.setPrecio(getPrecioForVuelo(vuelo));
             vuelosWithDuracion.add(vuelo);
         }
