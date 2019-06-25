@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface ClienteService {
 
-    //Cliente getClienteForForm (CrearUsuarioDTO crearUsuarioDTO);
-    //Cliente findUserById ();
+
+    Cliente findClienteByEmail(String email);
+    Cliente saveCliente(Cliente cliente);
+
 }

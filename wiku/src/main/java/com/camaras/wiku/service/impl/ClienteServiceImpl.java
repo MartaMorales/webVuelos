@@ -9,18 +9,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
-    /*
+
     @Autowired
     ClienteDao clienteDao;
     @Override
-    public Cliente getClienteForForm(CrearUsuarioDTO crearUsuarioDTO) {
-        return clienteDao.findById(crearUsuarioDTO.);
+    public Cliente findClienteByEmail(String email) {
+        return clienteDao.findByEmail(email);
     }
 
     @Override
-    public Cliente findUserByDni(String dni) {
-        return null;
+    public Cliente saveCliente(Cliente cliente) {
+        return clienteDao.save(cliente);
     }
-    */
-
 }

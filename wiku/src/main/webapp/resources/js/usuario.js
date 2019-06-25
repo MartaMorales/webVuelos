@@ -19,18 +19,43 @@ function validateForm() {
                 required: true
             },
             email: {
-                required: true
-            },
-            repemail: {
                 required: true,
-                emailEqualsRepemail: true
+                email:true
+            },
+            repEmail: {
+                required: true,
+                equalTo: "#email"
             },
             password: {
                 required: true
             },
-            reppassword: {
+            repPassword: {
                 required: true,
-                passwordEqualsReppassword: true
+                equalTo: "#password"
+            }
+        },
+        messages: {
+            nombre: {
+                required: "Introduce tu nombre"
+            },
+            apellido1: {
+                required: "Introduce tu primer apellido"
+            },
+            usuario: {
+                required: "Introduce un nombre de usuario"
+            },
+            email: {
+                required: "Introduce tu email"
+            },
+            repEmail: {
+                required: "Los emails tienen que coincidir"
+            },
+            password: {
+                required: "Introduce tu contraseña",
+                minlength: "La contraseña tiene que tener al menos 6 caracteres"
+            },
+            repPassword: {
+                required: "Las contraseñas tienen que coincidir"
             }
         },
         errorElement: 'div',
@@ -42,22 +67,5 @@ function validateForm() {
                 error.insertAfter(element);
             }
         }
-    })}
-
-$.validator.addMethod(
-    "emailEqualsRepemail",
-    function () {
-        var email = $("#email").val();
-        var repEmail = $("#repEmail").val();
-        return email === repEmail;
-    },
-    "Los emails deben de coincidir."
-);
-$.validator.addMethod("passwordEqualsReppassword", function () {
-        var password = $("#password").val();
-        var repPassword = $("#repPassword").val();
-        return password === repPassword;
-
-    },
-    "Las contraseñas deben de coincidir."
-);
+    });
+}

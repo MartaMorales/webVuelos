@@ -2,8 +2,10 @@ package com.camaras.wiku.controller;
 
 import com.camaras.wiku.dto.BuscarDestinoDTO;
 import com.camaras.wiku.dto.CrearUsuarioDTO;
+import com.camaras.wiku.service.LoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping
 public class UsuarioController {
     private static final Logger logger = LoggerFactory.getLogger(UsuarioController.class);
+    @Autowired
+    LoginService loginService;
 
     @GetMapping("/usuario")
     public String usuario(Model model){
@@ -26,6 +30,8 @@ public class UsuarioController {
     @PostMapping("/crearusuario")
     public void crearUsuario(@ModelAttribute("crearUsuarioDTO") CrearUsuarioDTO crearUsuarioDTO, Model model){
         logger.debug("Executing crearUsuario() method via post throw usuario.jsp ");
+        loginService.createLoginFromUserForm(crearUsuarioDTO);
+
 
         model.addAttribute(crearUsuarioDTO);
     }
