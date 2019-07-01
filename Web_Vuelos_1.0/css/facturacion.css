@@ -1,0 +1,16 @@
+.datos{
+    font-size: 1.6rem;
+}
+
+.boton{
+    font-size: 1.8rem;
+    margin: 0 0 0 50%;
+    padding: 0 5rem 0 5rem;
+    border-radius: 1rem;
+}
+
+.boton:hover{
+    background: #f8b500;
+    border-radius: 1rem;
+    border-color: #f8b500;
+}

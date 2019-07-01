@@ -1,0 +1,183 @@
+.icons{
+    font-size: 3rem!important;
+    margin-left: -1rem;
+}
+
+#submit-button{
+    margin-top: 45%;
+}
+
+.input-field .prefix ~ label {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.iconosbuscador {
+    width: 3rem;
+    height: 100%;
+}
+
+
+.image-background {
+    height: 55rem;
+    width: 100%;
+    filter: blur(1.3rem);
+    margin-top: -3rem;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 35rem;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#resultado{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.vuelos-container{
+    height: 65rem;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 5% 0 5%;
+}
+
+.row-vuelo{
+    margin-bottom: 0 !important;
+}
+
+.precio{
+    margin-top: 2.5rem;
+}
+
+#booking {
+    font-family: 'Lato', sans-serif;
+}
+
+.booking-form {
+    max-width: 586px;
+    width: 100%;
+    margin: auto;
+    color:dodgerblue;
+}
+
+.booking-input{
+    color:white;
+}
+
+.booking-form .form-label {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: dodgerblue;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+    height: 24px;
+    font-size: 14px;
+}
+
+.booking-form .submit-btn {
+    color: #fff;
+    background-color: dodgerblue;
+    font-weight: 700;
+    height: 80px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: none;
+    width: 100%;
+}
+
+.left-select{
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-select{
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+[type="radio"]:not(:checked), [type="radio"]:checked{
+    position: unset;
+}
+
+@media only screen and (max-width: 767px) {
+    .booking-form [class*="col-"] + [class*="col-"] .form-group .form-control {
+        border-left: 1px solid #dddee9;
+    }
+}
+
+.target {
+    margin: 5rem;
+}
+
+.origen {
+    width: 2.4rem;
+    height: auto;
+}
+
+.borde {
+    border: 4rem dodgerblue;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.boton {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #f8b500;
+    border-color: #f8b500;
+    border-radius: 1rem;
+}
+
+.comprar-button{
+    height: 15rem;
+    font-size: 6rem;
+    width: 45rem;
+    margin-top:5rem;
+}
+
+.comprar-icon{
+    font-size: 8.5rem !important;
+}
+
+.border {
+    border-radius: 1rem;
+    border: 0.2rem dodgerblue solid;
+    padding: 1rem 0 1rem 0;
+}
+
+.border:hover {
+    border: 0.2rem #f8b500 solid;
+}
+.vuelo-tittle{
+    text-align: center;
+}
+.span-tittle{
+    color: dodgerblue;
+}
+.span-tittle:hover{
+    color: #f8b500;
+}

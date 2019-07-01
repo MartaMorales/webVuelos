@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiku Airlines - Destinos</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/css/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/destino.css">
+
+</head>
+<body>
+<header></header>
+
+<main>
+
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <form>
+                            <div class="row no-margin">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Origen</span>
+                                        <input class="form-control" type="text" placeholder="Origen">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="form-label">Salida</span>
+                                        <input class="form-control" type="date" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Destino</span>
+                                        <input class="form-control" type="text" placeholder="Destino">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">Llegada</span>
+                                        <input class="form-control" type="date" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Adultos (18+)</span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Niños (0-17)</span>
+                                        <select class="form-control">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-btn">
+                                <button class="submit-btn">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Aquí tienes los siguientes vuelos a......</h3>
+
+    <div class="row target">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 border">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1">
+                            <img class="origen" src="img/Icons/origen.png" alt="origen">
+                        </div>
+                        <div class="col-lg-3">
+                            <p>21:20-22:35</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>directo</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>1h 15m</p>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1">
+                            <img class="origen" src="img/Icons/destino.png" alt="origen">
+                        </div>
+                        <div class="col-lg-3">
+                            <p>21:20-22:35</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>directo</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>1h 15m</p>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 boton"><input type="button" value="Seleccionar" class="btn btn-primary boton"></div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+
+    <div class="row target">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 border">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1">
+                            <img class="origen" src="img/Icons/origen.png" alt="origen">
+                        </div>
+                        <div class="col-lg-3">
+                            <p>21:20-22:35</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>directo</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>1h 15m</p>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1">
+                            <img class="origen" src="img/Icons/destino.png" alt="origen">
+                        </div>
+                        <div class="col-lg-3">
+                            <p>21:20-22:35</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>directo</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p>1h 15m</p>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 boton">
+                    <input type="button" value="Seleccionar" class="btn btn-primary boton"></div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+</main>
+
+<footer></footer>
+
+</body>
+<script src="vendor/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="vendor/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="vendor/js/jquery-jvectormap-usa-en.js"></script>
+<script src="vendor/js/jquery-3.4.1.min.js"></script>
+<script src="js/destino.js"></script>
+</html>

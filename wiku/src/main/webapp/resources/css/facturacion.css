@@ -1,0 +1,23 @@
+html, body, .block {
+    height: inherit;
+    z-index: 500;
+}
+.input-field .prefix ~ label {
+    margin-left: 3rem;
+    font-size: 1.6rem;
+}
+
+.input-field .prefix ~ label {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+}
+
+#submit-button{
+    margin-top: 45%;
+}
+
+.scroll-spy-wiku{
+    position: sticky;
+    top:80px;
+    text-align: justify;
+}

@@ -1,0 +1,94 @@
+-- EUROPA ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'España','ESP'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Alemania','GER'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Austria','AUS'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Bélgica','BEL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Bulgaria','BUL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Dinamarca','DEN'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Francia','FRA'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Finlandia','FIN'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Grecia','GRE'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Holanda','HOL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Hungría','HUN'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Irlanda','IRL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Italia','ITA'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Letonia','LET'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Luxemburgo','LUX'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Noruega','NOR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Polonia','POL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Portugal','POR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Reino Unido','UKM'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'República Checa','RCH'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Rumanía','RUM'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Suecia','SUE'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Suiza','SWI'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (1,'Turquía','TUR'); 
+commit;
+-- AFRICA ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (2,'Egipto','EGI'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (2,'Marruecos','MAR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (2,'Sudáfrica','SUD'); 
+commit;
+-- AMERICA DEL NORTE ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Canadá','CAN'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Estados Unidos','USA'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'México','MEX');
+commit;
+-- AMERICA CENTRAL ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Costa Rica','COR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'El Salvador','SAL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Guatemala','GUA'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Honduras','HON'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Nicaragua','NIC'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Panamá','PAN'); 
+commit;
+-- CARIBE ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Cuba','CUB'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Antigua y Barbuda','AYB'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Aruba','ARU'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Bahamas','BAH'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Curazao','CUR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Jamaica','JAM'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Puerto Rico','PUE'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'República Dominicana','REP'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Saint Martin','SAI'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Santa Lucía','STL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Trinidad y Tobago','TYT'); 
+commit;
+-- AMERICA DEL SUR ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Argentina','ARG'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Bolivia','BOL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Brasil','BRA'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Chile','CHI'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Colombia','COL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Ecuador','ECU'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Paraguay','PAR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Perú','PER'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Surinam','SUR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Uruguay','URU'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (4,'Venezuela','VEN'); 
+commit;
+-- ASIA ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Arabia Saudita','ARS'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'China','CHI'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Corea del Norte','NCO'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Corea del Sur','SCO'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Emiratos Árabes Unidos','EAU'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Filipinas','FIL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'India','IND'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Indonesia','IDO'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Irak','IRA'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Israel','ISR'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Japón','JAP'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Kuwait','KUW'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Líbano','LIB'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Malasia','MAL'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Rusia','RUS'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Singapur','SIN'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (3,'Tailandia','TAI'); 
+commit;
+-- OCEANIA ----------------------------------------------------------------------------------
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (5,'Australia','AST'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (5,'Nueva Zelanda','NZE'); 
+insert into wiku_airlines.pais (id_continente,nombre,acronimo) values (5,'Polinesia Francesa','PFR'); 
+commit;

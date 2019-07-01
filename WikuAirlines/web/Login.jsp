@@ -1,0 +1,87 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Javier Y Marta
+  Date: 30/05/2019
+  Time: 9:33
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiku Airlines - Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="resources/vendor/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="resources/vendor/css/normalize.css">-->
+    <link rel="stylesheet" href="resources/css/general.css">
+    <link rel="stylesheet" href="resources/css/login2.css">
+
+</head>
+<body>
+<header></header>
+<main>
+    <div class="row">
+        <div class="col l4 m4"></div>
+        <div class="col l4 m4 s12">
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                        <img src="resources/img/logos/wiku_blank.png" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center form_container">
+                    <form method="post" action="Login">
+                        <div class="input-field m3">
+                            <i class="material-icons icons prefix">person</i>
+                            <input type="text" name="usuario" id="userormail" class="validate">
+                            <label for="userormail">Nombre de usuario o email</label>
+                        </div>
+                        <div class="input-field m2">
+                            <i class="material-icons icons prefix">vpn_key</i>
+                            <input type="password" name="password" id="passlog" class="validate">
+                            <label for="passlog">Contraseña</label>
+                        </div>
+                        <div class="switch">
+                            <label for="recuerdame">
+                                <input type="checkbox" id="recuerdame">
+                                <span class="lever"></span>
+                                <label id="labrec">Recuérdame</label>
+                            </label>
+                        </div>
+
+                        <div class="d-flex justify-content-center m3 login_container">
+                            <button class="btn waves-effect waves-light wiku-button" type="submit" name="action">Entrar
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                        <div class="m4">
+                            <div class="center-align">
+                                <p>¿No tienes cuenta todavía? <a href="#" class="ml-2">Crear cuenta</a></p>
+                            </div>
+                            <div class="center-align">
+                                <a href="#">¿Has perdido tu contraseña?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col l4 m4"></div>
+    </div>
+</main>
+
+<footer>
+    <%@include file="/views/layout/footerlogin.jsp" %>
+</footer>
+
+</body>
+<script src="resources/vendor/js/jquery-3.4.1.min.js"></script>
+<script src="resources/vendor/js/materialize.min.js"></script>
+<script src="resources/js/login2.js"></script>
+</html>

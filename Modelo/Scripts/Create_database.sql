@@ -1,7 +1,18 @@
+drop database if exists wiku_airlines;
+create database wiku_airlines;
+use wiku_airlines;
+
+create table if not exists continente (
+id int auto_increment not null primary key,
+nombre varchar (140)
+);
+
 create table if not exists pais (
 id int auto_increment not null primary key,
+id_continente int,
 nombre varchar (140),
-acronimo varchar (10)
+acronimo varchar (10),
+FOREIGN KEY (id_continente) REFERENCES continente(id)
 );
 
 create table if not exists ciudad (
@@ -18,6 +29,7 @@ nombre  varchar  (20)not null, -- not null se pone siempre despues del tipo
 apellido1 varchar (20),
 apellido2 varchar (20),
 dni  varchar (9)not null,
+email varchar(100) not null,
 fecha_nacimiento date,
 telefono int,
 direccion varchar (140),
@@ -32,6 +44,10 @@ FOREIGN KEY (id_pais) REFERENCES  pais(id)
 create table if not exists reserva(
 id int auto_increment not null primary key,
 id_cliente int,
+fecha_salida date,
+fecha_llegada date,
+precio double,
+tipo varchar(6),
 FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
 
@@ -46,7 +62,6 @@ create table if not exists aeropuerto(
 id int auto_increment not null primary key,
 nombre varchar (140),
 id_ciudad int,
-direccion varchar (140),
 FOREIGN KEY (id_ciudad) REFERENCES ciudad(id)	
 );
 
@@ -54,12 +69,21 @@ create table if not exists vuelo(
 id int auto_increment not null primary key,
 id_aeropuerto_salida int,
 id_aeropuerto_llegada int,
-hora_salida timestamp,
-hora_llegada timestamp,
+hora_salida varchar(10),
+hora_llegada varchar(10),
 id_avion int,
 FOREIGN KEY (id_aeropuerto_salida) REFERENCES aeropuerto(id),
 FOREIGN KEY (id_aeropuerto_llegada) REFERENCES aeropuerto(id),
 FOREIGN KEY (id_avion) REFERENCES avion(id)
+);
+
+create table if not exists oferta( 
+id int auto_increment not null primary key,
+id_vuelo int,
+descripcion varchar(240),
+precio double (8,2),
+img_url varchar(200),
+FOREIGN KEY (id_vuelo) REFERENCES vuelo(id)
 );
 
 create table if not exists reserva_vuelo(
@@ -75,7 +99,13 @@ id int auto_increment not null primary key,
 dni varchar (9),
 nombre varchar (20),
 apellido1 varchar (20),
-apellido2 varchar (20)
+apellido2 varchar (20),
+genero varchar(20),
+telefono varchar(12),
+fecha_nacimiento Date,
+tipo varchar(10),
+id_pais int,
+FOREIGN KEY (id_pais) REFERENCES  pais(id)
 );
 
 create table if not exists pasajero_reserva(
@@ -111,4 +141,12 @@ tipo varchar (20),
 FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
 
-
+CREATE TABLE IF NOT EXISTS login (
+  id int auto_increment not null primary key,
+  usuario VARCHAR(50) NOT NULL,
+  enabled boolean NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  id_cliente int,
+  foreign key (id_cliente) references cliente(id)
+);

@@ -1,0 +1,174 @@
+html{
+    font-size: 62.5%; /*Reset para REMS - 62.5%=10px de 16px*/
+}
+h1{
+  font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+h5{
+    font-size: 2.2rem;
+}
+
+/*Cuerpo de la web*/
+body {
+    background: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    overflow-x:hidden ;
+}
+
+main {
+    margin-top: 2rem;
+    height:inherit;
+}
+
+header{
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+
+/* Header*/
+
+.submit-icon{
+    line-height: 3.5rem !important;
+}
+
+.wiku-nav{
+    background-color: dodgerblue;
+    color:white;
+}
+
+.wiku-nav ul a{
+    font-size: 1.6rem;
+}
+
+.wiku-logo-header{
+    width: 24.5rem;
+    height: auto;
+}
+
+.wiku-button{
+    background-color: #f8b500;
+}
+
+.wiku-button:hover{
+    background-color: #FAD561;
+}
+
+.wiku-button:focus{
+    background-color: #FAA300;
+}
+
+.sidenav-overlay{
+    z-index: 1;
+}
+
+.wiku-logo-hamburger{
+    height: 15rem;
+}
+
+.wiku-logo-hamburger .background{
+    text-align: center;
+}
+
+.wiku-logo-img-hamburger{
+    width: 18rem;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #f8b500;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #f8b500;
+    -webkit-box-shadow: 0 1px 0 0 #f8b500;
+    box-shadow: 0 1px 0 0 #f8b500;
+}
+
+/*body*/
+.icons {
+    font-size: 2.8rem;
+}
+
+.error{
+    font-size: 1.2rem;
+    color: lightcoral;
+    font-weight: bold;
+    margin-top:-10px;
+}
+.margin-auto{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    display: block;
+    background-color: #393e46 !important;
+    color: white;
+    margin-top:5%;
+    font-size: 1.6rem;
+    bottom: 0;
+    width: 100%;
+    height: inherit;
+}
+
+footer li {
+    padding-top: 1rem;
+}
+
+footer > a:hover{
+    color:#f8b500;
+}
+
+.footer-logo{
+    width: 20rem;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        padding: 0.5rem 10rem 0.5rem 10rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .wiku-logo-header{
+        width: 22.5rem;
+    }
+}
