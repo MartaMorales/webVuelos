@@ -119,7 +119,7 @@
                         <p class="light">
                             Tras una dura decisión decidí realizar el proyecto yo sola y avanzar al máximo con las mejores tecnologías que pensé para ello. Soy una persona constante, tenaz y muy ambiciosa
                             por lo que me centré al máximo en el proyecto. He realizado el análisis, la definición de la base de datos, la mínima funcionalidad deseada, diseñado la interfaz, creado el
-                            proyecto y la principal desarrolladora.
+                            proyecto y la desarrolladora.
                         </p>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                         <h2 class="center light-blue-text">
                             <i class="material-icons">settings</i>
                         </h2>
-                        <h5 class="center">Contínuo crecimiento</h5>
+                        <h5 class="center">Continuo crecimiento</h5>
                         <p class="light">
                             Soy una persona creativa, luchadora y con muchas ganas de aprender. He sentido la necesidad de crecer un poco más a cada paso que doy y se me da muy bien adaptarme a todas
                             las situaciones. A cada objetivo que he tenido en mi vida he dado el 100% de mí y aunque no saliera bien siempre he aprendido de él y he tomado fuerzas para ir a por el

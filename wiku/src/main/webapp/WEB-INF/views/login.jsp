@@ -55,7 +55,7 @@
                         </div>
                         <div class="m4">
                             <div class="center-align">
-                                <p>¿No tienes cuenta todavía? <a href="#" class="ml-2">Crear cuenta</a></p>
+                                <p>¿No tienes cuenta todavía? <a href="${pageContext.request.contextPath}/usuario" class="ml-2">Crear cuenta</a></p>
                             </div>
                             <div class="center-align">
                                 <a href="#">¿Has perdido tu contraseña?</a>

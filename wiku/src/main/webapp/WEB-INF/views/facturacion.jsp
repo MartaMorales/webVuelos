@@ -42,7 +42,7 @@
                                     </label>
                                 </p>
                             </div>
-                            <div class="col l4 m4 s4">
+                            <div class="col l4 m4 s12">
                                 <div class="input-field">
                                     <i class="material-icons prefix">account_circle</i>
                                     <form:input path="pasajeroList[${pasajeroIndex}].nombre" id="nombre${pasajeroIndex}" type="text" class="validate" />
@@ -124,7 +124,7 @@
                                         </label>
                                     </p>
                                 </div>
-                                <div class="col l4 m4 s4">
+                                <div class="col l4 m4 s12">
                                     <div class="input-field">
                                         <i class="material-icons prefix">account_circle</i>
                                         <form:input path="pasajeroList[${pasajeroIndex}].nombre" id="nombre${pasajeroIndex}" type="text" class="validate" />
@@ -192,17 +192,17 @@
                     <h1>Datos de facturacion</h1>
                     <div class="row">
                         <div class="col l1 m1 s1"></div>
-                        <div class="input-field col s4 m4 l4">
+                        <div class="input-field col s12 m4 l4">
                             <i class="material-icons prefix">account_circle</i>
                             <form:input id="nombre-cliente" type="text" class="validate" path="nombre"/>
                             <label for="nombre-cliente">Nombre</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s12 m3 l3">
                             <i class="material-icons prefix">account_circle</i>
                             <form:input id="apellido-cliente1" type="text" class="validate" path="apellido1"/>
                             <label for="apellido-cliente1">Primer apellido</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s12 m3 l3">
                             <i class="material-icons prefix">account_circle</i>
                             <form:input id="apellido-cliente2" type="text" class="validate" path="apellido2"/>
                             <label for="apellido-cliente2">Segundo apellido</label>
@@ -211,17 +211,17 @@
                     </div>
                     <div class="row">
                         <div class="col l1 m1 s1"></div>
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s12 m2 l2">
                             <i class="material-icons prefix">perm_identity</i>
                             <form:input id="inputDNI" type="text" class="validate" path="dni"/>
                             <label for="inputDNI">DNI/Pasaporte</label>
                         </div>
-                        <div class="input-field col s4 m4 l4">
+                        <div class="input-field col s12 m4 l4">
                             <i class="material-icons prefix">mail</i>
                             <form:input id="inputEmail" type="email" class="validate" path="email"/>
                             <label for="inputEmail">Email</label>
                         </div>
-                        <div class="input-field col s4 m4 l4">
+                        <div class="input-field col s12 m4 l4">
                             <i class="material-icons prefix">mail</i>
                             <input id="reptEmail" type="email" class="validate" name="emailRept">
                             <label for="reptEmail">Repite el Email</label>
@@ -230,51 +230,55 @@
                     </div>
                     <div class="row">
                         <div class="col l1 m1 s1"></div>
-                        <div class="input-field col s4 m4 l4">
+                        <div class="input-field col s12 m4 l4">
                             <i class="material-icons prefix">location_city</i>
                             <form:input id="calle" type="text" class="validate" path="calle"/>
                             <label for="calle">Direccion</label>
                         </div>
-                        <div class="input-field col s1 m1 l1">
+                        <div class="input-field col s12 m2 l2">
                             <i class="material-icons prefix">location_city</i>
                             <form:input id="numero" type="text" class="validate" path="numero"/>
                             <label for="numero">Número</label>
                         </div>
-                        <div class="input-field col s1 m1 l1">
+                        <div class="input-field col s12 m2 l2">
                             <i class="material-icons prefix">location_city</i>
                             <form:input id="piso" type="text" class="validate" path="piso"/>
                             <label for="piso">Piso</label>
                         </div>
-                        <div class="input-field col s1 m1 l1">
+                        <div class="input-field col s12 m2 l2">
                             <i class="material-icons prefix">location_city</i>
                             <form:input id="puerta" type="text" class="validate" path="puerta"/>
                             <label for="puerta">Puerta</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="col l2 m2 s2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col l1 m1 s1"></div>
+                        <div class="input-field col s12 m3 l3">
                             <i class="material-icons prefix">location_city</i>
                             <form:input id="cp" type="text" class="validate" path="codigoPostal"/>
                             <label for="cp">Codigo postal</label>
+                        </div>
+                        <div class="input-field col s12 m3 l3">
+                            <i class="material-icons prefix">location_city</i>
+                            <form:input id="localidad" type="text" class="validate" path="localidad"/>
+                            <label for="localidad">Localidad</label>
+                        </div>
+                        <div class="input-field col s12 m3 l3">
+                            <i class="material-icons prefix">location_city</i>
+                            <form:input id="provincia" type="text" class="validate" path="provincia"/>
+                            <label for="provincia">Provincia</label>
                         </div>
                         <div class="col l1 m1 s1"></div>
                     </div>
                     <div class="row">
                         <div class="col l1 m1 s1"></div>
-                        <div class="input-field col s3 m3 l3">
-                            <i class="material-icons prefix">location_city</i>
-                            <form:input id="localidad" type="text" class="validate" path="localidad"/>
-                            <label for="localidad">Localidad</label>
-                        </div>
-                        <div class="input-field col s3 m3 l3">
-                            <i class="material-icons prefix">location_city</i>
-                            <form:input id="provincia" type="text" class="validate" path="provincia"/>
-                            <label for="provincia">Provincia</label>
-                        </div>
-                        <div class="input-field col s4 m4 l4">
+                        <div class="input-field col s12 m4 l4">
                             <i class="material-icons prefix">phone</i>
                             <form:input id="telefono" type="tel" class="validate" path="telefono"/>
                             <label for="telefono">Telefono</label>
                         </div>
-                        <div class="col l1 m1 s1"></div>
+                        <div class="col l7 m7 s7"></div>
                     </div>
                 </div>
                 <div id="pago" class="section scrollspy">

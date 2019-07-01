@@ -21,7 +21,7 @@
 </header>
 <main>
     <%--Buscador de vuelos --%>
-    <section class="container row">
+    <section class="row">
         <div class="col l1  m1 s1"></div>
         <div class="col l10 m10 s10">
             <form:form id="index-form" action="${pageContext.request.contextPath}/destinos/buscar" cssClass="needs-validation" novalidate="novalidate" modelAttribute="buscarDestinoDTO" method="POST" >

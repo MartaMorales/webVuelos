@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LoginController {
 
     private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
-@Autowired
-LoginService loginService;
+    @Autowired
+    LoginService loginService;
 
     @GetMapping("")
     public String login(Model model) {
@@ -31,14 +31,20 @@ LoginService loginService;
     }
 
     @PostMapping("/buscar")
-    public String bucarLogin(@ModelAttribute("buscarLoginDTO") BuscarLoginDTO buscarLoginDTO, Model model){
+    public String bucarLogin(@ModelAttribute("buscarLoginDTO") BuscarLoginDTO buscarLoginDTO, Model model) {
         logger.debug("Executing buscarLogin() method via Get throw login.jsp form of login");
 
-       Login login = loginService.getLoginFromForm(buscarLoginDTO);
+        Login login = loginService.getLoginFromForm(buscarLoginDTO);
 
         model.addAttribute(buscarLoginDTO);
         model.addAttribute("login", login);
 
         return "index";
+    }
+
+    @GetMapping("/usuario")
+    public String usuario(Model model) {
+        logger.debug("Executing login() method via Get");
+        return "usuario";
     }
 }
